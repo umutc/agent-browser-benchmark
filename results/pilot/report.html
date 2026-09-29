@@ -1,0 +1,223 @@
+<title>Five Ways to Drive a Browser</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one reading column for prose; figures and tables break out to a wider measure. */
+:root{
+  --paper:#f7f8f6; --panel:#ffffff; --ink:#15191d; --ink-2:#4a525a; --ink-3:#737b83; --rule:#dde1dd; --accent:#0f6e6a;
+  --good:#1f7a3a; --good-bg:#e3f2e6; --part:#8a5a00; --part-bg:#fbf0d9; --bad:#a3322f; --bad-bg:#f9e3e1;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4;
+  --display:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif; --body:"Source Serif 4",Georgia,"Times New Roman",serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){color-scheme:dark;
+  --paper:#141716; --panel:#1b1f1e; --ink:#eef1ef; --ink-2:#b9c1bd; --ink-3:#8d9692; --rule:#2f3533; --accent:#5cc4bd;
+  --good:#7fd69a; --good-bg:#17301f; --part:#f0c46a; --part-bg:#352a12; --bad:#f19a95; --bad-bg:#3a1c1b;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181;}}
+:root[data-theme="dark"]{color-scheme:dark;
+  --paper:#141716; --panel:#1b1f1e; --ink:#eef1ef; --ink-2:#b9c1bd; --ink-3:#8d9692; --rule:#2f3533; --accent:#5cc4bd;
+  --good:#7fd69a; --good-bg:#17301f; --part:#f0c46a; --part-bg:#352a12; --bad:#f19a95; --bad-bg:#3a1c1b;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181;}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:17px/1.6 var(--body);margin:0;padding-inline:20px;padding-block:0 64px}
+.wrap{max-width:1040px;margin:0 auto}
+.prose{max-width:68ch}
+header.top{padding-block:48px 24px;border-bottom:1px solid var(--rule);margin-bottom:32px}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+h1{font:800 clamp(34px,5vw,54px)/1.05 var(--display);letter-spacing:-.02em;margin:0 0 16px;text-wrap:balance}
+h2{font:700 26px/1.2 var(--display);letter-spacing:-.01em;margin:56px 0 12px;text-wrap:balance}
+h3{font:700 18px/1.3 var(--display);margin:28px 0 8px}
+.dek{font-size:20px;color:var(--ink-2);max-width:62ch;margin:0}
+.runline{font:13px/1.5 var(--mono);color:var(--ink-3);margin-top:18px}
+p{margin:0 0 14px} a{color:var(--accent)}
+code{font:0.84em var(--mono);background:color-mix(in oklab,var(--rule) 45%,transparent);padding:1px 5px;border-radius:4px}
+.sw{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:7px;vertical-align:0}
+.s1{background:var(--s1)}.s2{background:var(--s2)}.s3{background:var(--s3)}.s4{background:var(--s4)}.s5{background:var(--s5)}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font:14px/1.4 var(--display);font-variant-numeric:tabular-nums}
+caption{text-align:left;font:600 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);padding-bottom:10px}
+th,td{padding:9px 10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+thead th{font-weight:700;color:var(--ink-2);white-space:nowrap}
+td.n{text-align:right;white-space:nowrap}
+.score td.n strong{font-weight:700}
+.matrix th[scope=row]{min-width:220px}
+.score th[scope=row],td .vn{white-space:nowrap}
+.matrix .tname{display:block;font-weight:600}.matrix code{font-size:11px;color:var(--ink-3);background:none;padding:0}
+.cell{white-space:nowrap}.cell small{display:block;color:var(--ink-3);font:11px var(--mono);margin-top:3px}
+.pill{display:inline-block;font:600 12px var(--mono);padding:2px 8px;border-radius:999px}
+.cell.full .pill{background:var(--good-bg);color:var(--good)}.cell.part .pill{background:var(--part-bg);color:var(--part)}.cell.none .pill{background:var(--bad-bg);color:var(--bad)}
+.legend-states{display:flex;gap:18px;flex-wrap:wrap;font:13px var(--display);color:var(--ink-2);margin:10px 0 0}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:28px;margin:18px 0}
+figure.chart{margin:0}
+figure.chart figcaption{font:700 15px/1.3 var(--display);margin-bottom:6px}
+.axis-note{font:12px var(--mono);color:var(--ink-3);margin:4px 0 0}
+svg text{font-family:var(--display);fill:var(--ink)} svg .lab{font-size:13px;fill:var(--ink-2)} svg .val{font-size:12px;font-family:var(--mono);fill:var(--ink)} svg .tick{font-size:11px;font-family:var(--mono);fill:var(--ink-3)}
+svg .grid{stroke:var(--rule);stroke-width:1} svg .ci{stroke:var(--ink);stroke-width:1.5;opacity:.7}
+svg .rng{stroke-width:3;stroke-linecap:round;opacity:.55} svg .dot{stroke:var(--panel);stroke-width:2}
+.c1{stroke:var(--s1)}.c2{stroke:var(--s2)}.c3{stroke:var(--s3)}.c4{stroke:var(--s4)}.c5{stroke:var(--s5)}
+.f1{fill:var(--s1)}.f2{fill:var(--s2)}.f3{fill:var(--s3)}.f4{fill:var(--s4)}.f5{fill:var(--s5)}
+svg .mark:focus{outline:none} svg .mark:focus .dot,svg .mark:hover .dot{r:8}
+.findings{display:grid;gap:14px;padding:0;list-style:none;margin:18px 0}
+.findings li{background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:16px 18px}
+.findings li strong{font-family:var(--display)}
+.method dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:12px 0}
+.method dt{font:600 13px var(--mono);color:var(--ink-3)} .method dd{margin:0}
+details{margin:12px 0} summary{cursor:pointer;font:600 14px var(--display);color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:640px){body{font-size:16px}.method dl{grid-template-columns:1fr}}
+</style>
+<div class="wrap">
+<header class="top">
+  <p class="eyebrow">Browser automation benchmark · Claude Code</p>
+  <h1>Five ways to drive a browser</h1>
+  <p class="dek">The same agent, model and prompts ran 15 browser tasks through five different automation surfaces. This report compares what each one could do, how often it finished the job, and what it cost in time and tokens.</p>
+  <p class="runline">claude-opus-5-5 · effort medium · 20 runs · 2026-09-29 to 2026-09-29 · list-price equivalent $2</p>
+</header>
+
+<section>
+  <h2>Scorecard</h2>
+  <p class="prose">Capability counts the 3 single-skill probes a variant passed in at least two of three runs. Realistic tasks and bug hunts are multi-step jobs repeated five times each. Time, tokens and cost are medians over every run except the baseline.</p>
+  <div class="scroll"><table class="score">
+    <thead><tr><th scope="col">Variant</th><th scope="col">Capability</th><th scope="col">Realistic tasks</th><th scope="col">Bug hunts (recall)</th><th scope="col">Median time</th><th scope="col">Median input</th><th scope="col">Fixed context</th><th scope="col">Timeouts</th><th scope="col">Wrong but claimed done</th></tr></thead>
+    <tbody><tr><th scope="row"><span class="sw s1" aria-hidden="true"></span>Claude in Chrome</th><td class="n"><strong>3</strong>/3</td><td class="n">– <small>(–––)</small></td><td class="n">–</td><td class="n">16 s</td><td class="n">104k</td><td class="n">15.5k</td><td class="n">0</td><td class="n">0</td></tr><tr><th scope="row"><span class="sw s2" aria-hidden="true"></span>Playwright · Chrome</th><td class="n"><strong>3</strong>/3</td><td class="n">– <small>(–––)</small></td><td class="n">–</td><td class="n">8 s</td><td class="n">32.9k</td><td class="n">10.5k</td><td class="n">0</td><td class="n">0</td></tr><tr><th scope="row"><span class="sw s3" aria-hidden="true"></span>Orca browser</th><td class="n"><strong>2</strong>/3</td><td class="n">– <small>(–––)</small></td><td class="n">–</td><td class="n">32 s</td><td class="n">43.2k</td><td class="n">6.3k</td><td class="n">1</td><td class="n">0</td></tr><tr><th scope="row"><span class="sw s4" aria-hidden="true"></span>Safari MCP</th><td class="n"><strong>2</strong>/3</td><td class="n">– <small>(–––)</small></td><td class="n">–</td><td class="n">28 s</td><td class="n">17.2k</td><td class="n">8.3k</td><td class="n">1</td><td class="n">0</td></tr><tr><th scope="row"><span class="sw s5" aria-hidden="true"></span>Playwright · WebKit</th><td class="n"><strong>3</strong>/3</td><td class="n">– <small>(–––)</small></td><td class="n">–</td><td class="n">7 s</td><td class="n">32.8k</td><td class="n">10.5k</td><td class="n">0</td><td class="n">0</td></tr></tbody></table></div>
+</section>
+
+
+
+<section>
+  <h2>Capability probes</h2>
+  <p class="prose">Each probe tests one skill on a purpose-built page, three runs per variant. A cell shows passes out of runs and the median time. The server checks every answer against what it actually received, so an agent that says it finished but never submitted the form fails.</p>
+  <div class="scroll"><table class="matrix"><caption>Single-skill probes (K1)</caption><thead><tr><th scope="col">Task</th><th scope="col"><span class="sw s1" aria-hidden="true"></span>Claude in Chrome</th><th scope="col"><span class="sw s2" aria-hidden="true"></span>Playwright · Chrome</th><th scope="col"><span class="sw s3" aria-hidden="true"></span>Orca browser</th><th scope="col"><span class="sw s4" aria-hidden="true"></span>Safari MCP</th><th scope="col"><span class="sw s5" aria-hidden="true"></span>Playwright · WebKit</th></tr></thead><tbody><tr><th scope="row"><span class="tname">read text</span><code>k1-read</code></th><td class="cell full" title="Claude in Chrome · k1-read: 1/1 passed"><span class="pill">1/1</span><small>8 s</small></td><td class="cell full" title="Playwright · Chrome · k1-read: 1/1 passed"><span class="pill">1/1</span><small>8 s</small></td><td class="cell full" title="Orca browser · k1-read: 1/1 passed"><span class="pill">1/1</span><small>17 s</small></td><td class="cell full" title="Safari MCP · k1-read: 1/1 passed"><span class="pill">1/1</span><small>5 s</small></td><td class="cell full" title="Playwright · WebKit · k1-read: 1/1 passed"><span class="pill">1/1</span><small>7 s</small></td></tr><tr><th scope="row"><span class="tname">JS dialogs (confirm + prompt)</span><code>k1-dialogs</code></th><td class="cell full" title="Claude in Chrome · k1-dialogs: 1/1 passed"><span class="pill">1/1</span><small>30 s</small></td><td class="cell full" title="Playwright · Chrome · k1-dialogs: 1/1 passed"><span class="pill">1/1</span><small>15 s</small></td><td class="cell none" title="Orca browser · k1-dialogs: 0/1 passed · 1 timeout"><span class="pill">0/1</span><small>240 s</small></td><td class="cell none" title="Safari MCP · k1-dialogs: 0/1 passed · 1 timeout"><span class="pill">0/1</span><small>239 s</small></td><td class="cell full" title="Playwright · WebKit · k1-dialogs: 1/1 passed"><span class="pill">1/1</span><small>17 s</small></td></tr><tr><th scope="row"><span class="tname">screenshot + vision (below the fold)</span><code>k1-canvas</code></th><td class="cell full" title="Claude in Chrome · k1-canvas: 1/1 passed"><span class="pill">1/1</span><small>16 s</small></td><td class="cell full" title="Playwright · Chrome · k1-canvas: 1/1 passed"><span class="pill">1/1</span><small>7 s</small></td><td class="cell full" title="Orca browser · k1-canvas: 1/1 passed"><span class="pill">1/1</span><small>32 s</small></td><td class="cell full" title="Safari MCP · k1-canvas: 1/1 passed"><span class="pill">1/1</span><small>28 s</small></td><td class="cell full" title="Playwright · WebKit · k1-canvas: 1/1 passed"><span class="pill">1/1</span><small>7 s</small></td></tr></tbody></table></div>
+  <div class="legend-states"><span><span class="pill" style="background:var(--good-bg);color:var(--good)">3/3</span> passed every run</span><span><span class="pill" style="background:var(--part-bg);color:var(--part)">1/3</span> passed some runs</span><span><span class="pill" style="background:var(--bad-bg);color:var(--bad)">0/3</span> never passed</span></div>
+</section>
+
+<section>
+  <h2>Realistic tasks</h2>
+  <p class="prose">Eight multi-step jobs: a checkout with validation, a filtered catalog, a paginated table, a wizard with a custom date picker, a login with a code from a second tab, detail-page scraping, a shop full of pop-ups, and a pointer-driven kanban board.</p>
+  <p>No realistic-task runs yet.</p>
+  <div class="charts">
+    
+    
+  </div>
+</section>
+
+<section>
+  <h2>Bug hunts</h2>
+  <p class="prose">Five pages with planted problems in lettered sections: failing API calls behind normal-looking widgets, buttons that throw only in the console, accessibility faults, layouts that break only at phone width, and widgets that depend on Chromium-only APIs. Bug placement changes every run. Recall is the share of planted bugs found with the right category.</p>
+  <p>No bug-hunt runs yet.</p>
+</section>
+
+<section>
+  <h2>Speed and cost</h2>
+  <p class="prose">Fixed context is what a variant costs before it does anything: the tool definitions and any system prompt it adds, measured with a no-tool reply. Input tokens per run then grow with every page the agent reads, so a tool that returns compact page snapshots stays cheaper on long tasks.</p>
+  <div class="charts">
+    <figure class="chart" id="k1-time"><figcaption>Time per capability probe</figcaption>
+    <div class="scroll"><svg viewBox="0 0 640 208" width="100%" role="img" aria-label="Time per capability probe"><line x1="150" x2="150" y1="8" y2="184" class="grid"/><text x="150" y="200" class="tick" text-anchor="middle">0</text><line x1="266.5" x2="266.5" y1="8" y2="184" class="grid"/><text x="266.5" y="200" class="tick" text-anchor="middle">50</text><line x1="383" x2="383" y1="8" y2="184" class="grid"/><text x="383" y="200" class="tick" text-anchor="middle">100</text><line x1="499.5" x2="499.5" y1="8" y2="184" class="grid"/><text x="499.5" y="200" class="tick" text-anchor="middle">150</text><line x1="616" x2="616" y1="8" y2="184" class="grid"/><text x="616" y="200" class="tick" text-anchor="middle">200</text><g class="mark" tabindex="0"><title>Claude in Chrome: median 15.7 seconds (IQR 11.8–22.6)</title>
+        <text x="140" y="29" class="lab" text-anchor="end">Claude in Chrome</text>
+        <line x1="177.513805" x2="202.740715" y1="25" y2="25" class="rng c1"/>
+        <circle cx="186.51809" cy="25" r="6" class="dot f1"/>
+        <text x="212.740715" y="29" class="val">16</text></g><g class="mark" tabindex="0"><title>Playwright · Chrome: median 8.1 seconds (IQR 7.4–11.7)</title>
+        <text x="140" y="63" class="lab" text-anchor="end">Playwright · Chrome</text>
+        <line x1="167.18142" x2="177.180615" y1="59" y2="59" class="rng c2"/>
+        <circle cx="168.77747" cy="59" r="6" class="dot f2"/>
+        <text x="187.180615" y="63" class="val">8.1</text></g><g class="mark" tabindex="0"><title>Orca browser: median 31.6 seconds (IQR 24.2–135.6)</title>
+        <text x="140" y="97" class="lab" text-anchor="end">Orca browser</text>
+        <line x1="206.39299" x2="465.91072" y1="93" y2="93" class="rng c3"/>
+        <circle cx="223.73751" cy="93" r="6" class="dot f3"/>
+        <text x="475.91072" y="97" class="val">32</text></g><g class="mark" tabindex="0"><title>Safari MCP: median 28.4 seconds (IQR 16.5–133.9)</title>
+        <text x="140" y="131" class="lab" text-anchor="end">Safari MCP</text>
+        <line x1="188.406555" x2="461.97535000000005" y1="127" y2="127" class="rng c4"/>
+        <circle cx="216.13938000000002" cy="127" r="6" class="dot f4"/>
+        <text x="471.97535000000005" y="131" class="val">28</text></g><g class="mark" tabindex="0"><title>Playwright · WebKit: median 7.2 seconds (IQR 6.9–12.4)</title>
+        <text x="140" y="165" class="lab" text-anchor="end">Playwright · WebKit</text>
+        <line x1="166.0537" x2="178.81511" y1="161" y2="161" class="rng c5"/>
+        <circle cx="166.85988" cy="161" r="6" class="dot f5"/>
+        <text x="188.81511" y="165" class="val">7.2</text></g></svg></div>
+    <p class="axis-note">seconds · dot = median, line = middle 50% of runs</p></figure>
+    <figure class="chart" id="k1-tok"><figcaption>Input tokens per capability probe</figcaption>
+    <div class="scroll"><svg viewBox="0 0 640 208" width="100%" role="img" aria-label="Input tokens per capability probe"><line x1="150" x2="150" y1="8" y2="184" class="grid"/><text x="150" y="200" class="tick" text-anchor="middle">0</text><line x1="266.5" x2="266.5" y1="8" y2="184" class="grid"/><text x="266.5" y="200" class="tick" text-anchor="middle">50</text><line x1="383" x2="383" y1="8" y2="184" class="grid"/><text x="383" y="200" class="tick" text-anchor="middle">100</text><line x1="499.5" x2="499.5" y1="8" y2="184" class="grid"/><text x="499.5" y="200" class="tick" text-anchor="middle">150</text><line x1="616" x2="616" y1="8" y2="184" class="grid"/><text x="616" y="200" class="tick" text-anchor="middle">200</text><g class="mark" tabindex="0"><title>Claude in Chrome: median 104.0 thousand tokens (IQR 76.1–131.0)</title>
+        <text x="140" y="29" class="lab" text-anchor="end">Claude in Chrome</text>
+        <line x1="327.21047999999996" x2="455.123985" y1="25" y2="25" class="rng c1"/>
+        <circle cx="392.20816" cy="25" r="6" class="dot f1"/>
+        <text x="465.123985" y="29" class="val">104</text></g><g class="mark" tabindex="0"><title>Playwright · Chrome: median 32.9 thousand tokens (IQR 27.4–56.5)</title>
+        <text x="140" y="63" class="lab" text-anchor="end">Playwright · Chrome</text>
+        <line x1="213.850155" x2="281.74402499999997" y1="59" y2="59" class="rng c2"/>
+        <circle cx="226.69195" cy="59" r="6" class="dot f2"/>
+        <text x="291.74402499999997" y="63" class="val">33</text></g><g class="mark" tabindex="0"><title>Orca browser: median 43.2 thousand tokens (IQR 32.0–53.8)</title>
+        <text x="140" y="97" class="lab" text-anchor="end">Orca browser</text>
+        <line x1="224.577475" x2="275.29575" y1="93" y2="93" class="rng c3"/>
+        <circle cx="250.64202" cy="93" r="6" class="dot f3"/>
+        <text x="285.29575" y="97" class="val">43</text></g><g class="mark" tabindex="0"><title>Safari MCP: median 17.2 thousand tokens (IQR 17.2–70.8)</title>
+        <text x="140" y="131" class="lab" text-anchor="end">Safari MCP</text>
+        <line x1="190.10629" x2="314.99312499999996" y1="127" y2="127" class="rng c4"/>
+        <circle cx="190.12959" cy="127" r="6" class="dot f4"/>
+        <text x="324.99312499999996" y="131" class="val">17</text></g><g class="mark" tabindex="0"><title>Playwright · WebKit: median 32.8 thousand tokens (IQR 32.7–56.0)</title>
+        <text x="140" y="165" class="lab" text-anchor="end">Playwright · WebKit</text>
+        <line x1="226.15372" x2="280.45437000000004" y1="161" y2="161" class="rng c5"/>
+        <circle cx="226.30982999999998" cy="161" r="6" class="dot f5"/>
+        <text x="290.45437000000004" y="165" class="val">33</text></g></svg></div>
+    <p class="axis-note">thousand tokens · dot = median, line = middle 50% of runs</p></figure>
+    
+    <figure class="chart" id="base-tok"><figcaption>Fixed context (baseline reply)</figcaption>
+    <div class="scroll"><svg viewBox="0 0 640 208" width="100%" role="img" aria-label="Fixed context (baseline reply)"><line x1="150" x2="150" y1="8" y2="184" class="grid"/><text x="150" y="200" class="tick" text-anchor="middle">0</text><line x1="266.5" x2="266.5" y1="8" y2="184" class="grid"/><text x="266.5" y="200" class="tick" text-anchor="middle">5</text><line x1="383" x2="383" y1="8" y2="184" class="grid"/><text x="383" y="200" class="tick" text-anchor="middle">10</text><line x1="499.5" x2="499.5" y1="8" y2="184" class="grid"/><text x="499.5" y="200" class="tick" text-anchor="middle">15</text><line x1="616" x2="616" y1="8" y2="184" class="grid"/><text x="616" y="200" class="tick" text-anchor="middle">20</text><g class="mark" tabindex="0"><title>Claude in Chrome: median 15.5 thousand tokens (IQR 15.5–15.5)</title>
+        <text x="140" y="29" class="lab" text-anchor="end">Claude in Chrome</text>
+        <line x1="511.8956" x2="511.8956" y1="25" y2="25" class="rng c1"/>
+        <circle cx="511.8956" cy="25" r="6" class="dot f1"/>
+        <text x="521.8956000000001" y="29" class="val">16</text></g><g class="mark" tabindex="0"><title>Playwright · Chrome: median 10.5 thousand tokens (IQR 10.5–10.5)</title>
+        <text x="140" y="63" class="lab" text-anchor="end">Playwright · Chrome</text>
+        <line x1="394.0442" x2="394.0442" y1="59" y2="59" class="rng c2"/>
+        <circle cx="394.0442" cy="59" r="6" class="dot f2"/>
+        <text x="404.0442" y="63" class="val">10</text></g><g class="mark" tabindex="0"><title>Orca browser: median 6.3 thousand tokens (IQR 6.3–6.3)</title>
+        <text x="140" y="97" class="lab" text-anchor="end">Orca browser</text>
+        <line x1="296.9531" x2="296.9531" y1="93" y2="93" class="rng c3"/>
+        <circle cx="296.9531" cy="93" r="6" class="dot f3"/>
+        <text x="306.9531" y="97" class="val">6.3</text></g><g class="mark" tabindex="0"><title>Safari MCP: median 8.3 thousand tokens (IQR 8.3–8.3)</title>
+        <text x="140" y="131" class="lab" text-anchor="end">Safari MCP</text>
+        <line x1="343.9259" x2="343.9259" y1="127" y2="127" class="rng c4"/>
+        <circle cx="343.9259" cy="127" r="6" class="dot f4"/>
+        <text x="353.9259" y="131" class="val">8.3</text></g><g class="mark" tabindex="0"><title>Playwright · WebKit: median 10.5 thousand tokens (IQR 10.5–10.5)</title>
+        <text x="140" y="165" class="lab" text-anchor="end">Playwright · WebKit</text>
+        <line x1="394.0442" x2="394.0442" y1="161" y2="161" class="rng c5"/>
+        <circle cx="394.0442" cy="161" r="6" class="dot f5"/>
+        <text x="404.0442" y="165" class="val">10</text></g></svg></div>
+    <p class="axis-note">thousand tokens · dot = median, line = middle 50% of runs</p></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Engine or tool?</h2>
+  <p class="prose">Two pairs separate the browser engine from the automation interface. Claude in Chrome and Playwright drive the same installed Chrome; Safari MCP and Playwright's WebKit build share an engine family. Where a pair differs, the interface is the likely cause.</p>
+  <div class="scroll"><table><thead><tr><th scope="col">Pair</th><th scope="col">Variant</th><th scope="col">Probes passed</th><th scope="col">Realistic passed</th><th scope="col">Median time</th><th scope="col">Median input</th></tr></thead>
+  <tbody><tr><th scope="row">Same Chrome</th><td><span class="sw s1" aria-hidden="true"></span>Claude in Chrome</td><td>100%</td><td>–</td><td>16 s</td><td>104k</td></tr>
+    <tr><th scope="row"></th><td><span class="sw s2" aria-hidden="true"></span>Playwright · Chrome</td><td>100%</td><td>–</td><td>8 s</td><td>32.9k</td></tr><tr><th scope="row">WebKit family</th><td><span class="sw s4" aria-hidden="true"></span>Safari MCP</td><td>67%</td><td>–</td><td>28 s</td><td>17.2k</td></tr>
+    <tr><th scope="row"></th><td><span class="sw s5" aria-hidden="true"></span>Playwright · WebKit</td><td>100%</td><td>–</td><td>7 s</td><td>32.8k</td></tr></tbody></table></div>
+</section>
+
+<section>
+  <h2>How each agent worked</h2>
+  <div class="scroll"><table><thead><tr><th scope="col">Variant</th><th scope="col">Most used tools</th><th scope="col">Real input events</th><th scope="col">Viewport</th></tr></thead>
+  <tbody><tr><th scope="row"><span class="sw s1" aria-hidden="true"></span>Claude in Chrome</th><td><code>javascript_tool</code> 25%, <code>navigate</code> 19%, <code>computer</code> 19%, <code>tabs_close_mcp</code> 19%</td><td class="n">–</td><td class="n">1728×907</td></tr><tr><th scope="row"><span class="sw s2" aria-hidden="true"></span>Playwright · Chrome</th><td><code>browser_navigate</code> 30%, <code>browser_handle_dialog</code> 20%, <code>browser_snapshot</code> 20%, <code>browser_take_screenshot</code> 10%</td><td class="n">–</td><td class="n">1728×907</td></tr><tr><th scope="row"><span class="sw s3" aria-hidden="true"></span>Orca browser</th><td><code>orca snapshot</code> 21%, <code>orca exec</code> 18%, <code>orca tab</code> 14%, <code>orca goto</code> 11%</td><td class="n">–</td><td class="n">1727×973</td></tr><tr><th scope="row"><span class="sw s4" aria-hidden="true"></span>Safari MCP</th><td><code>navigate_to_url</code> 21%, <code>evaluate_javascript</code> 21%, <code>screenshot</code> 21%, <code>Read</code> 14%</td><td class="n">–</td><td class="n">1728×890</td></tr><tr><th scope="row"><span class="sw s5" aria-hidden="true"></span>Playwright · WebKit</th><td><code>browser_navigate</code> 30%, <code>browser_handle_dialog</code> 20%, <code>browser_snapshot</code> 20%, <code>browser_take_screenshot</code> 10%</td><td class="n">–</td><td class="n">1728×890</td></tr></tbody></table></div>
+  <p class="prose" style="margin-top:12px">Real input events is the share of passed interaction runs where the page received trusted browser input (<code>event.isTrusted</code>) rather than events synthesized from page JavaScript.</p>
+</section>
+
+<section class="method">
+  <h2>Method</h2>
+  <div class="prose">
+  <p>Every run is a fresh <code>claude -p</code> process with only one browser surface available: <code>--strict-mcp-config</code>, built-in tools limited to <code>Read</code> (plus <code>Bash</code> restricted to <code>orca</code> browser commands for the Orca variant), and <code>--setting-sources project</code> so no personal instructions leak in. The answer comes back through a JSON schema.</p>
+  <p>Pages come from a local fixture server at a fresh origin per run (<code>run-&lt;id&gt;.localhost</code>), so cookies and storage always start empty. Expected answers are derived from a secret held only in the runner's memory. Browsers ran visible and maximized on a 1728×1117 display; a beacon on every page recorded the real viewport. Runs were ordered in shuffled blocks so each task's five variants ran back to back.</p>
+  <p>Every multi-step fixture was first solved by a scripted reference solution in both Chrome and WebKit, so a failure here reflects the agent and its tools, not a broken page.</p>
+  </div>
+  <dl>
+    <dt>Claude in Chrome</dt><dd>Claude in Chrome extension (MCP) · Chrome (user profile)</dd><dt>Playwright · Chrome</dt><dd>@playwright/mcp · Chrome (Playwright, isolated profile)</dd><dt>Orca browser</dt><dd>orca CLI through Bash · Chromium (Orca/Electron)</dd><dt>Safari MCP</dt><dd>safaridriver --mcp · Safari (WebKit)</dd><dt>Playwright · WebKit</dt><dd>@playwright/mcp · WebKit (Playwright build)</dd>
+  </dl>
+</section>
+
+
+
+<section>
+  <h2>Data</h2>
+  <details><summary>Per-variant totals by tier</summary>
+  <div class="scroll"><table><thead><tr><th scope="col">Tier</th><th scope="col">Variant</th><th scope="col">Runs</th><th scope="col">Passed</th><th scope="col">Median s</th><th scope="col">p75 s</th><th scope="col">Median tools</th><th scope="col">Median input</th><th scope="col">Median $</th></tr></thead><tbody>
+  <tr><td>K0</td><td><span class="sw s1" aria-hidden="true"></span>Claude in Chrome</td><td class="n">1</td><td class="n">1</td><td class="n">2.6</td><td class="n">2.6</td><td class="n">1</td><td class="n">15.5k</td><td class="n">0.127</td></tr><tr><td>K0</td><td><span class="sw s2" aria-hidden="true"></span>Playwright · Chrome</td><td class="n">1</td><td class="n">1</td><td class="n">2.5</td><td class="n">2.5</td><td class="n">1</td><td class="n">10.5k</td><td class="n">0.087</td></tr><tr><td>K0</td><td><span class="sw s3" aria-hidden="true"></span>Orca browser</td><td class="n">1</td><td class="n">1</td><td class="n">1.9</td><td class="n">1.9</td><td class="n">1</td><td class="n">6.3k</td><td class="n">0.052</td></tr><tr><td>K0</td><td><span class="sw s4" aria-hidden="true"></span>Safari MCP</td><td class="n">1</td><td class="n">1</td><td class="n">2.7</td><td class="n">2.7</td><td class="n">1</td><td class="n">8.3k</td><td class="n">0.070</td></tr><tr><td>K0</td><td><span class="sw s5" aria-hidden="true"></span>Playwright · WebKit</td><td class="n">1</td><td class="n">1</td><td class="n">2.4</td><td class="n">2.4</td><td class="n">1</td><td class="n">10.5k</td><td class="n">0.005</td></tr><tr><td>K1</td><td><span class="sw s1" aria-hidden="true"></span>Claude in Chrome</td><td class="n">3</td><td class="n">3</td><td class="n">15.7</td><td class="n">22.6</td><td class="n">6</td><td class="n">104k</td><td class="n">0.182</td></tr><tr><td>K1</td><td><span class="sw s2" aria-hidden="true"></span>Playwright · Chrome</td><td class="n">3</td><td class="n">3</td><td class="n">8.1</td><td class="n">11.7</td><td class="n">3</td><td class="n">32.9k</td><td class="n">0.048</td></tr><tr><td>K1</td><td><span class="sw s3" aria-hidden="true"></span>Orca browser</td><td class="n">3</td><td class="n">2</td><td class="n">31.6</td><td class="n">135.6</td><td class="n">5</td><td class="n">43.2k</td><td class="n">0.096</td></tr><tr><td>K1</td><td><span class="sw s4" aria-hidden="true"></span>Safari MCP</td><td class="n">3</td><td class="n">2</td><td class="n">28.4</td><td class="n">133.9</td><td class="n">3</td><td class="n">17.2k</td><td class="n">0.134</td></tr><tr><td>K1</td><td><span class="sw s5" aria-hidden="true"></span>Playwright · WebKit</td><td class="n">3</td><td class="n">3</td><td class="n">7.2</td><td class="n">12.4</td><td class="n">3</td><td class="n">32.8k</td><td class="n">0.100</td></tr>
+  </tbody></table></div></details>
+</section>
+</div>

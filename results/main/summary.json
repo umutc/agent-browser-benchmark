@@ -1,0 +1,194 @@
+{
+ "generatedAt": "2026-09-29T23:09:19.619Z",
+ "runs": 4,
+ "cells": [
+  {
+   "variant": "pw-webkit",
+   "task": "k1-dialogs",
+   "tier": "k1",
+   "capability": "JS dialogs (confirm + prompt)",
+   "n": 1,
+   "passes": 1,
+   "passRate": 1,
+   "ci": [
+    0.20654329147389294,
+    1
+   ],
+   "timeouts": 0,
+   "falseClaims": 0,
+   "medianSeconds": 15.723,
+   "medianToolCalls": 6,
+   "medianInputTokens": 79411,
+   "medianOutputTokens": 574,
+   "medianResultKB": 1.74609375,
+   "medianImages": 0,
+   "medianCostUsd": 0.04619779999999999,
+   "trustedRate": null,
+   "meanRecall": null,
+   "meanPrecision": null,
+   "denials": 0,
+   "leftovers": 0,
+   "viewport": "1728x890"
+  },
+  {
+   "variant": "pw-chrome",
+   "task": "k1-dialogs",
+   "tier": "k1",
+   "capability": "JS dialogs (confirm + prompt)",
+   "n": 1,
+   "passes": 1,
+   "passRate": 1,
+   "ci": [
+    0.20654329147389294,
+    1
+   ],
+   "timeouts": 0,
+   "falseClaims": 0,
+   "medianSeconds": 15.15,
+   "medianToolCalls": 6,
+   "medianInputTokens": 79936,
+   "medianOutputTokens": 584,
+   "medianResultKB": 1.984375,
+   "medianImages": 0,
+   "medianCostUsd": 0.047446600000000005,
+   "trustedRate": null,
+   "meanRecall": null,
+   "meanPrecision": null,
+   "denials": 0,
+   "leftovers": 0,
+   "viewport": "1728x907"
+  },
+  {
+   "variant": "claude-in-chrome",
+   "task": "k1-dialogs",
+   "tier": "k1",
+   "capability": "JS dialogs (confirm + prompt)",
+   "n": 1,
+   "passes": 1,
+   "passRate": 1,
+   "ci": [
+    0.20654329147389294,
+    1
+   ],
+   "timeouts": 0,
+   "falseClaims": 0,
+   "medianSeconds": 20.557,
+   "medianToolCalls": 5,
+   "medianInputTokens": 83644,
+   "medianOutputTokens": 1336,
+   "medianResultKB": 1.7431640625,
+   "medianImages": 0,
+   "medianCostUsd": 0.06704280000000001,
+   "trustedRate": null,
+   "meanRecall": null,
+   "meanPrecision": null,
+   "denials": 0,
+   "leftovers": 1,
+   "viewport": "1728x873"
+  },
+  {
+   "variant": "safari-mcp",
+   "task": "k1-dialogs",
+   "tier": "k1",
+   "capability": "JS dialogs (confirm + prompt)",
+   "n": 1,
+   "passes": 0,
+   "passRate": 0,
+   "ci": [
+    0,
+    0.7934567085261071
+   ],
+   "timeouts": 1,
+   "falseClaims": 0,
+   "medianSeconds": 239.544,
+   "medianToolCalls": 3,
+   "medianInputTokens": 17215,
+   "medianOutputTokens": 56,
+   "medianResultKB": 0.2646484375,
+   "medianImages": 0,
+   "medianCostUsd": null,
+   "trustedRate": null,
+   "meanRecall": null,
+   "meanPrecision": null,
+   "denials": 0,
+   "leftovers": 0,
+   "viewport": "1728x890"
+  }
+ ],
+ "totals": {
+  "k1": [
+   {
+    "variant": "pw-webkit",
+    "n": 1,
+    "passes": 1,
+    "passRate": 1,
+    "ci": [
+     0.20654329147389294,
+     1
+    ],
+    "medianSeconds": 15.723,
+    "p75Seconds": 15.723,
+    "medianToolCalls": 6,
+    "medianInputTokens": 79411,
+    "medianCostUsd": 0.04619779999999999,
+    "totalCostUsd": 0.04619779999999999,
+    "timeouts": 0,
+    "falseClaims": 0
+   },
+   {
+    "variant": "pw-chrome",
+    "n": 1,
+    "passes": 1,
+    "passRate": 1,
+    "ci": [
+     0.20654329147389294,
+     1
+    ],
+    "medianSeconds": 15.15,
+    "p75Seconds": 15.15,
+    "medianToolCalls": 6,
+    "medianInputTokens": 79936,
+    "medianCostUsd": 0.047446600000000005,
+    "totalCostUsd": 0.047446600000000005,
+    "timeouts": 0,
+    "falseClaims": 0
+   },
+   {
+    "variant": "claude-in-chrome",
+    "n": 1,
+    "passes": 1,
+    "passRate": 1,
+    "ci": [
+     0.20654329147389294,
+     1
+    ],
+    "medianSeconds": 20.557,
+    "p75Seconds": 20.557,
+    "medianToolCalls": 5,
+    "medianInputTokens": 83644,
+    "medianCostUsd": 0.06704280000000001,
+    "totalCostUsd": 0.06704280000000001,
+    "timeouts": 0,
+    "falseClaims": 0
+   },
+   {
+    "variant": "safari-mcp",
+    "n": 1,
+    "passes": 0,
+    "passRate": 0,
+    "ci": [
+     0,
+     0.7934567085261071
+    ],
+    "medianSeconds": 239.544,
+    "p75Seconds": 239.544,
+    "medianToolCalls": 3,
+    "medianInputTokens": 17215,
+    "medianCostUsd": null,
+    "totalCostUsd": 0,
+    "timeouts": 1,
+    "falseClaims": 0
+   }
+  ]
+ }
+}

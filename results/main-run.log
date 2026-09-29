@@ -1,0 +1,5 @@
+[runner] plan=670 done=0 todo=670 out=/Users/umutc/code/browser-mcp-bench/results/main
+[runner] 1/670 k1-dialogs|pw-webkit|1 status=ok pass=true time=16s tools=6 tokens=79411+574 5h=0.09 weekly=0.65
+[runner] 2/670 k1-dialogs|pw-chrome|1 status=ok pass=true time=15s tools=6 tokens=79936+584 5h=0.09 weekly=0.65
+[runner] 3/670 k1-dialogs|claude-in-chrome|1 status=ok pass=true time=21s tools=5 tokens=83644+1336 5h=0.09 weekly=0.65
+[runner] 4/670 k1-dialogs|safari-mcp|1 status=timeout pass=false time=240s tools=3 tokens=17215+56 5h=0.09 weekly=0.65

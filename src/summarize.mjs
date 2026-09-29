@@ -6,8 +6,6 @@ import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { ROOT } from './variants.mjs';
 
-const { values: options } = parseArgs({ options: { out: { type: 'string', default: 'results/main' } } });
-const outDir = join(ROOT, options.out);
 
 export function loadRuns(dir) {
   return readFileSync(join(dir, 'runs.jsonl'), 'utf8')
@@ -109,6 +107,8 @@ export function variantTotals(runs, tiers) {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
+  const { values: options } = parseArgs({ options: { out: { type: 'string', default: 'results/main' } } });
+  const outDir = join(ROOT, options.out);
   const runs = loadRuns(outDir);
   const cells = aggregate(runs);
   const tiers = [...new Set(runs.map((r) => r.tier))].sort();
