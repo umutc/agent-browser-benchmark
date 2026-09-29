@@ -30,8 +30,10 @@ export function parseStream(lines, arrivals) {
       if (message.id && message.usage) messageUsage.set(message.id, message.usage);
       for (const block of message.content || []) {
         if (block.type !== 'tool_use') continue;
-        toolCalls += 1;
         toolNames[block.name] = (toolNames[block.name] || 0) + 1;
+        // The final answer arrives through the StructuredOutput tool; it is not browser work.
+        if (block.name === 'StructuredOutput') continue;
+        toolCalls += 1;
         toolUseAt.set(block.id, at);
       }
     }

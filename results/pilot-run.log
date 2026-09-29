@@ -1,0 +1,21 @@
+[runner] plan=20 done=0 todo=20 out=/Users/umutc/code/browser-mcp-bench/results/pilot
+[runner] 1/20 k1-canvas|safari-mcp|1 status=ok pass=true time=28s tools=11 tokens=124402+1619 weekly=0.65
+[runner] 2/20 k1-canvas|claude-in-chrome|1 status=ok pass=true time=16s tools=6 tokens=103952+676 weekly=0.65
+[runner] 3/20 k1-canvas|pw-webkit|1 status=ok pass=true time=7s tools=3 tokens=32617+289 weekly=0.65
+[runner] 4/20 k1-canvas|orca-browser|1 status=ok pass=true time=32s tools=5 tokens=43194+839 weekly=0.65
+[runner] 5/20 k1-canvas|pw-chrome|1 status=ok pass=true time=7s tools=3 tokens=21892+445 weekly=0.65
+[runner] 6/20 k1-dialogs|pw-webkit|1 status=ok pass=true time=17s tools=7 tokens=79227+580 weekly=0.65
+[runner] 7/20 k1-dialogs|claude-in-chrome|1 status=ok pass=true time=30s tools=9 tokens=157957+1924 weekly=0.65
+[runner] 8/20 k1-dialogs|orca-browser|1 status=timeout pass=false time=240s tools=8 tokens=64356+136 weekly=0.65
+[runner] 9/20 k1-dialogs|safari-mcp|1 status=timeout pass=false time=239s tools=3 tokens=17203+56 weekly=0.65
+[runner] 10/20 k1-dialogs|pw-chrome|1 status=ok pass=true time=15s tools=7 tokens=80170+584 weekly=0.65
+[runner] 11/20 k0-baseline|pw-chrome|1 status=ok pass=true time=2s tools=1 tokens=10474+152 weekly=0.65
+[runner] 12/20 k0-baseline|safari-mcp|1 status=ok pass=true time=3s tools=1 tokens=8323+174 weekly=0.65
+[runner] 13/20 k0-baseline|pw-webkit|1 status=ok pass=true time=2s tools=1 tokens=10474+158 weekly=0.65
+[runner] 14/20 k0-baseline|orca-browser|1 status=ok pass=true time=2s tools=1 tokens=6307+76 weekly=0.65
+[runner] 15/20 k0-baseline|claude-in-chrome|1 status=ok pass=true time=3s tools=1 tokens=15532+146 weekly=0.65
+[runner] 16/20 k1-read|claude-in-chrome|1 status=ok pass=true time=8s tools=4 tokens=48160+325 weekly=0.65
+[runner] 17/20 k1-read|pw-chrome|1 status=ok pass=true time=8s tools=3 tokens=32915+241 weekly=0.65
+[runner] 18/20 k1-read|safari-mcp|1 status=ok pass=true time=5s tools=2 tokens=17223+191 weekly=0.65
+[runner] 19/20 k1-read|pw-webkit|1 status=ok pass=true time=7s tools=3 tokens=32751+229 weekly=0.65
+[runner] 20/20 k1-read|orca-browser|1 status=ok pass=true time=17s tools=3 tokens=20821+384 weekly=0.65

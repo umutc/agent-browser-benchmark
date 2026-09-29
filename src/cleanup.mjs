@@ -19,17 +19,43 @@ function run(command, args, timeout = 15000) {
   }
 }
 
-export function browserProcesses() {
-  const out = run('ps', ['-axo', 'pid=,command=']);
-  const found = [];
-  for (const line of out.split('\n')) {
-    const match = line.trim().match(/^(\d+)\s+(.*)$/);
-    if (!match) continue;
-    for (const [kind, pattern] of Object.entries(LEFTOVER_PATTERNS)) {
-      if (pattern.test(match[2])) found.push({ pid: Number(match[1]), kind });
+export function processTable() {
+  const rows = [];
+  for (const line of run('ps', ['-axo', 'pid=,ppid=,command=']).split('\n')) {
+    const match = line.trim().match(/^(\d+)\s+(\d+)\s+(.*)$/);
+    if (match) rows.push({ pid: Number(match[1]), ppid: Number(match[2]), command: match[3] });
+  }
+  return rows;
+}
+
+function kindOf(command) {
+  return Object.entries(LEFTOVER_PATTERNS).find(([, pattern]) => pattern.test(command))?.[0] ?? null;
+}
+
+// Browser processes that descend from the given root (the run's claude process). Called
+// while the run is alive, because orphans are re-parented to launchd once claude exits.
+export function trackDescendantBrowsers(rootPid, tracked) {
+  const table = processTable();
+  const children = new Map();
+  for (const row of table) {
+    if (!children.has(row.ppid)) children.set(row.ppid, []);
+    children.get(row.ppid).push(row);
+  }
+  const stack = [rootPid];
+  while (stack.length) {
+    for (const child of children.get(stack.pop()) || []) {
+      const kind = kindOf(child.command);
+      if (kind) tracked.set(child.pid, { kind, command: child.command });
+      stack.push(child.pid);
     }
   }
-  return found;
+}
+
+// Safari MCP windows belong to a Safari process that launchd starts, so it is not a
+// descendant of claude. The only link is timing: a new --automation Safari during a
+// safari-mcp run.
+export function safariAutomationPids() {
+  return processTable().filter((row) => kindOf(row.command) === 'safariAutomation').map((row) => row.pid);
 }
 
 const chromeRunning = () => run('pgrep', ['-x', 'Google Chrome']).trim().length > 0;
@@ -99,18 +125,28 @@ function removeRunFiles(runId, directories) {
   return removed;
 }
 
-export async function cleanupRun({ runId, processesBefore, chromeWindowsBefore, workdir, orcaWorktree }) {
+export async function cleanupRun({ runId, variant, tracked, safariBefore, chromeWindowsBefore, workdir, orcaWorktree }) {
   await new Promise((resolve) => setTimeout(resolve, 2500));
-  const beforePids = new Set(processesBefore.map((p) => p.pid));
-  const leftovers = browserProcesses().filter((p) => !beforePids.has(p.pid));
-  for (const process_ of leftovers) {
+  const alive = new Map(processTable().map((row) => [row.pid, row.command]));
+  const killed = [];
+  for (const [pid, info] of tracked) {
+    if (alive.get(pid) !== info.command) continue;
     try {
-      process.kill(process_.pid, 'SIGTERM');
+      process.kill(pid, 'SIGTERM');
+      killed.push(info.kind);
     } catch {}
   }
+  if (variant === 'safari-mcp') {
+    for (const pid of safariAutomationPids().filter((pid) => !safariBefore.includes(pid))) {
+      try {
+        process.kill(pid, 'SIGTERM');
+        killed.push('safariAutomation');
+      } catch {}
+    }
+  }
   return {
-    killedProcesses: leftovers.map((p) => p.kind),
-    chromeTabsClosed: closeChromeTabs(runId, chromeWindowsBefore),
+    killedProcesses: killed,
+    chromeTabsClosed: variant === 'claude-in-chrome' ? closeChromeTabs(runId, chromeWindowsBefore) : 0,
     orcaTabsClosed: orcaWorktree ? closeOrcaTabs(runId, orcaWorktree) : 0,
     filesRemoved: removeRunFiles(runId, [join(homedir(), 'Downloads'), workdir]),
   };

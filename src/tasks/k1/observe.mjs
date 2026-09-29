@@ -165,7 +165,11 @@ const responsive = defineTask({
     },
   },
   check: (c, out, events) => {
-    const widths = [...clientEvents(events, 'pageview'), ...clientEvents(events, 'resize')].map((e) => e.data.w);
+    const widths = [
+      ...clientEvents(events, 'pageview'),
+      ...clientEvents(events, 'resize'),
+      ...serverEvents(events, 'mobile'),
+    ].map((e) => e.data.w);
     const narrow = widths.some((w) => w <= 480);
     return result(narrow && norm(out?.code) === c.code('m'), { narrow, minWidth: Math.min(...widths), got: out?.code });
   },

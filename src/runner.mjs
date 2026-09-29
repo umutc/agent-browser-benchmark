@@ -13,7 +13,7 @@ import { TASKS, selectTasks } from './tasks/index.mjs';
 import { buildPrompt } from './tasks/common.mjs';
 import { VARIANTS, ROOT, WORKDIR, ORCA_WORKTREE, selectVariants, claudeArgs } from './variants.mjs';
 import { parseStream, isRateLimited } from './metrics.mjs';
-import { browserProcesses, chromeWindowIds, cleanupRun } from './cleanup.mjs';
+import { chromeWindowIds, cleanupRun, safariAutomationPids, trackDescendantBrowsers } from './cleanup.mjs';
 import { newRunId, rng, shuffle } from './lib/codes.mjs';
 
 const { values: options } = parseArgs({
@@ -26,6 +26,8 @@ const { values: options } = parseArgs({
     model: { type: 'string', default: 'claude-opus-5-5' },
     effort: { type: 'string', default: 'medium' },
     'max-weekly': { type: 'string', default: '0.85' },
+    'max-five-hour': { type: 'string', default: '0.8' },
+    'max-minutes': { type: 'string', default: '100000' },
     'max-runs': { type: 'string', default: '100000' },
     'dry-run': { type: 'boolean', default: false },
   },
@@ -73,7 +75,7 @@ function finishedKeys() {
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-function runClaude(args, runDir, timeoutSec) {
+function runClaude(args, runDir, timeoutSec, tracked) {
   return new Promise((resolve) => {
     const lines = [];
     const arrivals = [];
@@ -92,6 +94,7 @@ function runClaude(args, runDir, timeoutSec) {
       }
     });
     child.stderr.on('data', (chunk) => (stderr += chunk));
+    const poller = setInterval(() => trackDescendantBrowsers(child.pid, tracked), 1500);
     const killGroup = (signal) => {
       try {
         process.kill(-child.pid, signal);
@@ -104,6 +107,7 @@ function runClaude(args, runDir, timeoutSec) {
     }, timeoutSec * 1000);
     child.on('close', (exitCode) => {
       clearTimeout(timer);
+      clearInterval(poller);
       if (buffer.trim()) {
         lines.push(buffer);
         arrivals.push(Date.now());
@@ -136,10 +140,11 @@ async function runOne(item) {
   const args = claudeArgs({ variantName: item.variant, prompt, schema: task.schema, runDir, model: options.model, effort: options.effort });
   writeFileSync(join(runDir, 'prompt.txt'), prompt);
 
-  const processesBefore = browserProcesses();
-  const chromeWindowsBefore = chromeWindowIds();
+  const tracked = new Map();
+  const safariBefore = safariAutomationPids();
+  const chromeWindowsBefore = item.variant === 'claude-in-chrome' ? chromeWindowIds() : [];
   const startedAt = new Date().toISOString();
-  const execution = await runClaude(args, runDir, task.timeoutSec);
+  const execution = await runClaude(args, runDir, task.timeoutSec, tracked);
   const metrics = parseStream(execution.lines, execution.arrivals);
   const events = runEvents(runId);
   writeFileSync(join(runDir, 'server-events.json'), JSON.stringify(events, null, 1));
@@ -156,7 +161,9 @@ async function runOne(item) {
 
   const cleanup = await cleanupRun({
     runId,
-    processesBefore,
+    variant: item.variant,
+    tracked,
+    safariBefore,
     chromeWindowsBefore,
     workdir: WORKDIR,
     orcaWorktree: item.variant === 'orca-browser' ? ORCA_WORKTREE : null,
@@ -212,15 +219,20 @@ async function main() {
 
   const server = await startServer(TASKS);
   const infraStrikes = {};
+  const deadline = Date.now() + Number(options['max-minutes']) * 60_000;
   let index = 0;
   while (index < todo.length) {
+    if (Date.now() > deadline) {
+      console.log(`[runner] PAUSE: --max-minutes reached after ${index} runs; re-run the same command to continue`);
+      break;
+    }
     const item = todo[index];
     const record = await runOne(item);
     const utilization = record.rateLimit?.unifiedWindows?.seven_day?.utilization;
     console.log(
       `[runner] ${index + 1}/${todo.length} ${item.key} status=${record.status} pass=${record.pass} ` +
         `time=${Math.round((record.durationMs || 0) / 1000)}s tools=${record.toolCalls} ` +
-        `tokens=${record.totalInputTokens}+${record.usage.output} weekly=${utilization ?? '?'}`,
+        `tokens=${record.totalInputTokens}+${record.usage.output} 5h=${record.rateLimit?.unifiedWindows?.five_hour?.utilization ?? '?'} weekly=${utilization ?? '?'}`,
     );
 
     if (record.status === 'rate-limited') {
@@ -241,6 +253,12 @@ async function main() {
       continue;
     }
     infraStrikes[item.variant] = 0;
+    const fiveHour = record.rateLimit?.unifiedWindows?.five_hour;
+    if (fiveHour && fiveHour.utilization >= Number(options['max-five-hour'])) {
+      const waitMs = Math.max(60_000, fiveHour.resetsAt * 1000 - Date.now() + 60_000);
+      console.log(`[runner] five-hour usage ${fiveHour.utilization}; leaving room for the user, waiting ${Math.round(waitMs / 60000)} min`);
+      await sleep(waitMs);
+    }
     if (utilization !== undefined && utilization >= Number(options['max-weekly'])) {
       console.log(`[runner] STOP: weekly usage ${utilization} reached --max-weekly ${options['max-weekly']}`);
       process.exitCode = 4;

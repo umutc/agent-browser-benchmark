@@ -8,6 +8,7 @@ export function escapeHtml(value) {
 
 const BASE_CSS = `
   *{box-sizing:border-box}
+  [hidden]{display:none!important}
   body{font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;margin:0;color:#1d2330;background:#f7f7f9}
   header.site{background:#243b6b;color:#fff;padding:12px 24px;display:flex;gap:24px;align-items:center}
   header.site .brand{font-weight:700;font-size:18px}
