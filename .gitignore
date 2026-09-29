@@ -1,0 +1,7 @@
+node_modules/
+workdir/*
+!workdir/.keep
+results/raw/
+results/**/raw/
+config/generated/
+.DS_Store

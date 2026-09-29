@@ -1,0 +1,13 @@
+{
+  "name": "browser-mcp-bench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Benchmark of browser automation surfaces for Claude Code agents",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "serve": "node src/serve.mjs",
+    "run": "node src/runner.mjs",
+    "report": "node src/report.mjs"
+  }
+}
