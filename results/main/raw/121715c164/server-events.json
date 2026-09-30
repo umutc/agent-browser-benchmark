@@ -1,0 +1,269 @@
+[
+ {
+  "ts": 1790733840142,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Shop"
+  },
+  "url": "http://run-121715c164.localhost:8765/k2-catalog/",
+  "host": "run-121715c164.localhost:8765"
+ },
+ {
+  "ts": 1790733840143,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790733845051,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "Tents",
+   "minRating": 4,
+   "inStock": true,
+   "sort": "price-asc",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790733851114,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790733851116,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Shop"
+  },
+  "url": "http://run-121715c164.localhost:8765/k2-catalog/",
+  "host": "run-121715c164.localhost:8765"
+ },
+ {
+  "ts": 1790733851970,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790733852457,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 2
+  }
+ },
+ {
+  "ts": 1790733852981,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 3
+  }
+ },
+ {
+  "ts": 1790733853498,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 4
+  }
+ },
+ {
+  "ts": 1790733858788,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Shop"
+  },
+  "url": "http://run-121715c164.localhost:8765/k2-catalog/",
+  "host": "run-121715c164.localhost:8765"
+ },
+ {
+  "ts": 1790733858788,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790733862919,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Shop"
+  },
+  "url": "http://run-121715c164.localhost:8765/k2-catalog/",
+  "host": "run-121715c164.localhost:8765"
+ },
+ {
+  "ts": 1790733862919,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790733863740,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790733864165,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 2
+  }
+ },
+ {
+  "ts": 1790733864584,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 3
+  }
+ },
+ {
+  "ts": 1790733864999,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 4
+  }
+ },
+ {
+  "ts": 1790733871217,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Shop"
+  },
+  "url": "http://run-121715c164.localhost:8765/k2-catalog/",
+  "host": "run-121715c164.localhost:8765"
+ },
+ {
+  "ts": 1790733871218,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790733872048,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "Tents",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790733872864,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "Tents",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ }
+]

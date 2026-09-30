@@ -1,0 +1,1 @@
+{"mcpServers":{"playwright":{"command":"node","args":["/Users/umutc/.npm/_npx/9833c18b2d85bc59/node_modules/@playwright/mcp/cli.js","--config","/Users/umutc/code/browser-mcp-bench/results/main/raw/c6eabd66d8/playwright.json"]}}}

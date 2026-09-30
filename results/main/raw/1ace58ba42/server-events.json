@@ -1,0 +1,32 @@
+[
+ {
+  "ts": 1790734589006,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Guest session"
+  },
+  "url": "http://run-1ace58ba42.localhost:8765/k1-cookie/",
+  "host": "run-1ace58ba42.localhost:8765"
+ },
+ {
+  "ts": 1790734594699,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Guest session"
+  },
+  "url": "http://run-1ace58ba42.localhost:8765/k1-cookie/",
+  "host": "run-1ace58ba42.localhost:8765"
+ }
+]

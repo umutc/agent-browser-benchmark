@@ -1,0 +1,105 @@
+[
+ {
+  "ts": 1790726348554,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790726348568,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Invoices"
+  },
+  "url": "http://run-b6b2b1904d.localhost:8765/k2-table/",
+  "host": "run-b6b2b1904d.localhost:8765"
+ },
+ {
+  "ts": 1790726357504,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790726357508,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 2
+  }
+ },
+ {
+  "ts": 1790726357511,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 3
+  }
+ },
+ {
+  "ts": 1790726357513,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 4
+  }
+ },
+ {
+  "ts": 1790726357516,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 5
+  }
+ },
+ {
+  "ts": 1790726357519,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 6
+  }
+ },
+ {
+  "ts": 1790726357521,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 7
+  }
+ },
+ {
+  "ts": 1790726357523,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 8
+  }
+ },
+ {
+  "ts": 1790726357524,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 9
+  }
+ },
+ {
+  "ts": 1790726357526,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 10
+  }
+ }
+]

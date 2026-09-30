@@ -1,0 +1,94 @@
+[
+ {
+  "ts": 1790734742644,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Catalog"
+  },
+  "url": "http://run-04cbd32985.localhost:8765/k1-scroll/",
+  "host": "run-04cbd32985.localhost:8765"
+ },
+ {
+  "ts": 1790734742818,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-04cbd32985.localhost:8765/k1-scroll/",
+  "host": "run-04cbd32985.localhost:8765"
+ },
+ {
+  "ts": 1790734742964,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 0
+  }
+ },
+ {
+  "ts": 1790734747315,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790734749336,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 2
+  }
+ },
+ {
+  "ts": 1790734751349,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 3
+  }
+ },
+ {
+  "ts": 1790734753369,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 4
+  }
+ },
+ {
+  "ts": 1790734755373,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 5
+  }
+ },
+ {
+  "ts": 1790734757374,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 6
+  }
+ },
+ {
+  "ts": 1790734759394,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 7
+  }
+ }
+]

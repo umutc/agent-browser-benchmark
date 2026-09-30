@@ -1,0 +1,59 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Camp shop" [level=1] [ref=e7]
+      - link "Cart (2)" [ref=e74] [cursor=pointer]:
+        - /url: cart
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - heading "Trail Lantern" [level=3] [ref=e11]
+        - paragraph [ref=e12]: $34.00
+        - generic [ref=e13]:
+          - button "Decrease quantity of Trail Lantern" [ref=e14] [cursor=pointer]: −
+          - generic [ref=e15]: "1"
+          - button "Increase quantity of Trail Lantern" [ref=e16] [cursor=pointer]: +
+        - button "Add to cart" [active] [ref=e17] [cursor=pointer]
+      - generic [ref=e18]:
+        - heading "Camp Mug" [level=3] [ref=e19]
+        - paragraph [ref=e20]: $12.50
+        - generic [ref=e21]:
+          - button "Decrease quantity of Camp Mug" [ref=e22] [cursor=pointer]: −
+          - generic [ref=e23]: "1"
+          - button "Increase quantity of Camp Mug" [ref=e24] [cursor=pointer]: +
+        - button "Add to cart" [ref=e25] [cursor=pointer]
+      - generic [ref=e26]:
+        - heading "Pocket Stove" [level=3] [ref=e27]
+        - paragraph [ref=e28]: $59.00
+        - generic [ref=e29]:
+          - button "Decrease quantity of Pocket Stove" [ref=e30] [cursor=pointer]: −
+          - generic [ref=e31]: "1"
+          - button "Increase quantity of Pocket Stove" [ref=e32] [cursor=pointer]: +
+        - button "Add to cart" [ref=e33] [cursor=pointer]
+      - generic [ref=e34]:
+        - heading "Ultralight Hammock" [level=3] [ref=e35]
+        - paragraph [ref=e36]: $74.00
+        - generic [ref=e37]:
+          - button "Decrease quantity of Ultralight Hammock" [ref=e38] [cursor=pointer]: −
+          - generic [ref=e39]: "1"
+          - button "Increase quantity of Ultralight Hammock" [ref=e40] [cursor=pointer]: +
+        - button "Add to cart" [ref=e41] [cursor=pointer]
+      - generic [ref=e42]:
+        - heading "Water Filter" [level=3] [ref=e43]
+        - paragraph [ref=e44]: $39.00
+        - generic [ref=e45]:
+          - button "Decrease quantity of Water Filter" [ref=e46] [cursor=pointer]: −
+          - generic [ref=e47]: "1"
+          - button "Increase quantity of Water Filter" [ref=e48] [cursor=pointer]: +
+        - button "Add to cart" [ref=e49] [cursor=pointer]
+      - generic [ref=e50]:
+        - heading "Folding Knife" [level=3] [ref=e51]
+        - paragraph [ref=e52]: $28.00
+        - generic [ref=e53]:
+          - button "Decrease quantity of Folding Knife" [ref=e54] [cursor=pointer]: −
+          - generic [ref=e55]: "1"
+          - button "Increase quantity of Folding Knife" [ref=e56] [cursor=pointer]: +
+        - button "Add to cart" [ref=e57] [cursor=pointer]
+    - generic [ref=e75]: Added 2 × Trail Lantern

@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-a9a01c3e7b.localhost:8765/k1-responsive/
+
+Task: This page reveals a mobile-only offer code when the browser viewport is 480 CSS pixels wide or narrower. Make the viewport that narrow, then report the offer code.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

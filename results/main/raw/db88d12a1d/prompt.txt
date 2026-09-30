@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-db88d12a1d.localhost:8765/k2-overlays/
+
+Task: Add 2 × "Trail Lantern" and 1 × "Camp Mug" to the cart, open the cart, apply the coupon code SAVE20-87TN, and report the grand total shown in the cart. Decline any cookie banner or newsletter pop-up (choose the reject or no-thanks option).
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

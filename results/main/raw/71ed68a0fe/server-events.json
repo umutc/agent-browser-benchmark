@@ -1,0 +1,113 @@
+[
+ {
+  "ts": 1790732043886,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Cameras"
+  },
+  "url": "http://run-71ed68a0fe.localhost:8765/k2-extract/",
+  "host": "run-71ed68a0fe.localhost:8765"
+ },
+ {
+  "ts": 1790732046003,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-1"
+  }
+ },
+ {
+  "ts": 1790732046012,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-2"
+  }
+ },
+ {
+  "ts": 1790732046019,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-3"
+  }
+ },
+ {
+  "ts": 1790732046026,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-4"
+  }
+ },
+ {
+  "ts": 1790732046033,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-5"
+  }
+ },
+ {
+  "ts": 1790732046038,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-6"
+  }
+ },
+ {
+  "ts": 1790732046045,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-7"
+  }
+ },
+ {
+  "ts": 1790732046052,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-8"
+  }
+ },
+ {
+  "ts": 1790732046060,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-9"
+  }
+ },
+ {
+  "ts": 1790732046068,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-10"
+  }
+ },
+ {
+  "ts": 1790732046073,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-11"
+  }
+ },
+ {
+  "ts": 1790732046079,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-12"
+  }
+ }
+]

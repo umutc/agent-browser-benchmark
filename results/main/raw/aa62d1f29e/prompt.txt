@@ -1,0 +1,14 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-aa62d1f29e.localhost:8765/k2-wizard/
+
+Task: Request an insurance quote with these details:
+Vehicle type: Motorcycle, model year 2022
+Driver: Jordan Reyes, date of birth 8 June 1970
+Always wears a helmet: Yes
+Riding experience: 10 years
+Go through every step, submit the request, and report the quote reference.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

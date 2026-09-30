@@ -1,0 +1,49 @@
+[
+ {
+  "ts": 1790723646840,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Editor"
+  },
+  "url": "http://run-4d29faa114.localhost:8765/k1-keyboard/",
+  "host": "run-4d29faa114.localhost:8765"
+ },
+ {
+  "ts": 1790723652884,
+  "source": "client",
+  "type": "shortcut",
+  "data": {
+   "trusted": false
+  },
+  "url": "http://run-4d29faa114.localhost:8765/k1-keyboard/",
+  "host": "run-4d29faa114.localhost:8765"
+ },
+ {
+  "ts": 1790723652887,
+  "source": "server",
+  "type": "palette",
+  "data": {}
+ },
+ {
+  "ts": 1790723652888,
+  "source": "client",
+  "type": "shortcut",
+  "data": {
+   "trusted": false
+  },
+  "url": "http://run-4d29faa114.localhost:8765/k1-keyboard/",
+  "host": "run-4d29faa114.localhost:8765"
+ },
+ {
+  "ts": 1790723652889,
+  "source": "server",
+  "type": "palette",
+  "data": {}
+ }
+]

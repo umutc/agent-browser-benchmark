@@ -1,0 +1,81 @@
+[
+ {
+  "ts": 1790736953681,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Admin tools"
+  },
+  "url": "http://run-b85859e0f5.localhost:8765/k3-console/",
+  "host": "run-b85859e0f5.localhost:8765"
+ },
+ {
+  "ts": 1790736958024,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "A"
+  }
+ },
+ {
+  "ts": 1790736959528,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "B"
+  }
+ },
+ {
+  "ts": 1790736961030,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "C"
+  }
+ },
+ {
+  "ts": 1790736962530,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "D"
+  }
+ },
+ {
+  "ts": 1790736964033,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "E"
+  }
+ },
+ {
+  "ts": 1790736965534,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "F"
+  }
+ },
+ {
+  "ts": 1790736967035,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "G"
+  }
+ },
+ {
+  "ts": 1790736968537,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "H"
+  }
+ }
+]

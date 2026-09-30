@@ -1,0 +1,32 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - heading "Gear catalog" [level=1] [ref=e6]
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: Category
+        - combobox "Category" [ref=e10]:
+          - option "All" [selected]
+          - option "Tents"
+          - option "Backpacks"
+          - option "Sleeping Bags"
+          - option "Stoves"
+      - generic [ref=e11]:
+        - generic [ref=e12]: Minimum rating
+        - combobox "Minimum rating" [ref=e13]:
+          - option "Any" [selected]
+          - option "3+"
+          - option "4+"
+          - option "4.5+"
+      - generic [ref=e15]:
+        - checkbox "In stock only" [ref=e16]
+        - text: In stock only
+      - generic [ref=e17]:
+        - generic [ref=e18]: Sort
+        - combobox "Sort" [ref=e19]:
+          - option "Featured" [selected]
+          - 'option "Price: low to high"'
+          - 'option "Price: high to low"'
+      - button "Apply filters" [ref=e20] [cursor=pointer]

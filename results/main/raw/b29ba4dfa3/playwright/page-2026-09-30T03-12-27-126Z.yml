@@ -1,0 +1,49 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - heading "Gear catalog" [level=1] [ref=e6]
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: Category
+        - combobox "Category" [ref=e10]:
+          - option "All"
+          - option "Tents" [selected]
+          - option "Backpacks"
+          - option "Sleeping Bags"
+          - option "Stoves"
+      - generic [ref=e11]:
+        - generic [ref=e12]: Minimum rating
+        - combobox "Minimum rating" [ref=e13]:
+          - option "Any"
+          - option "3+"
+          - option "4+" [selected]
+          - option "4.5+"
+      - generic [ref=e15]:
+        - checkbox "In stock only" [checked] [ref=e16]
+        - text: In stock only
+      - generic [ref=e17]:
+        - generic [ref=e18]: Sort
+        - combobox "Sort" [ref=e19]:
+          - option "Featured"
+          - 'option "Price: low to high" [selected]'
+          - 'option "Price: high to low"'
+      - button "Apply filters" [active] [ref=e20] [cursor=pointer]
+    - generic [ref=e21]:
+      - generic [ref=e75]:
+        - strong [ref=e76]: Juniper Tent 112
+        - generic [ref=e77]: SKU TE-WCBVX
+        - generic [ref=e78]: $232.10 · ★ 4.2
+        - text: In stock
+      - generic [ref=e79]:
+        - strong [ref=e80]: Summit Tent 144
+        - generic [ref=e81]: SKU TE-M9B4Y
+        - generic [ref=e82]: $374.33 · ★ 4.8
+        - text: In stock
+      - generic [ref=e83]:
+        - strong [ref=e84]: Basalt Tent 140
+        - generic [ref=e85]: SKU TE-32L8Z
+        - generic [ref=e86]: $389.53 · ★ 4.0
+        - text: In stock
+    - button "1" [ref=e87] [cursor=pointer]

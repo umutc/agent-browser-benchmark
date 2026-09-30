@@ -1,0 +1,39 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - heading "Admin tools" [level=1] [ref=e6]
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: Section A
+        - heading "Recalculate totals" [level=3] [ref=e10]
+        - button "Run" [ref=e11] [cursor=pointer]
+      - generic [ref=e12]:
+        - generic [ref=e13]: Section B
+        - heading "Refresh cache" [level=3] [ref=e14]
+        - button "Run" [ref=e15] [cursor=pointer]
+      - generic [ref=e16]:
+        - generic [ref=e17]: Section C
+        - heading "Export CSV" [level=3] [ref=e18]
+        - button "Run" [ref=e19] [cursor=pointer]
+      - generic [ref=e20]:
+        - generic [ref=e21]: Section D
+        - heading "Sync contacts" [level=3] [ref=e22]
+        - button "Run" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]:
+        - generic [ref=e25]: Section E
+        - heading "Rebuild index" [level=3] [ref=e26]
+        - button "Run" [ref=e27] [cursor=pointer]
+      - generic [ref=e28]:
+        - generic [ref=e29]: Section F
+        - heading "Send digest" [level=3] [ref=e30]
+        - button "Run" [ref=e31] [cursor=pointer]
+      - generic [ref=e32]:
+        - generic [ref=e33]: Section G
+        - heading "Rotate keys" [level=3] [ref=e34]
+        - button "Run" [ref=e35] [cursor=pointer]
+      - generic [ref=e36]:
+        - generic [ref=e37]: Section H
+        - heading "Archive logs" [level=3] [ref=e38]
+        - button "Run" [ref=e39] [cursor=pointer]

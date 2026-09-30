@@ -1,0 +1,3 @@
+[     329ms] [ERROR] Widget failed: new Intl.DateTimeFormat("en-US").formatt is not a function. (In 'new Intl.DateTimeFormat("en-US").formatt(new Date())', 'new Intl.DateTimeFormat("en-US").formatt' is undefined) @ http://run-59a9037fc6.localhost:8765/k3-engine/:42
+[     330ms] [ERROR] Widget failed: undefined is not an object (evaluating 'navigator.userAgentData.brands') @ http://run-59a9037fc6.localhost:8765/k3-engine/:54
+[     330ms] [ERROR] Widget failed: undefined is not an object (evaluating 'navigator.connection.effectiveType') @ http://run-59a9037fc6.localhost:8765/k3-engine/:60

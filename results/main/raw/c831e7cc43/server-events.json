@@ -1,0 +1,23 @@
+[
+ {
+  "ts": 1790735490662,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Status"
+  },
+  "url": "http://run-c831e7cc43.localhost:8765/k1-console/",
+  "host": "run-c831e7cc43.localhost:8765"
+ },
+ {
+  "ts": 1790735490663,
+  "source": "server",
+  "type": "diag",
+  "data": {}
+ }
+]

@@ -1,0 +1,3 @@
+[      32ms] [ERROR] Integrity check failed: token FUY898 @ http://run-2d33ded5e6.localhost:8765/k1-console/:29
+[      32ms] [LOG] status page ready @ http://run-2d33ded5e6.localhost:8765/k1-console/:30
+[      36ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://run-2d33ded5e6.localhost:8765/favicon.ico:0

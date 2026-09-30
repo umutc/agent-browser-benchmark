@@ -1,0 +1,50 @@
+[
+ {
+  "ts": 1790724227471,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Verify Phrase"
+  },
+  "url": "http://run-aaf5ccfcad.localhost:8765/k1-type/",
+  "host": "run-aaf5ccfcad.localhost:8765"
+ },
+ {
+  "ts": 1790724241801,
+  "source": "client",
+  "type": "keydown",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-aaf5ccfcad.localhost:8765/k1-type/",
+  "host": "run-aaf5ccfcad.localhost:8765"
+ },
+ {
+  "ts": 1790724244491,
+  "source": "server",
+  "type": "submit",
+  "data": {
+   "phrase": "alpine ed68hf lantern"
+  }
+ },
+ {
+  "ts": 1790724244514,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Result"
+  },
+  "url": "http://run-aaf5ccfcad.localhost:8765/k1-type/submit",
+  "host": "run-aaf5ccfcad.localhost:8765"
+ }
+]

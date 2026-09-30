@@ -1,0 +1,77 @@
+[
+ {
+  "ts": 1790738535345,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790738535346,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Shop"
+  },
+  "url": "http://run-ac0bddcd82.localhost:8765/k2-catalog/",
+  "host": "run-ac0bddcd82.localhost:8765"
+ },
+ {
+  "ts": 1790738542620,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "Tents",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 2
+  }
+ },
+ {
+  "ts": 1790738543122,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "Tents",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 3
+  }
+ },
+ {
+  "ts": 1790738549133,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "Tents",
+   "minRating": 4,
+   "inStock": true,
+   "sort": "price-asc",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790738554338,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "Tents",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "price-asc",
+   "page": 1
+  }
+ }
+]

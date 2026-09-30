@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-514606eb85.localhost:8765/k1-print/
+
+Task: This page shows an extra code only in its print version (print media). Switch the page to print media, for example by emulating the print CSS media type, and report the code that appears.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

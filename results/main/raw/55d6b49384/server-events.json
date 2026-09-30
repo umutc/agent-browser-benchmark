@@ -1,0 +1,57 @@
+[
+ {
+  "ts": 1790734742203,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Catalog"
+  },
+  "url": "http://run-55d6b49384.localhost:8765/k1-scroll/",
+  "host": "run-55d6b49384.localhost:8765"
+ },
+ {
+  "ts": 1790734742702,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 0
+  }
+ },
+ {
+  "ts": 1790734746409,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790734746909,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 2
+  }
+ },
+ {
+  "ts": 1790734747428,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 3
+  }
+ },
+ {
+  "ts": 1790734747927,
+  "source": "server",
+  "type": "items",
+  "data": {
+   "page": 4
+  }
+ }
+]

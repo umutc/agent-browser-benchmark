@@ -1,0 +1,70 @@
+[
+ {
+  "ts": 1790726301790,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Status"
+  },
+  "url": "http://run-164f4ffe2d.localhost:8765/k1-console/",
+  "host": "run-164f4ffe2d.localhost:8765"
+ },
+ {
+  "ts": 1790726301791,
+  "source": "server",
+  "type": "diag",
+  "data": {}
+ },
+ {
+  "ts": 1790726302053,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-164f4ffe2d.localhost:8765/k1-console/",
+  "host": "run-164f4ffe2d.localhost:8765"
+ },
+ {
+  "ts": 1790726305732,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Status"
+  },
+  "url": "http://run-164f4ffe2d.localhost:8765/k1-console/",
+  "host": "run-164f4ffe2d.localhost:8765"
+ },
+ {
+  "ts": 1790726305733,
+  "source": "server",
+  "type": "diag",
+  "data": {}
+ },
+ {
+  "ts": 1790726305986,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-164f4ffe2d.localhost:8765/k1-console/",
+  "host": "run-164f4ffe2d.localhost:8765"
+ }
+]

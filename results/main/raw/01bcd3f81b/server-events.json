@@ -1,0 +1,47 @@
+[
+ {
+  "ts": 1790733151759,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Checkout"
+  },
+  "url": "http://run-01bcd3f81b.localhost:8765/k2-checkout/",
+  "host": "run-01bcd3f81b.localhost:8765"
+ },
+ {
+  "ts": 1790733156955,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1728,
+   "h": 851,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-01bcd3f81b.localhost:8765/k2-checkout/",
+  "host": "run-01bcd3f81b.localhost:8765"
+ },
+ {
+  "ts": 1790733172051,
+  "source": "server",
+  "type": "order",
+  "data": {
+   "fullName": "Quinn Haraldsen",
+   "email": "quinn.haraldsen@example.com",
+   "phone": "555-109-4260",
+   "street": "1570 Canyon Crest Dr",
+   "city": "Boulder",
+   "state": "CO",
+   "zip": "80302",
+   "shipping": "express",
+   "payment": "invoice",
+   "terms": true
+  }
+ }
+]

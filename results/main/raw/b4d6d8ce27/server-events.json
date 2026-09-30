@@ -1,0 +1,40 @@
+[
+ {
+  "ts": 1790737137676,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Verify Phrase"
+  },
+  "url": "http://run-b4d6d8ce27.localhost:8765/k1-type/",
+  "host": "run-b4d6d8ce27.localhost:8765"
+ },
+ {
+  "ts": 1790737140986,
+  "source": "server",
+  "type": "submit",
+  "data": {
+   "phrase": "alpine ycawkq lantern"
+  }
+ },
+ {
+  "ts": 1790737140996,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Result"
+  },
+  "url": "http://run-b4d6d8ce27.localhost:8765/k1-type/submit",
+  "host": "run-b4d6d8ce27.localhost:8765"
+ }
+]

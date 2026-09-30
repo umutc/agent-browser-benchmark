@@ -1,0 +1,160 @@
+[
+ {
+  "ts": 1790733738080,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Admin tools"
+  },
+  "url": "http://run-b8ede75c6e.localhost:8765/k3-console/",
+  "host": "run-b8ede75c6e.localhost:8765"
+ },
+ {
+  "ts": 1790733742841,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "A"
+  }
+ },
+ {
+  "ts": 1790733744888,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "B"
+  }
+ },
+ {
+  "ts": 1790733746890,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "C"
+  }
+ },
+ {
+  "ts": 1790733748872,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "D"
+  }
+ },
+ {
+  "ts": 1790733750881,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "E"
+  }
+ },
+ {
+  "ts": 1790733752863,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "F"
+  }
+ },
+ {
+  "ts": 1790733754890,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "G"
+  }
+ },
+ {
+  "ts": 1790733756855,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "H"
+  }
+ },
+ {
+  "ts": 1790733762013,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Admin tools"
+  },
+  "url": "http://run-b8ede75c6e.localhost:8765/k3-console/",
+  "host": "run-b8ede75c6e.localhost:8765"
+ },
+ {
+  "ts": 1790733764020,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "A"
+  }
+ },
+ {
+  "ts": 1790733768880,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "B"
+  }
+ },
+ {
+  "ts": 1790733773875,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "C"
+  }
+ },
+ {
+  "ts": 1790733778885,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "D"
+  }
+ },
+ {
+  "ts": 1790733783852,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "E"
+  }
+ },
+ {
+  "ts": 1790733788885,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "F"
+  }
+ },
+ {
+  "ts": 1790733793877,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "G"
+  }
+ },
+ {
+  "ts": 1790733798851,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "H"
+  }
+ }
+]

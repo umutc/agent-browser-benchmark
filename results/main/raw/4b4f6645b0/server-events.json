@@ -1,0 +1,117 @@
+[
+ {
+  "ts": 1790737742127,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Admin tools"
+  },
+  "url": "http://run-4b4f6645b0.localhost:8765/k3-console/",
+  "host": "run-4b4f6645b0.localhost:8765"
+ },
+ {
+  "ts": 1790737742450,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-4b4f6645b0.localhost:8765/k3-console/",
+  "host": "run-4b4f6645b0.localhost:8765"
+ },
+ {
+  "ts": 1790737749229,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "A"
+  }
+ },
+ {
+  "ts": 1790737752427,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Admin tools"
+  },
+  "url": "http://run-4b4f6645b0.localhost:8765/k3-console/",
+  "host": "run-4b4f6645b0.localhost:8765"
+ },
+ {
+  "ts": 1790737810184,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "A"
+  }
+ },
+ {
+  "ts": 1790737811780,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "B"
+  }
+ },
+ {
+  "ts": 1790737813417,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "C"
+  }
+ },
+ {
+  "ts": 1790737814952,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "D"
+  }
+ },
+ {
+  "ts": 1790737816552,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "E"
+  }
+ },
+ {
+  "ts": 1790737818146,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "F"
+  }
+ },
+ {
+  "ts": 1790737819749,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "G"
+  }
+ },
+ {
+  "ts": 1790737821346,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "H"
+  }
+ }
+]

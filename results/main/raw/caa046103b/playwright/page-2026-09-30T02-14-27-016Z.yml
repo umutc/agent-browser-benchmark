@@ -1,0 +1,11 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Submit an expense report" [level=1] [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]: Report file
+        - button "Report file" [ref=e10]
+        - button "Upload" [ref=e12] [cursor=pointer]

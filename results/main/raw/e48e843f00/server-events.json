@@ -1,0 +1,73 @@
+[
+ {
+  "ts": 1790736541558,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Settings"
+  },
+  "url": "http://run-e48e843f00.localhost:8765/k1-dialogs/",
+  "host": "run-e48e843f00.localhost:8765"
+ },
+ {
+  "ts": 1790736541864,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-e48e843f00.localhost:8765/k1-dialogs/",
+  "host": "run-e48e843f00.localhost:8765"
+ },
+ {
+  "ts": 1790736544718,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-e48e843f00.localhost:8765/k1-dialogs/",
+  "host": "run-e48e843f00.localhost:8765"
+ },
+ {
+  "ts": 1790736703567,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 0,
+   "h": 0,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Settings"
+  },
+  "url": "http://run-e48e843f00.localhost:8765/k1-dialogs/",
+  "host": "run-e48e843f00.localhost:8765"
+ },
+ {
+  "ts": 1790736735438,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": false
+  },
+  "url": "http://run-e48e843f00.localhost:8765/k1-dialogs/",
+  "host": "run-e48e843f00.localhost:8765"
+ },
+ {
+  "ts": 1790736735439,
+  "source": "server",
+  "type": "confirm",
+  "data": {
+   "typed": "V5375"
+  }
+ }
+]

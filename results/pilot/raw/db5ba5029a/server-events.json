@@ -1,0 +1,17 @@
+[
+ {
+  "ts": 1790721624897,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Trail guide"
+  },
+  "url": "http://run-db5ba5029a.localhost:8765/k1-canvas/",
+  "host": "run-db5ba5029a.localhost:8765"
+ }
+]

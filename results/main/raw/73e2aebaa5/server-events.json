@@ -1,0 +1,48 @@
+[
+ {
+  "ts": 1790736921277,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Orders"
+  },
+  "url": "http://run-73e2aebaa5.localhost:8765/k1-popup/",
+  "host": "run-73e2aebaa5.localhost:8765"
+ },
+ {
+  "ts": 1790736924882,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-73e2aebaa5.localhost:8765/k1-popup/",
+  "host": "run-73e2aebaa5.localhost:8765"
+ },
+ {
+  "ts": 1790736924904,
+  "source": "server",
+  "type": "receipt-view",
+  "data": {}
+ },
+ {
+  "ts": 1790736924910,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Receipt"
+  },
+  "url": "http://run-73e2aebaa5.localhost:8765/k1-popup/receipt?t=LCEVQ57SQ7",
+  "host": "run-73e2aebaa5.localhost:8765"
+ }
+]

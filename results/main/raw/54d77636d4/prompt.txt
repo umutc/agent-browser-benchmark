@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-54d77636d4.localhost:8765/k1-iframe/
+
+Task: The page contains an embedded partner widget (an iframe). Click the "Get voucher" button inside the widget and report the voucher code it shows.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

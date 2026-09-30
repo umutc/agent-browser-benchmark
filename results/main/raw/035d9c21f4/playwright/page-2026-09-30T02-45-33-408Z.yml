@@ -1,0 +1,31 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - heading "Weekly dashboard" [level=1] [ref=e6]
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: Widget A
+        - heading "Revenue" [level=3] [ref=e10]
+        - generic [ref=e11]: 31,049
+      - generic [ref=e12]:
+        - generic [ref=e13]: Widget B
+        - heading "Orders" [level=3] [ref=e14]
+        - generic [ref=e15]: "0"
+      - generic [ref=e16]:
+        - generic [ref=e17]: Widget C
+        - heading "Visitors" [level=3] [ref=e18]
+        - generic [ref=e19]: "0"
+      - generic [ref=e20]:
+        - generic [ref=e21]: Widget D
+        - heading "Refunds" [level=3] [ref=e22]
+        - generic [ref=e23]: "0"
+      - generic [ref=e24]:
+        - generic [ref=e25]: Widget E
+        - heading "Signups" [level=3] [ref=e26]
+        - generic [ref=e27]: 32,908
+      - generic [ref=e28]:
+        - generic [ref=e29]: Widget F
+        - heading "Churned accounts" [level=3] [ref=e30]
+        - generic [ref=e31]: "0"

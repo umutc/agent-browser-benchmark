@@ -1,0 +1,130 @@
+[
+ {
+  "ts": 1790736032760,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Sign in"
+  },
+  "url": "http://run-4c1f93bac3.localhost:8765/k2-login/",
+  "host": "run-4c1f93bac3.localhost:8765"
+ },
+ {
+  "ts": 1790736035922,
+  "source": "server",
+  "type": "login",
+  "data": {
+   "ok": true
+  }
+ },
+ {
+  "ts": 1790736035987,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Verify"
+  },
+  "url": "http://run-4c1f93bac3.localhost:8765/k2-login/verify",
+  "host": "run-4c1f93bac3.localhost:8765"
+ },
+ {
+  "ts": 1790736039099,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 942,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Inbox"
+  },
+  "url": "http://run-4c1f93bac3.localhost:8765/k2-login/inbox",
+  "host": "run-4c1f93bac3.localhost:8765"
+ },
+ {
+  "ts": 1790736039288,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1728,
+   "h": 852,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-4c1f93bac3.localhost:8765/k2-login/verify",
+  "host": "run-4c1f93bac3.localhost:8765"
+ },
+ {
+  "ts": 1790736045368,
+  "source": "server",
+  "type": "verify",
+  "data": {
+   "ok": true
+  }
+ },
+ {
+  "ts": 1790736045379,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 852,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Dashboard"
+  },
+  "url": "http://run-4c1f93bac3.localhost:8765/k2-login/app",
+  "host": "run-4c1f93bac3.localhost:8765"
+ },
+ {
+  "ts": 1790736048642,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 852,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Settings"
+  },
+  "url": "http://run-4c1f93bac3.localhost:8765/k2-login/settings",
+  "host": "run-4c1f93bac3.localhost:8765"
+ },
+ {
+  "ts": 1790736052241,
+  "source": "server",
+  "type": "settings",
+  "data": {
+   "email": false,
+   "sms": false
+  }
+ },
+ {
+  "ts": 1790736052259,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 852,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Settings"
+  },
+  "url": "http://run-4c1f93bac3.localhost:8765/k2-login/settings",
+  "host": "run-4c1f93bac3.localhost:8765"
+ }
+]

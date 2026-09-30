@@ -1,0 +1,78 @@
+[
+ {
+  "ts": 1790736483810,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Checkout offers"
+  },
+  "url": "http://run-57f31ea14d.localhost:8765/k1-iframe-xo/",
+  "host": "run-57f31ea14d.localhost:8765"
+ },
+ {
+  "ts": 1790736483872,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 0,
+   "h": 0,
+   "dpr": 2,
+   "top": false,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Partner widget"
+  },
+  "url": "http://x-57f31ea14d.localhost:8765/k1-iframe-xo/frame",
+  "host": "x-57f31ea14d.localhost:8765"
+ },
+ {
+  "ts": 1790736485908,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 638,
+   "h": 218,
+   "dpr": 2,
+   "top": false
+  },
+  "url": "http://x-57f31ea14d.localhost:8765/k1-iframe-xo/frame",
+  "host": "x-57f31ea14d.localhost:8765"
+ },
+ {
+  "ts": 1790736509877,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 817,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Partner widget"
+  },
+  "url": "http://x-57f31ea14d.localhost:8765/k1-iframe-xo/frame",
+  "host": "x-57f31ea14d.localhost:8765"
+ },
+ {
+  "ts": 1790736524657,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://x-57f31ea14d.localhost:8765/k1-iframe-xo/frame",
+  "host": "x-57f31ea14d.localhost:8765"
+ },
+ {
+  "ts": 1790736524657,
+  "source": "server",
+  "type": "voucher",
+  "data": {
+   "crossOrigin": true
+  }
+ }
+]

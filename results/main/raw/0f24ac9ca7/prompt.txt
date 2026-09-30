@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-0f24ac9ca7.localhost:8765/k2-table/
+
+Task: The invoice list is split over several pages. Add up the amounts of all invoices for customer "Northwind" whose status is "overdue". Report the total amount and how many invoices matched.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

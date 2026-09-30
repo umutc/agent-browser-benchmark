@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-ebc9c58380.localhost:8765/k3-engine/
+
+Task: Some widgets on this page do not work in the browser you are using. A broken widget shows a dash instead of a value and logs an error. For each section A–F report "ok" or "broken" as it behaves in your browser.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

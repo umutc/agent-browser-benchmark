@@ -1,0 +1,128 @@
+[
+ {
+  "ts": 1790724086863,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Shop"
+  },
+  "url": "http://run-cfc7ceecb2.localhost:8765/k2-catalog/",
+  "host": "run-cfc7ceecb2.localhost:8765"
+ },
+ {
+  "ts": 1790724086866,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790724092597,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "Tents",
+   "minRating": 4,
+   "inStock": true,
+   "sort": "price-asc",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790724097411,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790724097411,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Shop"
+  },
+  "url": "http://run-cfc7ceecb2.localhost:8765/k2-catalog/",
+  "host": "run-cfc7ceecb2.localhost:8765"
+ },
+ {
+  "ts": 1790724098244,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790724098669,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 2
+  }
+ },
+ {
+  "ts": 1790724099093,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 3
+  }
+ },
+ {
+  "ts": 1790724099526,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 4
+  }
+ },
+ {
+  "ts": 1790724103426,
+  "source": "server",
+  "type": "products",
+  "data": {
+   "category": "",
+   "minRating": 0,
+   "inStock": false,
+   "sort": "featured",
+   "page": 4
+  }
+ }
+]

@@ -1,7 +1,6 @@
 node_modules/
 workdir/*
 !workdir/.keep
-results/raw/
-results/**/raw/
 config/generated/
+results/**/.watch-cursor
 .DS_Store

@@ -1,0 +1,185 @@
+[
+ {
+  "ts": 1790738815717,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790738815816,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Invoices"
+  },
+  "url": "http://run-cc963c0cda.localhost:8765/k2-table/",
+  "host": "run-cc963c0cda.localhost:8765"
+ },
+ {
+  "ts": 1790738822836,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790738822839,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 2
+  }
+ },
+ {
+  "ts": 1790738822841,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 3
+  }
+ },
+ {
+  "ts": 1790738822844,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 4
+  }
+ },
+ {
+  "ts": 1790738822845,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 5
+  }
+ },
+ {
+  "ts": 1790738822848,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 6
+  }
+ },
+ {
+  "ts": 1790738822851,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 7
+  }
+ },
+ {
+  "ts": 1790738822855,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 8
+  }
+ },
+ {
+  "ts": 1790738822857,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 9
+  }
+ },
+ {
+  "ts": 1790738822859,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 10
+  }
+ },
+ {
+  "ts": 1790738826182,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790738826192,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 2
+  }
+ },
+ {
+  "ts": 1790738826198,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 3
+  }
+ },
+ {
+  "ts": 1790738826209,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 4
+  }
+ },
+ {
+  "ts": 1790738826217,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 5
+  }
+ },
+ {
+  "ts": 1790738826227,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 6
+  }
+ },
+ {
+  "ts": 1790738826230,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 7
+  }
+ },
+ {
+  "ts": 1790738826234,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 8
+  }
+ },
+ {
+  "ts": 1790738826243,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 9
+  }
+ },
+ {
+  "ts": 1790738826245,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 10
+  }
+ }
+]

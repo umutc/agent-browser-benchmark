@@ -1,0 +1,209 @@
+[
+ {
+  "ts": 1790738035283,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Cameras"
+  },
+  "url": "http://run-7b1f48f43e.localhost:8765/k2-extract/",
+  "host": "run-7b1f48f43e.localhost:8765"
+ },
+ {
+  "ts": 1790738038362,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-1"
+  }
+ },
+ {
+  "ts": 1790738038369,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-2"
+  }
+ },
+ {
+  "ts": 1790738038372,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-3"
+  }
+ },
+ {
+  "ts": 1790738038379,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-4"
+  }
+ },
+ {
+  "ts": 1790738038448,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-5"
+  }
+ },
+ {
+  "ts": 1790738038452,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-6"
+  }
+ },
+ {
+  "ts": 1790738038455,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-7"
+  }
+ },
+ {
+  "ts": 1790738038457,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-8"
+  }
+ },
+ {
+  "ts": 1790738038459,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-9"
+  }
+ },
+ {
+  "ts": 1790738038462,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-10"
+  }
+ },
+ {
+  "ts": 1790738038465,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-11"
+  }
+ },
+ {
+  "ts": 1790738038467,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-12"
+  }
+ },
+ {
+  "ts": 1790738041445,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-1"
+  }
+ },
+ {
+  "ts": 1790738041450,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-2"
+  }
+ },
+ {
+  "ts": 1790738041452,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-3"
+  }
+ },
+ {
+  "ts": 1790738041461,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-4"
+  }
+ },
+ {
+  "ts": 1790738041463,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-5"
+  }
+ },
+ {
+  "ts": 1790738041465,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-6"
+  }
+ },
+ {
+  "ts": 1790738041467,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-7"
+  }
+ },
+ {
+  "ts": 1790738041469,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-8"
+  }
+ },
+ {
+  "ts": 1790738041471,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-9"
+  }
+ },
+ {
+  "ts": 1790738041473,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-10"
+  }
+ },
+ {
+  "ts": 1790738041477,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-11"
+  }
+ },
+ {
+  "ts": 1790738041482,
+  "source": "server",
+  "type": "detail",
+  "data": {
+   "slug": "cam-12"
+  }
+ }
+]

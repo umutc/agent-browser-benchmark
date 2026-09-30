@@ -1,0 +1,56 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Cameras" [level=1] [ref=e7]
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Lumix A50" [ref=e10] [cursor=pointer]:
+            - /url: camera?id=cam-1
+          - text: · Full frame
+        - listitem [ref=e11]:
+          - link "Orion B13" [ref=e12] [cursor=pointer]:
+            - /url: camera?id=cam-2
+          - text: · 1-inch
+        - listitem [ref=e13]:
+          - link "Kestrel C38" [ref=e14] [cursor=pointer]:
+            - /url: camera?id=cam-3
+          - text: · Full frame
+        - listitem [ref=e15]:
+          - link "Vantage D77" [ref=e16] [cursor=pointer]:
+            - /url: camera?id=cam-4
+          - text: · 1-inch
+        - listitem [ref=e17]:
+          - link "Nimbus E53" [ref=e18] [cursor=pointer]:
+            - /url: camera?id=cam-5
+          - text: · 1-inch
+        - listitem [ref=e19]:
+          - link "Halcyon F78" [ref=e20] [cursor=pointer]:
+            - /url: camera?id=cam-6
+          - text: · APS-C
+        - listitem [ref=e21]:
+          - link "Lumix G59" [ref=e22] [cursor=pointer]:
+            - /url: camera?id=cam-7
+          - text: · Micro Four Thirds
+        - listitem [ref=e23]:
+          - link "Orion H86" [ref=e24] [cursor=pointer]:
+            - /url: camera?id=cam-8
+          - text: · Micro Four Thirds
+        - listitem [ref=e25]:
+          - link "Kestrel I71" [ref=e26] [cursor=pointer]:
+            - /url: camera?id=cam-9
+          - text: · Full frame
+        - listitem [ref=e27]:
+          - link "Vantage J53" [ref=e28] [cursor=pointer]:
+            - /url: camera?id=cam-10
+          - text: · APS-C
+        - listitem [ref=e29]:
+          - link "Nimbus K14" [ref=e30] [cursor=pointer]:
+            - /url: camera?id=cam-11
+          - text: · 1-inch
+        - listitem [ref=e31]:
+          - link "Halcyon L28" [ref=e32] [cursor=pointer]:
+            - /url: camera?id=cam-12
+          - text: · Micro Four Thirds

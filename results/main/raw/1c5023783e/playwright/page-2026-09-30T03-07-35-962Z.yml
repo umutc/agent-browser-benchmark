@@ -1,0 +1,47 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - heading "Contact details" [level=1] [ref=e6]
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [aria-hidden] [ref=e9]: A
+        - generic [ref=e10]: Full name
+        - textbox [ref=e11]
+        - button "Help" [ref=e12] [cursor=pointer]: "?"
+      - generic [ref=e13]:
+        - generic [aria-hidden] [ref=e14]: B
+        - generic [ref=e15]: Email
+        - textbox "Email" [ref=e16]
+        - button "Help" [ref=e17] [cursor=pointer]: "?"
+      - generic [ref=e18]:
+        - generic [aria-hidden] [ref=e19]: C
+        - generic [ref=e21]: Phone
+        - textbox "Phone" [ref=e22]
+        - button "Help" [ref=e23] [cursor=pointer]: "?"
+      - generic [ref=e24]:
+        - generic [aria-hidden] [ref=e25]: D
+        - generic [ref=e26]: Company
+        - textbox "Company" [ref=e27]
+        - button "Help" [ref=e28] [cursor=pointer]: "?"
+      - generic [ref=e29]:
+        - generic [aria-hidden] [ref=e30]: E
+        - generic [ref=e31]: Job title
+        - textbox [ref=e32]
+        - button "Help" [ref=e33] [cursor=pointer]: "?"
+      - generic [ref=e34]:
+        - generic [aria-hidden] [ref=e35]: F
+        - generic [ref=e36]: Country
+        - textbox "Country" [ref=e37]
+        - button "Help" [ref=e38] [cursor=pointer]: "?"
+      - generic [ref=e39]:
+        - generic [aria-hidden] [ref=e40]: G
+        - generic [ref=e41]: City
+        - textbox "City" [ref=e42]
+        - button "Help" [ref=e43] [cursor=pointer]: "?"
+      - generic [ref=e44]:
+        - generic [aria-hidden] [ref=e45]: H
+        - generic [ref=e46]: Website
+        - textbox "Website" [ref=e47]
+        - button "Help" [ref=e48] [cursor=pointer]: "?"

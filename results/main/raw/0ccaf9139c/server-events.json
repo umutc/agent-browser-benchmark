@@ -1,0 +1,71 @@
+[
+ {
+  "ts": 1790732300845,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Guest session"
+  },
+  "url": "http://run-0ccaf9139c.localhost:8765/k1-cookie/",
+  "host": "run-0ccaf9139c.localhost:8765"
+ },
+ {
+  "ts": 1790732312680,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Guest session"
+  },
+  "url": "http://run-0ccaf9139c.localhost:8765/k1-cookie/",
+  "host": "run-0ccaf9139c.localhost:8765"
+ },
+ {
+  "ts": 1790732335186,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1728,
+   "h": 851,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-0ccaf9139c.localhost:8765/k1-cookie/",
+  "host": "run-0ccaf9139c.localhost:8765"
+ },
+ {
+  "ts": 1790732338236,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-0ccaf9139c.localhost:8765/k1-cookie/",
+  "host": "run-0ccaf9139c.localhost:8765"
+ },
+ {
+  "ts": 1790732415121,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1728,
+   "h": 851,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-0ccaf9139c.localhost:8765/k1-cookie/",
+  "host": "run-0ccaf9139c.localhost:8765"
+ }
+]

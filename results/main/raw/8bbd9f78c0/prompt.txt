@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-8bbd9f78c0.localhost:8765/k3-console/
+
+Task: Each section A–H has a button. Every button shows "Done", but some of them fail silently in the background. Click every button and classify each section: "ok" (no error), "exception" (an uncaught exception is thrown) or "promise-rejection" (an unhandled promise rejection happens).
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

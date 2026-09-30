@@ -1,0 +1,118 @@
+[
+ {
+  "ts": 1790738815030,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790738815101,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Invoices"
+  },
+  "url": "http://run-b253db3a43.localhost:8765/k2-table/",
+  "host": "run-b253db3a43.localhost:8765"
+ },
+ {
+  "ts": 1790738815379,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-b253db3a43.localhost:8765/k2-table/",
+  "host": "run-b253db3a43.localhost:8765"
+ },
+ {
+  "ts": 1790738820881,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 1
+  }
+ },
+ {
+  "ts": 1790738820883,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 2
+  }
+ },
+ {
+  "ts": 1790738820885,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 3
+  }
+ },
+ {
+  "ts": 1790738820886,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 4
+  }
+ },
+ {
+  "ts": 1790738820887,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 5
+  }
+ },
+ {
+  "ts": 1790738820889,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 6
+  }
+ },
+ {
+  "ts": 1790738820890,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 7
+  }
+ },
+ {
+  "ts": 1790738820892,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 8
+  }
+ },
+ {
+  "ts": 1790738820893,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 9
+  }
+ },
+ {
+  "ts": 1790738820895,
+  "source": "server",
+  "type": "page",
+  "data": {
+   "page": 10
+  }
+ }
+]

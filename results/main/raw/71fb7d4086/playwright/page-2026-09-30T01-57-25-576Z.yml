@@ -1,0 +1,14 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Your cart" [level=1] [ref=e7]
+      - paragraph [ref=e8]: 2 items, subtotal $84.00
+      - generic [ref=e10]:
+        - heading "Coupon" [level=3] [ref=e11]
+        - generic [ref=e12]:
+          - textbox "Coupon code" [ref=e13]
+          - button "Apply" [ref=e14]
+          - paragraph

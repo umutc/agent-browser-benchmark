@@ -1,0 +1,54 @@
+[
+ {
+  "ts": 1790734972583,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Board"
+  },
+  "url": "http://run-41d36486b7.localhost:8765/k2-kanban/",
+  "host": "run-41d36486b7.localhost:8765"
+ },
+ {
+  "ts": 1790734999020,
+  "source": "client",
+  "type": "drag",
+  "data": {
+   "trusted": false,
+   "id": "c1",
+   "to": "done"
+  },
+  "url": "http://run-41d36486b7.localhost:8765/k2-kanban/",
+  "host": "run-41d36486b7.localhost:8765"
+ },
+ {
+  "ts": 1790734999021,
+  "source": "client",
+  "type": "drag",
+  "data": {
+   "trusted": false,
+   "id": "c2",
+   "to": "doing"
+  },
+  "url": "http://run-41d36486b7.localhost:8765/k2-kanban/",
+  "host": "run-41d36486b7.localhost:8765"
+ },
+ {
+  "ts": 1790735001354,
+  "source": "server",
+  "type": "save",
+  "data": {
+   "c3": "todo",
+   "c4": "doing",
+   "c5": "doing",
+   "c2": "doing",
+   "c6": "done",
+   "c1": "done"
+  }
+ }
+]

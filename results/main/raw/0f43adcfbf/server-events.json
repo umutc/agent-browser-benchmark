@@ -1,0 +1,17 @@
+[
+ {
+  "ts": 1790736823291,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Member Area"
+  },
+  "url": "http://run-0f43adcfbf.localhost:8765/k1-read/",
+  "host": "run-0f43adcfbf.localhost:8765"
+ }
+]

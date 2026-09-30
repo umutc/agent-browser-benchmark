@@ -1,0 +1,117 @@
+[
+ {
+  "ts": 1790733893923,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Sign in"
+  },
+  "url": "http://run-05955201ac.localhost:8765/k2-login/",
+  "host": "run-05955201ac.localhost:8765"
+ },
+ {
+  "ts": 1790733905009,
+  "source": "server",
+  "type": "login",
+  "data": {
+   "ok": true
+  }
+ },
+ {
+  "ts": 1790733905023,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Verify"
+  },
+  "url": "http://run-05955201ac.localhost:8765/k2-login/verify",
+  "host": "run-05955201ac.localhost:8765"
+ },
+ {
+  "ts": 1790733944035,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 817,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Inbox"
+  },
+  "url": "http://run-05955201ac.localhost:8765/k2-login/inbox",
+  "host": "run-05955201ac.localhost:8765"
+ },
+ {
+  "ts": 1790733948035,
+  "source": "server",
+  "type": "verify",
+  "data": {
+   "ok": true
+  }
+ },
+ {
+  "ts": 1790733948061,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Dashboard"
+  },
+  "url": "http://run-05955201ac.localhost:8765/k2-login/app",
+  "host": "run-05955201ac.localhost:8765"
+ },
+ {
+  "ts": 1790733951670,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Settings"
+  },
+  "url": "http://run-05955201ac.localhost:8765/k2-login/settings",
+  "host": "run-05955201ac.localhost:8765"
+ },
+ {
+  "ts": 1790733957626,
+  "source": "server",
+  "type": "settings",
+  "data": {
+   "email": false,
+   "sms": false
+  }
+ },
+ {
+  "ts": 1790733957644,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Settings"
+  },
+  "url": "http://run-05955201ac.localhost:8765/k2-login/settings",
+  "host": "run-05955201ac.localhost:8765"
+ }
+]

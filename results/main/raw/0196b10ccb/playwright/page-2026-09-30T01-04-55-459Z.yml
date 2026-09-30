@@ -1,0 +1,10 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Quarterly report" [level=1] [ref=e7]
+      - paragraph [ref=e8]: The report is available as a text file.
+      - link "Download report" [active] [ref=e9] [cursor=pointer]:
+        - /url: report.txt

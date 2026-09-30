@@ -1,0 +1,50 @@
+[
+ {
+  "ts": 1790733662145,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Verify Phrase"
+  },
+  "url": "http://run-0de41aefbc.localhost:8765/k1-type/",
+  "host": "run-0de41aefbc.localhost:8765"
+ },
+ {
+  "ts": 1790733687191,
+  "source": "client",
+  "type": "keydown",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-0de41aefbc.localhost:8765/k1-type/",
+  "host": "run-0de41aefbc.localhost:8765"
+ },
+ {
+  "ts": 1790733687343,
+  "source": "server",
+  "type": "submit",
+  "data": {
+   "phrase": "alpine fkeg8x lantern"
+  }
+ },
+ {
+  "ts": 1790733687361,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Result"
+  },
+  "url": "http://run-0de41aefbc.localhost:8765/k1-type/submit",
+  "host": "run-0de41aefbc.localhost:8765"
+ }
+]

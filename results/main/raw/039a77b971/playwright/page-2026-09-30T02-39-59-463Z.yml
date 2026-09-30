@@ -1,0 +1,9 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Offers" [level=1] [ref=e7]
+      - paragraph [ref=e8]: Some offers are only available on phones.
+      - generic [ref=e9]: "Mobile offer code: QJR9H3"

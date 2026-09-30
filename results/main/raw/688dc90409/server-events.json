@@ -1,0 +1,45 @@
+[
+ {
+  "ts": 1790738855432,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Get a Quote"
+  },
+  "url": "http://run-688dc90409.localhost:8765/k2-wizard/",
+  "host": "run-688dc90409.localhost:8765"
+ },
+ {
+  "ts": 1790738855616,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-688dc90409.localhost:8765/k2-wizard/",
+  "host": "run-688dc90409.localhost:8765"
+ },
+ {
+  "ts": 1790738892045,
+  "source": "server",
+  "type": "quote",
+  "data": {
+   "vehicle": "motorcycle",
+   "year": "2022",
+   "first": "Jordan",
+   "last": "Reyes",
+   "dob": "1968-07-19",
+   "helmet": "yes",
+   "experience": "5",
+   "miles": null
+  }
+ }
+]

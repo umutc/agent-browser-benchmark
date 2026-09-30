@@ -1,13 +1,20 @@
 {
-  "name": "browser-mcp-bench",
+  "name": "agent-browser-benchmark",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Benchmark of browser automation surfaces for Claude Code agents",
+  "description": "How five browser automation surfaces perform when a Claude Code agent drives them: 670 runs, raw transcripts included",
   "engines": { "node": ">=24" },
+  "license": "MIT",
   "scripts": {
-    "serve": "node src/serve.mjs",
-    "run": "node src/runner.mjs",
-    "report": "node src/report.mjs"
+    "smoke": "node src/smoke.mjs",
+    "selfcheck": "node src/selfcheck.mjs --engine chromium && node src/selfcheck.mjs --engine webkit",
+    "bench": "node src/runner.mjs --tasks all --variants all --repeats k0=3,k1=3,k2=5,k3=5 --out results/main --parallel --max-minutes 100",
+    "watch": "node src/watch.mjs --out results/main",
+    "summary": "node src/summarize.mjs --out results/main",
+    "report": "node src/report.mjs --out results/main --meta results/main/meta.json --html results/main/report.html"
+  },
+  "devDependencies": {
+    "@playwright/mcp": "0.0.83"
   }
 }

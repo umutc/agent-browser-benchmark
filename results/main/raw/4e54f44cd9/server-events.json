@@ -1,0 +1,30 @@
+[
+ {
+  "ts": 1790736333558,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Dashboard"
+  },
+  "url": "http://run-4e54f44cd9.localhost:8765/k3-network/",
+  "host": "run-4e54f44cd9.localhost:8765"
+ },
+ {
+  "ts": 1790736333838,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-4e54f44cd9.localhost:8765/k3-network/",
+  "host": "run-4e54f44cd9.localhost:8765"
+ }
+]

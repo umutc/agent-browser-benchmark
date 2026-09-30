@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-dff0ccc89f.localhost:8765/k1-controls/
+
+Task: Fill in the order form: set Country to "Norway", check "Subscribe to newsletter", choose the "Team" plan, set Quantity to 3, then click "Place order". Report the receipt code.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

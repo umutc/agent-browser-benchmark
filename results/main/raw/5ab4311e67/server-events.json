@@ -1,0 +1,32 @@
+[
+ {
+  "ts": 1790724410646,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Get a Quote"
+  },
+  "url": "http://run-5ab4311e67.localhost:8765/k2-wizard/",
+  "host": "run-5ab4311e67.localhost:8765"
+ },
+ {
+  "ts": 1790724437723,
+  "source": "server",
+  "type": "quote",
+  "data": {
+   "vehicle": "motorcycle",
+   "year": "2021",
+   "first": "Jordan",
+   "last": "Reyes",
+   "dob": "1985-05-18",
+   "helmet": "yes",
+   "experience": "2",
+   "miles": null
+  }
+ }
+]

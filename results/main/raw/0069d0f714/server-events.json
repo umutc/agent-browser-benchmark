@@ -1,0 +1,66 @@
+[
+ {
+  "ts": 1790737136705,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Verify Phrase"
+  },
+  "url": "http://run-0069d0f714.localhost:8765/k1-type/",
+  "host": "run-0069d0f714.localhost:8765"
+ },
+ {
+  "ts": 1790737137006,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-0069d0f714.localhost:8765/k1-type/",
+  "host": "run-0069d0f714.localhost:8765"
+ },
+ {
+  "ts": 1790737140250,
+  "source": "server",
+  "type": "submit",
+  "data": {
+   "phrase": "alpine rvcvuk lantern"
+  }
+ },
+ {
+  "ts": 1790737140259,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Result"
+  },
+  "url": "http://run-0069d0f714.localhost:8765/k1-type/submit",
+  "host": "run-0069d0f714.localhost:8765"
+ },
+ {
+  "ts": 1790737140520,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-0069d0f714.localhost:8765/k1-type/submit",
+  "host": "run-0069d0f714.localhost:8765"
+ }
+]

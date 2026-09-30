@@ -1,0 +1,56 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Cameras" [level=1] [ref=e7]
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Lumix A56" [ref=e10] [cursor=pointer]:
+            - /url: camera?id=cam-1
+          - text: · APS-C
+        - listitem [ref=e11]:
+          - link "Orion B14" [ref=e12] [cursor=pointer]:
+            - /url: camera?id=cam-2
+          - text: · 1-inch
+        - listitem [ref=e13]:
+          - link "Kestrel C64" [ref=e14] [cursor=pointer]:
+            - /url: camera?id=cam-3
+          - text: · Full frame
+        - listitem [ref=e15]:
+          - link "Vantage D40" [ref=e16] [cursor=pointer]:
+            - /url: camera?id=cam-4
+          - text: · Full frame
+        - listitem [ref=e17]:
+          - link "Nimbus E32" [ref=e18] [cursor=pointer]:
+            - /url: camera?id=cam-5
+          - text: · Full frame
+        - listitem [ref=e19]:
+          - link "Halcyon F60" [ref=e20] [cursor=pointer]:
+            - /url: camera?id=cam-6
+          - text: · 1-inch
+        - listitem [ref=e21]:
+          - link "Lumix G45" [ref=e22] [cursor=pointer]:
+            - /url: camera?id=cam-7
+          - text: · Micro Four Thirds
+        - listitem [ref=e23]:
+          - link "Orion H49" [ref=e24] [cursor=pointer]:
+            - /url: camera?id=cam-8
+          - text: · 1-inch
+        - listitem [ref=e25]:
+          - link "Kestrel I76" [ref=e26] [cursor=pointer]:
+            - /url: camera?id=cam-9
+          - text: · 1-inch
+        - listitem [ref=e27]:
+          - link "Vantage J82" [ref=e28] [cursor=pointer]:
+            - /url: camera?id=cam-10
+          - text: · 1-inch
+        - listitem [ref=e29]:
+          - link "Nimbus K27" [ref=e30] [cursor=pointer]:
+            - /url: camera?id=cam-11
+          - text: · 1-inch
+        - listitem [ref=e31]:
+          - link "Halcyon L78" [ref=e32] [cursor=pointer]:
+            - /url: camera?id=cam-12
+          - text: · 1-inch

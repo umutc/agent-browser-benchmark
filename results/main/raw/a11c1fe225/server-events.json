@@ -1,0 +1,132 @@
+[
+ {
+  "ts": 1790737287176,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Sign in"
+  },
+  "url": "http://run-a11c1fe225.localhost:8765/k2-login/",
+  "host": "run-a11c1fe225.localhost:8765"
+ },
+ {
+  "ts": 1790737303439,
+  "source": "server",
+  "type": "login",
+  "data": {
+   "ok": true
+  }
+ },
+ {
+  "ts": 1790737303461,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Verify"
+  },
+  "url": "http://run-a11c1fe225.localhost:8765/k2-login/verify",
+  "host": "run-a11c1fe225.localhost:8765"
+ },
+ {
+  "ts": 1790737307011,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Inbox"
+  },
+  "url": "http://run-a11c1fe225.localhost:8765/k2-login/inbox",
+  "host": "run-a11c1fe225.localhost:8765"
+ },
+ {
+  "ts": 1790737311218,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Verify"
+  },
+  "url": "http://run-a11c1fe225.localhost:8765/k2-login/verify",
+  "host": "run-a11c1fe225.localhost:8765"
+ },
+ {
+  "ts": 1790737322566,
+  "source": "server",
+  "type": "verify",
+  "data": {
+   "ok": true
+  }
+ },
+ {
+  "ts": 1790737322581,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Dashboard"
+  },
+  "url": "http://run-a11c1fe225.localhost:8765/k2-login/app",
+  "host": "run-a11c1fe225.localhost:8765"
+ },
+ {
+  "ts": 1790737326459,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Settings"
+  },
+  "url": "http://run-a11c1fe225.localhost:8765/k2-login/settings",
+  "host": "run-a11c1fe225.localhost:8765"
+ },
+ {
+  "ts": 1790737330335,
+  "source": "server",
+  "type": "settings",
+  "data": {
+   "email": false,
+   "sms": false
+  }
+ },
+ {
+  "ts": 1790737330350,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Settings"
+  },
+  "url": "http://run-a11c1fe225.localhost:8765/k2-login/settings",
+  "host": "run-a11c1fe225.localhost:8765"
+ }
+]

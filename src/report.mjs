@@ -326,7 +326,7 @@ details{margin:12px 0} summary{cursor:pointer;font:600 14px var(--display);color
   <p class="eyebrow">Browser automation benchmark · Claude Code</p>
   <h1>Five ways to drive a browser</h1>
   <p class="dek">The same agent, model and prompts ran ${num(runs.filter((r) => r.tier !== 'k0').length)} browser task runs through five different automation surfaces. This report compares what each one could do, how often it finished the job, and what it cost in time and tokens.</p>
-  <p class="runline">${esc(meta.model || 'claude-opus-5-5')} · effort ${esc(meta.effort || 'medium')} · ${num(runs.length)} runs · ${esc((firstRun || '').slice(0, 10))} to ${esc((lastRun || '').slice(0, 10))} · list-price equivalent $${num(totalCost, 0)}</p>
+  <p class="runline">${esc(meta.model || 'claude-opus-5-5')} · effort ${esc(meta.effort || 'medium')} · ${num(runs.length)} runs · ${esc((firstRun || '').slice(0, 10))} to ${esc((lastRun || '').slice(0, 10))} · list-price equivalent $${num(totalCost, 0)}${meta.repo ? ` · <a href="${esc(meta.repo)}">code and raw data</a>` : ''}</p>
 </header>
 
 <section>

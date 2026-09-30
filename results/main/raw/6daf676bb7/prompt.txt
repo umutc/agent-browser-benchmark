@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-6daf676bb7.localhost:8765/k2-login/
+
+Task: Log in with username "casey.tester" and password "Trail-BHQTBQ". Complete the two-step verification: the code is sent to the inbox page linked from the verification screen; use the newest message. Then open Settings, turn OFF email notifications, save, and report the Account ID shown in Settings.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

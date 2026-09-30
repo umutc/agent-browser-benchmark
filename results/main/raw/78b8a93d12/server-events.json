@@ -1,0 +1,17 @@
+[
+ {
+  "ts": 1790724830796,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Contact details"
+  },
+  "url": "http://run-78b8a93d12.localhost:8765/k3-a11y/",
+  "host": "run-78b8a93d12.localhost:8765"
+ }
+]

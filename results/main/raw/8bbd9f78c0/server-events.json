@@ -1,0 +1,94 @@
+[
+ {
+  "ts": 1790733737231,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Admin tools"
+  },
+  "url": "http://run-8bbd9f78c0.localhost:8765/k3-console/",
+  "host": "run-8bbd9f78c0.localhost:8765"
+ },
+ {
+  "ts": 1790733737522,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-8bbd9f78c0.localhost:8765/k3-console/",
+  "host": "run-8bbd9f78c0.localhost:8765"
+ },
+ {
+  "ts": 1790733748754,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "A"
+  }
+ },
+ {
+  "ts": 1790733751256,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "B"
+  }
+ },
+ {
+  "ts": 1790733753757,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "C"
+  }
+ },
+ {
+  "ts": 1790733756260,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "D"
+  }
+ },
+ {
+  "ts": 1790733758762,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "E"
+  }
+ },
+ {
+  "ts": 1790733761263,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "F"
+  }
+ },
+ {
+  "ts": 1790733763766,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "G"
+  }
+ },
+ {
+  "ts": 1790733766266,
+  "source": "server",
+  "type": "run",
+  "data": {
+   "letter": "H"
+  }
+ }
+]

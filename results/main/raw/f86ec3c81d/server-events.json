@@ -1,0 +1,25 @@
+[
+ {
+  "ts": 1790734674010,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Sync"
+  },
+  "url": "http://run-f86ec3c81d.localhost:8765/k1-network/",
+  "host": "run-f86ec3c81d.localhost:8765"
+ },
+ {
+  "ts": 1790734674021,
+  "source": "server",
+  "type": "sync",
+  "data": {
+   "syncId": "3PNFRTUS"
+  }
+ }
+]

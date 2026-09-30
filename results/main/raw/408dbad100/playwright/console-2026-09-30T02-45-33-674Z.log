@@ -1,0 +1,3 @@
+[      25ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://run-408dbad100.localhost:8765/k3-network/api/widget/B:0
+[      33ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://run-408dbad100.localhost:8765/k3-network/api/widget/E:0
+[      42ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://run-408dbad100.localhost:8765/favicon.ico:0

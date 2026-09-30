@@ -1,0 +1,15 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-bbdbd58935.localhost:8765/k2-checkout/
+
+Task: Complete the checkout for this customer and place the order.
+Name: Morgan Castillo
+Email: morgan.castillo@example.com
+Phone: 555 980 1958
+Address: 33 Lakeside Ave, Madison, WI 53703
+Shipping: Express
+Pay by invoice, accept the terms, and place the order. Report the order number and the order total.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

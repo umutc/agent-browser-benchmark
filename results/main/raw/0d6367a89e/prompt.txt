@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-0d6367a89e.localhost:8765/k1-upload/
+
+Task: Upload the file at /Users/umutc/code/browser-mcp-bench/workdir/bench-upload-0d6367a89e.txt using the upload form, then report the receipt code shown after the upload.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

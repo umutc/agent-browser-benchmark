@@ -1,5 +1,6 @@
 import { execFileSync } from 'node:child_process';
 import { writeFileSync } from 'node:fs';
+import { createRequire } from 'node:module';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -7,8 +8,16 @@ export const ROOT = fileURLToPath(new URL('..', import.meta.url)).replace(/\/$/,
 export const WORKDIR = join(ROOT, 'workdir');
 export const ORCA_WORKTREE = `path:${ROOT}`;
 
-const PLAYWRIGHT_MCP_CLI =
-  process.env.PW_MCP_CLI || '/Users/umutc/.npm/_npx/9833c18b2d85bc59/node_modules/@playwright/mcp/cli.js';
+// The benchmark ran @playwright/mcp 0.0.83 (see package.json). PW_MCP_CLI points at any
+// other install, for example an npx cache entry.
+function playwrightMcpCli() {
+  if (process.env.PW_MCP_CLI) return process.env.PW_MCP_CLI;
+  try {
+    return createRequire(import.meta.url).resolve('@playwright/mcp/cli.js');
+  } catch {
+    throw new Error('Install dependencies (npm install) or set PW_MCP_CLI to @playwright/mcp/cli.js');
+  }
+}
 
 const ORCA_BROWSER_COMMANDS = [
   'goto', 'back', 'reload', 'snapshot', 'screenshot', 'full-screenshot', 'pdf', 'click', 'fill', 'type',
@@ -74,7 +83,7 @@ export const VARIANTS = {
           outputDir: join(runDir, 'playwright'),
         }),
       );
-      return { playwright: { command: 'node', args: [PLAYWRIGHT_MCP_CLI, '--config', configPath] } };
+      return { playwright: { command: 'node', args: [playwrightMcpCli(), '--config', configPath] } };
     },
     flags: ['--no-chrome'],
     tools: ['Read'],
@@ -89,7 +98,7 @@ export const VARIANTS = {
       playwright: {
         command: 'node',
         args: [
-          PLAYWRIGHT_MCP_CLI, '--browser', 'webkit', '--isolated', '--viewport-size', '1728x890',
+          playwrightMcpCli(), '--browser', 'webkit', '--isolated', '--viewport-size', '1728x890',
           '--output-dir', join(runDir, 'playwright'),
         ],
       },

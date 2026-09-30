@@ -1,0 +1,40 @@
+[
+ {
+  "ts": 1790737136927,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Verify Phrase"
+  },
+  "url": "http://run-b9513001c2.localhost:8765/k1-type/",
+  "host": "run-b9513001c2.localhost:8765"
+ },
+ {
+  "ts": 1790737139379,
+  "source": "server",
+  "type": "submit",
+  "data": {
+   "phrase": "alpine 4kylec lantern"
+  }
+ },
+ {
+  "ts": 1790737139384,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Result"
+  },
+  "url": "http://run-b9513001c2.localhost:8765/k1-type/submit",
+  "host": "run-b9513001c2.localhost:8765"
+ }
+]

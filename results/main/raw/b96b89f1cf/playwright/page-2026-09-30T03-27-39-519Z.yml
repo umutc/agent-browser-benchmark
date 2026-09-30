@@ -1,0 +1,55 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Get a quote" [level=1] [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]: 1 Vehicle
+        - generic [ref=e10]: 2 Driver
+        - generic [ref=e11]: 3 Details
+        - generic [ref=e12]: 4 Review
+      - generic [ref=e13]:
+        - heading "Your vehicle" [level=2] [ref=e14]
+        - generic [ref=e15]:
+          - radio "Car" [ref=e16]
+          - text: Car
+        - generic [ref=e17]:
+          - radio "Motorcycle" [checked] [ref=e18]
+          - text: Motorcycle
+        - generic [ref=e19]:
+          - radio "RV" [ref=e20]
+          - text: RV
+        - generic [ref=e21]: Model year
+        - combobox "Model year" [ref=e22]:
+          - option "Select…"
+          - option "2026"
+          - option "2025"
+          - option "2024"
+          - option "2023"
+          - option "2022"
+          - option "2021"
+          - option "2020" [selected]
+          - option "2019"
+          - option "2018"
+          - option "2017"
+          - option "2016"
+          - option "2015"
+          - option "2014"
+          - option "2013"
+          - option "2012"
+          - option "2011"
+          - option "2010"
+          - option "2009"
+          - option "2008"
+          - option "2007"
+          - option "2006"
+          - option "2005"
+          - option "2004"
+          - option "2003"
+          - option "2002"
+          - option "2001"
+          - option "2000"
+      - paragraph [ref=e23]
+      - button "Next" [ref=e24] [cursor=pointer]

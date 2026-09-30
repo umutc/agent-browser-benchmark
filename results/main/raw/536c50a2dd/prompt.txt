@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-536c50a2dd.localhost:8765/k1-console/
+
+Task: When this page loads it writes an error message to the browser console. Report the token contained in that console error message.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

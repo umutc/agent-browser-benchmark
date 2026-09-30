@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-e91b7beb6c.localhost:8765/k3-responsive/
+
+Task: This page has layout bugs that only appear on a phone-sized screen (375 CSS pixels wide). Check the page at that width. For each section A–F report "ok", "horizontal-overflow" (content is wider than the section and sticks out or causes horizontal scrolling), or "text-clipped" (text is cut off instead of wrapping).
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

@@ -1,0 +1,32 @@
+[
+ {
+  "ts": 1790735127480,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Store policies"
+  },
+  "url": "http://run-67806d0a38.localhost:8765/k3-responsive/",
+  "host": "run-67806d0a38.localhost:8765"
+ },
+ {
+  "ts": 1790735137801,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 375,
+   "h": 800,
+   "dpr": 2,
+   "top": false,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Store policies"
+  },
+  "url": "http://run-67806d0a38.localhost:8765/k3-responsive/",
+  "host": "run-67806d0a38.localhost:8765"
+ }
+]

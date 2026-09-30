@@ -1,0 +1,50 @@
+[
+ {
+  "ts": 1790736484607,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Checkout offers"
+  },
+  "url": "http://run-ccbf815b19.localhost:8765/k1-iframe-xo/",
+  "host": "run-ccbf815b19.localhost:8765"
+ },
+ {
+  "ts": 1790736484670,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 638,
+   "h": 218,
+   "dpr": 1,
+   "top": false,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Partner widget"
+  },
+  "url": "http://x-ccbf815b19.localhost:8765/k1-iframe-xo/frame",
+  "host": "x-ccbf815b19.localhost:8765"
+ },
+ {
+  "ts": 1790736488096,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://x-ccbf815b19.localhost:8765/k1-iframe-xo/frame",
+  "host": "x-ccbf815b19.localhost:8765"
+ },
+ {
+  "ts": 1790736488097,
+  "source": "server",
+  "type": "voucher",
+  "data": {
+   "crossOrigin": true
+  }
+ }
+]

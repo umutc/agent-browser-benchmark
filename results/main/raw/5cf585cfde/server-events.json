@@ -1,0 +1,36 @@
+[
+ {
+  "ts": 1790735058946,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Board"
+  },
+  "url": "http://run-5cf585cfde.localhost:8765/k1-dnd/",
+  "host": "run-5cf585cfde.localhost:8765"
+ },
+ {
+  "ts": 1790735074125,
+  "source": "client",
+  "type": "drop",
+  "data": {
+   "trusted": true,
+   "item": "task-b"
+  },
+  "url": "http://run-5cf585cfde.localhost:8765/k1-dnd/",
+  "host": "run-5cf585cfde.localhost:8765"
+ },
+ {
+  "ts": 1790735074126,
+  "source": "server",
+  "type": "drop",
+  "data": {
+   "item": "task-b"
+  }
+ }
+]

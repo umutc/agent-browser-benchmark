@@ -1,0 +1,34 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Inbox" [level=1] [ref=e7]
+      - table [ref=e8]:
+        - rowgroup [ref=e9]:
+          - row [ref=e10]:
+            - columnheader "Received" [ref=e11]
+            - columnheader "Subject" [ref=e12]
+            - columnheader "Message" [ref=e13]
+          - row [ref=e14]:
+            - cell "Just now" [ref=e15]
+            - cell "Your sign-in code" [ref=e16]
+            - cell [ref=e17]:
+              - text: Your verification code is
+              - strong [ref=e18]: "127595"
+              - text: . It expires in 10 minutes.
+          - row [ref=e19]:
+            - cell "2 hours ago" [ref=e20]
+            - cell "Your sign-in code" [ref=e21]
+            - cell [ref=e22]:
+              - text: Your verification code is
+              - strong [ref=e23]: "593966"
+              - text: . It expires in 10 minutes.
+          - row [ref=e24]:
+            - cell "Yesterday" [ref=e25]
+            - cell "Your sign-in code" [ref=e26]
+            - cell [ref=e27]:
+              - text: Your verification code is
+              - strong [ref=e28]: "270679"
+              - text: . It expires in 10 minutes.

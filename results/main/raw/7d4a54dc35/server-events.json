@@ -1,0 +1,17 @@
+[
+ {
+  "ts": 1790736805760,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Developer tools"
+  },
+  "url": "http://run-7d4a54dc35.localhost:8765/k1-eval/",
+  "host": "run-7d4a54dc35.localhost:8765"
+ }
+]

@@ -1,0 +1,94 @@
+[
+ {
+  "ts": 1790734674448,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Sync"
+  },
+  "url": "http://run-9d2d36d339.localhost:8765/k1-network/",
+  "host": "run-9d2d36d339.localhost:8765"
+ },
+ {
+  "ts": 1790734674478,
+  "source": "server",
+  "type": "sync",
+  "data": {
+   "syncId": "P7WE4ULJ"
+  }
+ },
+ {
+  "ts": 1790734682574,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Sync"
+  },
+  "url": "http://run-9d2d36d339.localhost:8765/k1-network/",
+  "host": "run-9d2d36d339.localhost:8765"
+ },
+ {
+  "ts": 1790734682577,
+  "source": "server",
+  "type": "sync",
+  "data": {
+   "syncId": "Q72VVQAX"
+  }
+ },
+ {
+  "ts": 1790734706776,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Sync"
+  },
+  "url": "http://run-9d2d36d339.localhost:8765/k1-network/",
+  "host": "run-9d2d36d339.localhost:8765"
+ },
+ {
+  "ts": 1790734706779,
+  "source": "server",
+  "type": "sync",
+  "data": {
+   "syncId": "ZV99QXWN"
+  }
+ },
+ {
+  "ts": 1790734723761,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Sync"
+  },
+  "url": "http://run-9d2d36d339.localhost:8765/k1-network/",
+  "host": "run-9d2d36d339.localhost:8765"
+ },
+ {
+  "ts": 1790734723766,
+  "source": "server",
+  "type": "sync",
+  "data": {
+   "syncId": "CLHRZS6S"
+  }
+ }
+]

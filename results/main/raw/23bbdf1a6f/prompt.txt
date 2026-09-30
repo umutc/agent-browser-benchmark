@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-23bbdf1a6f.localhost:8765/k1-dnd/
+
+Task: Drag the card "Task B" from the Backlog column into the Done column. Report the code shown after the drop.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

@@ -1,0 +1,23 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]: Acme Outdoor
+    - generic [ref=f1e4]: Test site
+  - main [ref=f1e5]:
+    - generic [ref=f1e6]:
+      - link "‹ All cameras" [ref=f1e7] [cursor=pointer]:
+        - /url: ./
+      - heading "Halcyon F76" [level=1] [ref=f1e8]
+      - table [ref=f1e9]:
+        - rowgroup [ref=f1e10]:
+          - row [ref=f1e11]:
+            - rowheader "Sensor" [ref=f1e12]
+            - cell "1-inch" [ref=f1e13]
+          - row [ref=f1e14]:
+            - rowheader "Release year" [ref=f1e15]
+            - cell "2023" [ref=f1e16]
+          - row [ref=f1e17]:
+            - rowheader "Weight (body only)" [ref=f1e18]
+            - cell "468 g" [ref=f1e19]
+          - row [ref=f1e20]:
+            - rowheader "Launch price" [ref=f1e21]
+            - cell "$1249" [ref=f1e22]

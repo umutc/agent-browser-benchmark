@@ -1,0 +1,60 @@
+[
+ {
+  "ts": 1790737500272,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Checkout"
+  },
+  "url": "http://run-0f099a9cbc.localhost:8765/k2-checkout/",
+  "host": "run-0f099a9cbc.localhost:8765"
+ },
+ {
+  "ts": 1790737500553,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-0f099a9cbc.localhost:8765/k2-checkout/",
+  "host": "run-0f099a9cbc.localhost:8765"
+ },
+ {
+  "ts": 1790737532271,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-0f099a9cbc.localhost:8765/k2-checkout/",
+  "host": "run-0f099a9cbc.localhost:8765"
+ },
+ {
+  "ts": 1790737642190,
+  "source": "server",
+  "type": "order",
+  "data": {
+   "fullName": "Morgan Castillo",
+   "email": "morgan.castillo@example.com",
+   "phone": "555-877-9873",
+   "street": "33 Lakeside Ave",
+   "city": "Madison",
+   "state": "WI",
+   "zip": "53703",
+   "shipping": "express",
+   "payment": "invoice",
+   "terms": true
+  }
+ }
+]

@@ -1,0 +1,43 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]: Acme Outdoor
+    - generic [ref=f1e4]: Test site
+  - main [ref=f1e5]:
+    - generic [ref=f1e6]:
+      - link "‹ Continue shopping" [ref=f1e7]:
+        - /url: ./
+      - heading "Your cart" [level=1] [ref=f1e8]
+      - table [ref=f1e9]:
+        - rowgroup [ref=f1e10]:
+          - row [ref=f1e11]:
+            - columnheader "Item" [ref=f1e12]
+            - columnheader "Qty" [ref=f1e13]
+            - columnheader "Price" [ref=f1e14]
+            - columnheader [ref=f1e15]
+          - row [ref=f1e16]:
+            - cell "Trail Lantern" [ref=f1e17]
+            - cell "2" [ref=f1e18]
+            - cell "$68.00" [ref=f1e19]
+            - cell [ref=f1e20]:
+              - button "Remove" [ref=f1e22] [cursor=pointer]
+          - row [ref=f1e23]:
+            - cell "Camp Mug" [ref=f1e24]
+            - cell "1" [ref=f1e25]
+            - cell "$12.50" [ref=f1e26]
+            - cell [ref=f1e27]:
+              - button "Remove" [ref=f1e29] [cursor=pointer]
+      - generic [ref=f1e30]:
+        - generic [ref=f1e31]: Coupon code
+        - textbox "Coupon code" [ref=f1e32]
+        - button "Apply" [ref=f1e33] [cursor=pointer]
+      - table [ref=f1e34]:
+        - rowgroup [ref=f1e35]:
+          - row [ref=f1e36]:
+            - cell "Subtotal" [ref=f1e37]
+            - cell "$80.50" [ref=f1e38]
+          - row [ref=f1e39]:
+            - cell "Discount" [ref=f1e40]
+            - cell "−$0.00" [ref=f1e41]
+          - row [ref=f1e42]:
+            - columnheader "Grand total" [ref=f1e43]
+            - columnheader "$80.50" [ref=f1e44]

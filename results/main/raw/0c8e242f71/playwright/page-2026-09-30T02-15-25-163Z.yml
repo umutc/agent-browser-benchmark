@@ -1,0 +1,10 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Gift card" [level=1] [ref=e7]
+      - paragraph [ref=e8]: Your gift card code is hidden.
+      - button "Reveal code" [active] [ref=e9] [cursor=pointer]
+      - generic [ref=e10]: "Code: KMXM85"

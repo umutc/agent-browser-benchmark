@@ -1,0 +1,18 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Get a quote" [level=1] [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]: 1 Vehicle
+        - generic [ref=e10]: 2 Driver
+        - generic [ref=e11]: 3 Details
+        - generic [ref=e12]: 4 Review
+      - generic [ref=e131]:
+        - heading "Review" [level=2] [ref=e132]
+        - generic [ref=e133]: "{ \"vehicle\": \"motorcycle\", \"year\": \"2019\", \"first\": \"Jordan\", \"last\": \"Reyes\", \"dob\": \"1971-08-03\", \"helmet\": \"yes\", \"experience\": \"11\", \"miles\": null }"
+      - paragraph [ref=e23]
+      - button "Back" [ref=e34] [cursor=pointer]
+      - button "Submit quote request" [ref=e135] [cursor=pointer]

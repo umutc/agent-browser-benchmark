@@ -1,0 +1,87 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - heading "Checkout" [level=1] [ref=e8]
+        - heading "Contact" [level=2] [ref=e9]
+        - generic [ref=e10]: Full name
+        - textbox "Full name" [ref=e11]: Jordan Okafor
+        - generic [ref=e13]:
+          - generic [ref=e14]:
+            - generic [ref=e15]: Email
+            - textbox "Email" [ref=e16]: jordan.okafor@example.com
+          - generic [ref=e18]:
+            - generic [ref=e19]: Phone
+            - textbox "Phone" [ref=e20]:
+              - /placeholder: 555-555-5555
+              - text: 555-563-0776
+        - heading "Shipping address" [level=2] [ref=e22]
+        - generic [ref=e23]: Street
+        - textbox "Street" [ref=e24]: 1570 Canyon Crest Dr
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: City
+            - textbox "City" [ref=e29]: Boulder
+          - generic [ref=e31]:
+            - generic [ref=e32]: State
+            - combobox "State" [ref=e33]:
+              - option "Select…"
+              - option "AZ"
+              - option "CA"
+              - option "CO" [selected]
+              - option "ME"
+              - option "MN"
+              - option "NC"
+              - option "NY"
+              - option "OR"
+              - option "TX"
+              - option "WA"
+              - option "WI"
+        - generic [ref=e35]: ZIP code
+        - textbox "ZIP code" [ref=e36]: "80302"
+        - heading "Shipping method" [level=2] [ref=e38]
+        - generic [ref=e39]:
+          - radio "Standard (free, 5-7 days)" [ref=e40]
+          - text: Standard (free, 5-7 days)
+        - generic [ref=e41]:
+          - radio "Express ($15.00, 1-2 days)" [checked] [ref=e42]
+          - text: Express ($15.00, 1-2 days)
+        - heading "Payment" [level=2] [ref=e43]
+        - generic [ref=e44]:
+          - radio "Credit card (unavailable in test mode)" [ref=e45]
+          - text: Credit card (unavailable in test mode)
+        - generic [ref=e46]:
+          - radio "Invoice" [checked] [ref=e47]
+          - text: Invoice
+        - generic [ref=e49]:
+          - checkbox "I accept the terms and conditions" [checked] [ref=e50]
+          - text: I accept the terms and conditions
+        - button "Place order" [ref=e52] [cursor=pointer]
+        - generic [ref=e75]:
+          - strong [ref=e76]: Thank you!
+          - text: "Order number: AO-586364 · Total charged: $105.72"
+      - generic [ref=e53]:
+        - heading "Order summary" [level=2] [ref=e54]
+        - table [ref=e55]:
+          - rowgroup [ref=e56]:
+            - row [ref=e57]:
+              - cell "Trail Lantern ×2" [ref=e58]
+              - cell "$68.00" [ref=e59]
+            - row [ref=e60]:
+              - cell "Camp Mug ×1" [ref=e61]
+              - cell "$16.00" [ref=e62]
+            - row [ref=e63]:
+              - cell "Subtotal" [ref=e64]
+              - cell "$84.00" [ref=e65]
+            - row [ref=e77]:
+              - cell "Shipping" [ref=e67]
+              - cell "$15.00" [ref=e78]
+            - row [ref=e69]:
+              - cell "Tax (8%)" [ref=e70]
+              - cell "$6.72" [ref=e71]
+            - row [ref=e79]:
+              - columnheader "Total" [ref=e73]
+              - columnheader "$105.72" [ref=e80]

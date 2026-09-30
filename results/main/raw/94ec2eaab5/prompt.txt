@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-94ec2eaab5.localhost:8765/k1-hover/
+
+Task: Open the "Account" menu in the top navigation by hovering over it, click "Billing", and report the billing code shown on the Billing page.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

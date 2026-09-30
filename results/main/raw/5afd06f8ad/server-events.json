@@ -1,0 +1,51 @@
+[
+ {
+  "ts": 1790734054479,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Settings"
+  },
+  "url": "http://run-5afd06f8ad.localhost:8765/k1-dialogs/",
+  "host": "run-5afd06f8ad.localhost:8765"
+ },
+ {
+  "ts": 1790734057513,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": false
+  },
+  "url": "http://run-5afd06f8ad.localhost:8765/k1-dialogs/",
+  "host": "run-5afd06f8ad.localhost:8765"
+ },
+ {
+  "ts": 1790734057513,
+  "source": "server",
+  "type": "confirm",
+  "data": {}
+ },
+ {
+  "ts": 1790734062289,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": false
+  },
+  "url": "http://run-5afd06f8ad.localhost:8765/k1-dialogs/",
+  "host": "run-5afd06f8ad.localhost:8765"
+ },
+ {
+  "ts": 1790734062289,
+  "source": "server",
+  "type": "confirm",
+  "data": {
+   "typed": "TTB6H"
+  }
+ }
+]

@@ -1,0 +1,2 @@
+[      38ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://run-ebc9c58380.localhost:8765/favicon.ico:0
+[     236ms] [ERROR] Widget failed: (intermediate value).formatt is not a function @ http://run-ebc9c58380.localhost:8765/k3-engine/:42

@@ -1,0 +1,2 @@
+[     189ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://run-035d9c21f4.localhost:8765/k3-network/api/widget/F:0
+[     191ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://run-035d9c21f4.localhost:8765/k3-network/api/widget/C:0

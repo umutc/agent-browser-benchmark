@@ -1,0 +1,23 @@
+[
+ {
+  "ts": 1790736380326,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Reports"
+  },
+  "url": "http://run-5994f5376c.localhost:8765/k1-download/",
+  "host": "run-5994f5376c.localhost:8765"
+ },
+ {
+  "ts": 1790736383436,
+  "source": "server",
+  "type": "download",
+  "data": {}
+ }
+]

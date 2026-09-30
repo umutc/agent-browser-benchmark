@@ -1,0 +1,3 @@
+[      30ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://run-7c19ae3102.localhost:8765/k3-network/api/widget/C:0
+[      37ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://run-7c19ae3102.localhost:8765/k3-network/api/widget/E:0
+[      41ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://run-7c19ae3102.localhost:8765/favicon.ico:0

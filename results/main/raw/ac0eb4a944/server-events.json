@@ -1,0 +1,66 @@
+[
+ {
+  "ts": 1790724314424,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Verify Phrase"
+  },
+  "url": "http://run-ac0eb4a944.localhost:8765/k1-type/",
+  "host": "run-ac0eb4a944.localhost:8765"
+ },
+ {
+  "ts": 1790724314686,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-ac0eb4a944.localhost:8765/k1-type/",
+  "host": "run-ac0eb4a944.localhost:8765"
+ },
+ {
+  "ts": 1790724318879,
+  "source": "server",
+  "type": "submit",
+  "data": {
+   "phrase": "alpine haceru lantern"
+  }
+ },
+ {
+  "ts": 1790724318888,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Result"
+  },
+  "url": "http://run-ac0eb4a944.localhost:8765/k1-type/submit",
+  "host": "run-ac0eb4a944.localhost:8765"
+ },
+ {
+  "ts": 1790724319180,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-ac0eb4a944.localhost:8765/k1-type/submit",
+  "host": "run-ac0eb4a944.localhost:8765"
+ }
+]

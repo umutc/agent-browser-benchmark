@@ -1,0 +1,9 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - 'heading "Order #10492" [level=1] [ref=e7]'
+      - paragraph [ref=e8]: Paid on delivery.
+      - button "Open receipt" [active] [ref=e9] [cursor=pointer]

@@ -1,0 +1,109 @@
+[
+ {
+  "ts": 1790733187688,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Shop"
+  },
+  "url": "http://run-dd0d792120.localhost:8765/k2-overlays/",
+  "host": "run-dd0d792120.localhost:8765"
+ },
+ {
+  "ts": 1790733196158,
+  "source": "server",
+  "type": "consent",
+  "data": {
+   "choice": "reject"
+  }
+ },
+ {
+  "ts": 1790733209089,
+  "source": "server",
+  "type": "newsletter",
+  "data": {
+   "choice": "no"
+  }
+ },
+ {
+  "ts": 1790733210070,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-dd0d792120.localhost:8765/k2-overlays/",
+  "host": "run-dd0d792120.localhost:8765"
+ },
+ {
+  "ts": 1790733210071,
+  "source": "server",
+  "type": "cart-add",
+  "data": {
+   "sku": "lantern",
+   "qty": 2
+  }
+ },
+ {
+  "ts": 1790733211114,
+  "source": "server",
+  "type": "cart-add",
+  "data": {
+   "sku": "mug",
+   "qty": 1
+  }
+ },
+ {
+  "ts": 1790733211114,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-dd0d792120.localhost:8765/k2-overlays/",
+  "host": "run-dd0d792120.localhost:8765"
+ },
+ {
+  "ts": 1790733221800,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Cart"
+  },
+  "url": "http://run-dd0d792120.localhost:8765/k2-overlays/cart",
+  "host": "run-dd0d792120.localhost:8765"
+ },
+ {
+  "ts": 1790733225870,
+  "source": "server",
+  "type": "coupon",
+  "data": {
+   "ok": true
+  }
+ },
+ {
+  "ts": 1790733225881,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Cart"
+  },
+  "url": "http://run-dd0d792120.localhost:8765/k2-overlays/cart",
+  "host": "run-dd0d792120.localhost:8765"
+ }
+]

@@ -1,0 +1,48 @@
+[
+ {
+  "ts": 1790731258145,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Orders"
+  },
+  "url": "http://run-d5f5189d5e.localhost:8765/k1-popup/",
+  "host": "run-d5f5189d5e.localhost:8765"
+ },
+ {
+  "ts": 1790731263267,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-d5f5189d5e.localhost:8765/k1-popup/",
+  "host": "run-d5f5189d5e.localhost:8765"
+ },
+ {
+  "ts": 1790731263287,
+  "source": "server",
+  "type": "receipt-view",
+  "data": {}
+ },
+ {
+  "ts": 1790731263293,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Receipt"
+  },
+  "url": "http://run-d5f5189d5e.localhost:8765/k1-popup/receipt?t=PBF836VMAG",
+  "host": "run-d5f5189d5e.localhost:8765"
+ }
+]

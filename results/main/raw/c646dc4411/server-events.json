@@ -1,0 +1,96 @@
+[
+ {
+  "ts": 1790734395977,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Environment"
+  },
+  "url": "http://run-c646dc4411.localhost:8765/k3-engine/",
+  "host": "run-c646dc4411.localhost:8765"
+ },
+ {
+  "ts": 1790734396093,
+  "source": "client",
+  "type": "engine-section",
+  "data": {
+   "letter": "F",
+   "failed": false
+  },
+  "url": "http://run-c646dc4411.localhost:8765/k3-engine/",
+  "host": "run-c646dc4411.localhost:8765"
+ },
+ {
+  "ts": 1790734396095,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-c646dc4411.localhost:8765/k3-engine/",
+  "host": "run-c646dc4411.localhost:8765"
+ },
+ {
+  "ts": 1790734396095,
+  "source": "client",
+  "type": "engine-section",
+  "data": {
+   "letter": "A",
+   "failed": true
+  },
+  "url": "http://run-c646dc4411.localhost:8765/k3-engine/",
+  "host": "run-c646dc4411.localhost:8765"
+ },
+ {
+  "ts": 1790734396095,
+  "source": "client",
+  "type": "engine-section",
+  "data": {
+   "letter": "B",
+   "failed": false
+  },
+  "url": "http://run-c646dc4411.localhost:8765/k3-engine/",
+  "host": "run-c646dc4411.localhost:8765"
+ },
+ {
+  "ts": 1790734396095,
+  "source": "client",
+  "type": "engine-section",
+  "data": {
+   "letter": "C",
+   "failed": false
+  },
+  "url": "http://run-c646dc4411.localhost:8765/k3-engine/",
+  "host": "run-c646dc4411.localhost:8765"
+ },
+ {
+  "ts": 1790734396095,
+  "source": "client",
+  "type": "engine-section",
+  "data": {
+   "letter": "D",
+   "failed": false
+  },
+  "url": "http://run-c646dc4411.localhost:8765/k3-engine/",
+  "host": "run-c646dc4411.localhost:8765"
+ },
+ {
+  "ts": 1790734396095,
+  "source": "client",
+  "type": "engine-section",
+  "data": {
+   "letter": "E",
+   "failed": false
+  },
+  "url": "http://run-c646dc4411.localhost:8765/k3-engine/",
+  "host": "run-c646dc4411.localhost:8765"
+ }
+]

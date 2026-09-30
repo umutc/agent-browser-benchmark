@@ -1,0 +1,40 @@
+[
+ {
+  "ts": 1790736000433,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Offers"
+  },
+  "url": "http://run-1184a99878.localhost:8765/k1-responsive/",
+  "host": "run-1184a99878.localhost:8765"
+ },
+ {
+  "ts": 1790736018081,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 396,
+   "h": 696,
+   "dpr": 2,
+   "top": false,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Offers"
+  },
+  "url": "http://run-1184a99878.localhost:8765/k1-responsive/",
+  "host": "run-1184a99878.localhost:8765"
+ },
+ {
+  "ts": 1790736018084,
+  "source": "server",
+  "type": "mobile",
+  "data": {
+   "w": 396
+  }
+ }
+]

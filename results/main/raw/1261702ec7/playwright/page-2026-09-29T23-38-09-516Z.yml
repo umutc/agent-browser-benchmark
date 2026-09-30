@@ -1,0 +1,31 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - heading "Environment report" [level=1] [ref=e6]
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: Section A
+        - heading "Request ID" [level=3] [ref=e10]
+        - generic [ref=e11]: …
+      - generic [ref=e12]:
+        - generic [ref=e13]: Section B
+        - heading "Local time" [level=3] [ref=e14]
+        - generic [ref=e15]: …
+      - generic [ref=e16]:
+        - generic [ref=e17]: Section C
+        - heading "Team list" [level=3] [ref=e18]
+        - generic [ref=e19]: …
+      - generic [ref=e20]:
+        - generic [ref=e21]: Section D
+        - heading "Browser brand" [level=3] [ref=e22]
+        - generic [ref=e23]: …
+      - generic [ref=e24]:
+        - generic [ref=e25]: Section E
+        - heading "Price format" [level=3] [ref=e26]
+        - generic [ref=e27]: …
+      - generic [ref=e28]:
+        - generic [ref=e29]: Section F
+        - heading "Connection type" [level=3] [ref=e30]
+        - generic [ref=e31]: …

@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-0864933cd7.localhost:8765/k1-dialogs/
+
+Task: Click "Delete demo data". Accept the confirmation dialog. A second dialog asks you to type a confirmation word that appears only in that dialog; type it and accept. Report the code shown on the page afterwards.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

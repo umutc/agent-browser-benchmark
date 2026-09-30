@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-9690f88dfb.localhost:8765/k2-catalog/
+
+Task: Using the product catalog, find the cheapest in-stock product in the Tents category with a rating of at least 4.0 stars. Report its SKU and price.
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

@@ -1,0 +1,158 @@
+[
+ {
+  "ts": 1790737201025,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Shop"
+  },
+  "url": "http://run-b48db70911.localhost:8765/k2-overlays/",
+  "host": "run-b48db70911.localhost:8765"
+ },
+ {
+  "ts": 1790737201294,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-b48db70911.localhost:8765/k2-overlays/",
+  "host": "run-b48db70911.localhost:8765"
+ },
+ {
+  "ts": 1790737203326,
+  "source": "server",
+  "type": "consent",
+  "data": {
+   "choice": "reject"
+  }
+ },
+ {
+  "ts": 1790737210540,
+  "source": "server",
+  "type": "newsletter",
+  "data": {
+   "choice": "no"
+  }
+ },
+ {
+  "ts": 1790737213556,
+  "source": "server",
+  "type": "cart-add",
+  "data": {
+   "sku": "lantern",
+   "qty": 2
+  }
+ },
+ {
+  "ts": 1790737213556,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-b48db70911.localhost:8765/k2-overlays/",
+  "host": "run-b48db70911.localhost:8765"
+ },
+ {
+  "ts": 1790737215565,
+  "source": "server",
+  "type": "cart-add",
+  "data": {
+   "sku": "mug",
+   "qty": 1
+  }
+ },
+ {
+  "ts": 1790737215565,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-b48db70911.localhost:8765/k2-overlays/",
+  "host": "run-b48db70911.localhost:8765"
+ },
+ {
+  "ts": 1790737216584,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Cart"
+  },
+  "url": "http://run-b48db70911.localhost:8765/k2-overlays/cart",
+  "host": "run-b48db70911.localhost:8765"
+ },
+ {
+  "ts": 1790737228700,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-b48db70911.localhost:8765/k2-overlays/cart",
+  "host": "run-b48db70911.localhost:8765"
+ },
+ {
+  "ts": 1790737236170,
+  "source": "server",
+  "type": "coupon",
+  "data": {
+   "ok": false
+  }
+ },
+ {
+  "ts": 1790737236178,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Cart"
+  },
+  "url": "http://run-b48db70911.localhost:8765/k2-overlays/cart",
+  "host": "run-b48db70911.localhost:8765"
+ },
+ {
+  "ts": 1790737271176,
+  "source": "server",
+  "type": "coupon",
+  "data": {
+   "ok": true
+  }
+ },
+ {
+  "ts": 1790737271231,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Cart"
+  },
+  "url": "http://run-b48db70911.localhost:8765/k2-overlays/cart",
+  "host": "run-b48db70911.localhost:8765"
+ }
+]

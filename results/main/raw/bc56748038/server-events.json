@@ -1,0 +1,54 @@
+[
+ {
+  "ts": 1790730793518,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Dashboard"
+  },
+  "url": "http://run-bc56748038.localhost:8765/k1-hover/",
+  "host": "run-bc56748038.localhost:8765"
+ },
+ {
+  "ts": 1790730796844,
+  "source": "server",
+  "type": "menu-open",
+  "data": {}
+ },
+ {
+  "ts": 1790730796844,
+  "source": "client",
+  "type": "hover",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-bc56748038.localhost:8765/k1-hover/",
+  "host": "run-bc56748038.localhost:8765"
+ },
+ {
+  "ts": 1790730798698,
+  "source": "server",
+  "type": "billing-view",
+  "data": {}
+ },
+ {
+  "ts": 1790730798719,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Billing"
+  },
+  "url": "http://run-bc56748038.localhost:8765/k1-hover/billing?t=4HWH28Q4EC",
+  "host": "run-bc56748038.localhost:8765"
+ }
+]

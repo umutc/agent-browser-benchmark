@@ -1,0 +1,56 @@
+[
+ {
+  "ts": 1790733122917,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Trail guide"
+  },
+  "url": "http://run-3e2f02a024.localhost:8765/k1-canvas/",
+  "host": "run-3e2f02a024.localhost:8765"
+ },
+ {
+  "ts": 1790733123213,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1227,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-3e2f02a024.localhost:8765/k1-canvas/",
+  "host": "run-3e2f02a024.localhost:8765"
+ },
+ {
+  "ts": 1790733130069,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1227,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-3e2f02a024.localhost:8765/k1-canvas/",
+  "host": "run-3e2f02a024.localhost:8765"
+ },
+ {
+  "ts": 1790733137041,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1227,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-3e2f02a024.localhost:8765/k1-canvas/",
+  "host": "run-3e2f02a024.localhost:8765"
+ }
+]

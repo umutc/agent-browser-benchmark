@@ -1,0 +1,48 @@
+[
+ {
+  "ts": 1790735414309,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Sync"
+  },
+  "url": "http://run-639f60764f.localhost:8765/k1-network/",
+  "host": "run-639f60764f.localhost:8765"
+ },
+ {
+  "ts": 1790735414314,
+  "source": "server",
+  "type": "sync",
+  "data": {
+   "syncId": "U2VG6Z2C"
+  }
+ },
+ {
+  "ts": 1790735420343,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Sync"
+  },
+  "url": "http://run-639f60764f.localhost:8765/k1-network/",
+  "host": "run-639f60764f.localhost:8765"
+ },
+ {
+  "ts": 1790735420349,
+  "source": "server",
+  "type": "sync",
+  "data": {
+   "syncId": "BEN9RMSW"
+  }
+ }
+]

@@ -18,6 +18,11 @@ function get(host, path) {
   });
 }
 
+const EXPECTED_ERRORS = [
+  ['k2-extract', /^\/camera$/, 404],
+  ['k3-network', /^\/api\/widget\//, 500],
+];
+
 const server = await startServer(TASKS);
 let failures = 0;
 for (const task of TASKS) {
@@ -26,7 +31,9 @@ for (const task of TASKS) {
     const [method, path] = route.split(' ');
     if (method !== 'GET' || /items|billing|receipt/.test(path)) continue;
     const response = await get(`run-${runId}.localhost`, `/${task.id}${path}`);
-    const ok = response.status === 200 && (!response.body.startsWith('<!doctype') || response.body.includes('/__bench/b.js'));
+    // Some routes answer with a redirect, a 404 or a planted 500 by design.
+    const expected = response.status < 400 || EXPECTED_ERRORS.some(([id, re, status]) => id === task.id && re.test(path) && status === response.status);
+    const ok = expected && (!response.body.startsWith('<!doctype') || response.body.includes('/__bench/b.js'));
     if (!ok) failures += 1;
     console.log(`${ok ? 'ok  ' : 'FAIL'} ${task.id} ${route} -> ${response.status} ${response.body.length}b`);
   }

@@ -1,0 +1,34 @@
+[
+ {
+  "ts": 1790736436433,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Checkout"
+  },
+  "url": "http://run-f3c160c9f1.localhost:8765/k2-checkout/",
+  "host": "run-f3c160c9f1.localhost:8765"
+ },
+ {
+  "ts": 1790736442050,
+  "source": "server",
+  "type": "order",
+  "data": {
+   "fullName": "Jordan Okafor",
+   "email": "jordan.okafor@example.com",
+   "phone": "555-569-7026",
+   "street": "33 Lakeside Ave",
+   "city": "Madison",
+   "state": "WI",
+   "zip": "53703",
+   "shipping": "express",
+   "payment": "invoice",
+   "terms": true
+  }
+ }
+]

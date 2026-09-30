@@ -1,0 +1,20 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - navigation [ref=e6]:
+      - generic [ref=e7]: Home
+      - generic [ref=e8]: Products
+      - generic [ref=e9]:
+        - text: Account ▾
+        - generic [ref=e13]:
+          - link "Profile" [ref=e14]:
+            - /url: profile
+          - link "Billing" [ref=e15]:
+            - /url: billing?t=4HWH28Q4EC
+          - link "Sign out" [ref=e16]:
+            - /url: signout
+    - generic [ref=e10]:
+      - heading "Dashboard" [level=1] [ref=e11]
+      - paragraph [ref=e12]: Nothing new today.

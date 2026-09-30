@@ -1,0 +1,11 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Integration helpers" [level=1] [ref=e7]
+      - paragraph [ref=e8]:
+        - text: This page exposes a JavaScript function
+        - code [ref=e9]: acmeChecksum(text)
+        - text: .

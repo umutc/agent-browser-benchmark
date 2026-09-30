@@ -1,0 +1,67 @@
+[
+ {
+  "ts": 1790731566478,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Expenses"
+  },
+  "url": "http://run-69c9e4b6eb.localhost:8765/k1-upload/",
+  "host": "run-69c9e4b6eb.localhost:8765"
+ },
+ {
+  "ts": 1790731566746,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-69c9e4b6eb.localhost:8765/k1-upload/",
+  "host": "run-69c9e4b6eb.localhost:8765"
+ },
+ {
+  "ts": 1790731570815,
+  "source": "server",
+  "type": "upload",
+  "data": {
+   "token": "7RBL39",
+   "bytes": 237
+  }
+ },
+ {
+  "ts": 1790731570823,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Upload result"
+  },
+  "url": "http://run-69c9e4b6eb.localhost:8765/k1-upload/upload",
+  "host": "run-69c9e4b6eb.localhost:8765"
+ },
+ {
+  "ts": 1790731571076,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-69c9e4b6eb.localhost:8765/k1-upload/upload",
+  "host": "run-69c9e4b6eb.localhost:8765"
+ }
+]

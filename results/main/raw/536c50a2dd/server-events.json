@@ -1,0 +1,36 @@
+[
+ {
+  "ts": 1790735491005,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Status"
+  },
+  "url": "http://run-536c50a2dd.localhost:8765/k1-console/",
+  "host": "run-536c50a2dd.localhost:8765"
+ },
+ {
+  "ts": 1790735491006,
+  "source": "server",
+  "type": "diag",
+  "data": {}
+ },
+ {
+  "ts": 1790735491094,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-536c50a2dd.localhost:8765/k1-console/",
+  "host": "run-536c50a2dd.localhost:8765"
+ }
+]

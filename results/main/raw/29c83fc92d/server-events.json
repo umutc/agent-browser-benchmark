@@ -1,0 +1,25 @@
+[
+ {
+  "ts": 1790737030128,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Invoice"
+  },
+  "url": "http://run-29c83fc92d.localhost:8765/k1-print/",
+  "host": "run-29c83fc92d.localhost:8765"
+ },
+ {
+  "ts": 1790737030239,
+  "source": "server",
+  "type": "print-code",
+  "data": {
+   "media": true
+  }
+ }
+]

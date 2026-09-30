@@ -1,0 +1,79 @@
+[
+ {
+  "ts": 1790733444814,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Cart"
+  },
+  "url": "http://run-b122000aab.localhost:8765/k1-shadow/",
+  "host": "run-b122000aab.localhost:8765"
+ },
+ {
+  "ts": 1790733445092,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-b122000aab.localhost:8765/k1-shadow/",
+  "host": "run-b122000aab.localhost:8765"
+ },
+ {
+  "ts": 1790733448257,
+  "source": "server",
+  "type": "apply",
+  "data": {
+   "word": ""
+  }
+ },
+ {
+  "ts": 1790733448258,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-b122000aab.localhost:8765/k1-shadow/",
+  "host": "run-b122000aab.localhost:8765"
+ },
+ {
+  "ts": 1790733452323,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-b122000aab.localhost:8765/k1-shadow/",
+  "host": "run-b122000aab.localhost:8765"
+ },
+ {
+  "ts": 1790733458141,
+  "source": "server",
+  "type": "apply",
+  "data": {
+   "word": "trail-vubx"
+  }
+ },
+ {
+  "ts": 1790733458142,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-b122000aab.localhost:8765/k1-shadow/",
+  "host": "run-b122000aab.localhost:8765"
+ }
+]

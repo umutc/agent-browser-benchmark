@@ -1,0 +1,17 @@
+[
+ {
+  "ts": 1790737912089,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 375,
+   "h": 696,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Store policies"
+  },
+  "url": "http://run-dd91def008.localhost:8765/k3-responsive/",
+  "host": "run-dd91def008.localhost:8765"
+ }
+]

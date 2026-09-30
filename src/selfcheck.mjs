@@ -7,8 +7,12 @@ import { startServer, makeContext, runEvents, PORT } from './server.mjs';
 import { TASKS } from './tasks/index.mjs';
 import { newRunId } from './lib/codes.mjs';
 
-const PLAYWRIGHT_CORE = '/Users/umutc/.npm/_npx/9833c18b2d85bc59/node_modules/playwright-core/index.mjs';
-const { chromium, webkit } = await import(PLAYWRIGHT_CORE);
+import { createRequire } from 'node:module';
+import { pathToFileURL } from 'node:url';
+
+// playwright-core ships with @playwright/mcp; PLAYWRIGHT_CORE points at another copy.
+const corePath = process.env.PLAYWRIGHT_CORE || createRequire(import.meta.url).resolve('playwright-core');
+const { chromium, webkit } = await import(pathToFileURL(corePath).href);
 const { values: options } = parseArgs({ options: { engine: { type: 'string', default: 'chromium' }, only: { type: 'string' } } });
 
 async function textMatching(page, selector, pattern) {

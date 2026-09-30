@@ -1,0 +1,34 @@
+[
+ {
+  "ts": 1790737500002,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Checkout"
+  },
+  "url": "http://run-2598f9b46c.localhost:8765/k2-checkout/",
+  "host": "run-2598f9b46c.localhost:8765"
+ },
+ {
+  "ts": 1790737506328,
+  "source": "server",
+  "type": "order",
+  "data": {
+   "fullName": "Jordan Okafor",
+   "email": "jordan.okafor@example.com",
+   "phone": "555-441-0684",
+   "street": "418 Birch Hollow Rd",
+   "city": "Asheville",
+   "state": "NC",
+   "zip": "28801",
+   "shipping": "express",
+   "payment": "invoice",
+   "terms": true
+  }
+ }
+]

@@ -1,0 +1,71 @@
+[
+ {
+  "ts": 1790735414974,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Sync"
+  },
+  "url": "http://run-ad029bcf83.localhost:8765/k1-network/",
+  "host": "run-ad029bcf83.localhost:8765"
+ },
+ {
+  "ts": 1790735414985,
+  "source": "server",
+  "type": "sync",
+  "data": {
+   "syncId": "WGVGR8YU"
+  }
+ },
+ {
+  "ts": 1790735430761,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Sync"
+  },
+  "url": "http://run-ad029bcf83.localhost:8765/k1-network/",
+  "host": "run-ad029bcf83.localhost:8765"
+ },
+ {
+  "ts": 1790735430764,
+  "source": "server",
+  "type": "sync",
+  "data": {
+   "syncId": "RMWRJKUR"
+  }
+ },
+ {
+  "ts": 1790735435027,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 300,
+   "h": 150,
+   "dpr": 2,
+   "top": false,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Sync"
+  },
+  "url": "http://run-ad029bcf83.localhost:8765/k1-network/",
+  "host": "run-ad029bcf83.localhost:8765"
+ },
+ {
+  "ts": 1790735435029,
+  "source": "server",
+  "type": "sync",
+  "data": {
+   "syncId": "35K7S3ZZ"
+  }
+ }
+]

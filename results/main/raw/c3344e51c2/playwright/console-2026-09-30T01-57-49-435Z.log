@@ -1,0 +1,3 @@
+[     125ms] [ERROR] Integrity check failed: token MGXLP6 @ http://run-c3344e51c2.localhost:8765/k1-console/:29
+[     125ms] [LOG] status page ready @ http://run-c3344e51c2.localhost:8765/k1-console/:30
+[     131ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://run-c3344e51c2.localhost:8765/favicon.ico:0

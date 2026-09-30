@@ -1,0 +1,7 @@
+[      31ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://run-712e4f100b.localhost:8765/favicon.ico:0
+[   10289ms] Error: Request aborted
+    at http://run-712e4f100b.localhost:8765/k3-console/:34:59
+[   12806ms] TypeError: Cannot read retry settings of job job-d096
+    at http://run-712e4f100b.localhost:8765/k3-console/:35:45
+[   17857ms] TypeError: Cannot read retry settings of job job-f927
+    at http://run-712e4f100b.localhost:8765/k3-console/:35:45

@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-b8fd4c4431.localhost:8765/k3-a11y/
+
+Task: Audit the accessibility of this form. Each section is marked with a letter A–H. For each section report "ok" or the single problem it has: "missing-label" (the input has no programmatic label), "broken-aria-reference" (an aria attribute points to an element that does not exist), "low-contrast" (the visible label text has insufficient color contrast), "no-accessible-name" (a button has no accessible name), or "missing-alt" (an image has no alt attribute).
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

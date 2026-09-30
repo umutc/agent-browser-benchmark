@@ -1,0 +1,38 @@
+[
+ {
+  "ts": 1790735093942,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15",
+   "title": "Offers"
+  },
+  "url": "http://run-d4e9971fa6.localhost:8765/k1-responsive/",
+  "host": "run-d4e9971fa6.localhost:8765"
+ },
+ {
+  "ts": 1790735094067,
+  "source": "server",
+  "type": "mobile",
+  "data": {
+   "w": 400
+  }
+ },
+ {
+  "ts": 1790735094287,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 400,
+   "h": 696,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-d4e9971fa6.localhost:8765/k1-responsive/",
+  "host": "run-d4e9971fa6.localhost:8765"
+ }
+]

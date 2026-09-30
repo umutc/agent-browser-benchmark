@@ -1,0 +1,11 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Verify your phrase" [level=1] [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]: Phrase
+        - textbox "Phrase" [ref=e10]
+        - button "Submit" [ref=e12] [cursor=pointer]

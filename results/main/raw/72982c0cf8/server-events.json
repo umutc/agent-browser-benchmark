@@ -1,0 +1,54 @@
+[
+ {
+  "ts": 1790734921704,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Dashboard"
+  },
+  "url": "http://run-72982c0cf8.localhost:8765/k1-hover/",
+  "host": "run-72982c0cf8.localhost:8765"
+ },
+ {
+  "ts": 1790734925119,
+  "source": "server",
+  "type": "menu-open",
+  "data": {}
+ },
+ {
+  "ts": 1790734925119,
+  "source": "client",
+  "type": "hover",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-72982c0cf8.localhost:8765/k1-hover/",
+  "host": "run-72982c0cf8.localhost:8765"
+ },
+ {
+  "ts": 1790734928607,
+  "source": "server",
+  "type": "billing-view",
+  "data": {}
+ },
+ {
+  "ts": 1790734928622,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Billing"
+  },
+  "url": "http://run-72982c0cf8.localhost:8765/k1-hover/billing?t=W8F7KB7KLX",
+  "host": "run-72982c0cf8.localhost:8765"
+ }
+]

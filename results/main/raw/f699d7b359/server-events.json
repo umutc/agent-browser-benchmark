@@ -1,0 +1,34 @@
+[
+ {
+  "ts": 1790738299639,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Checkout"
+  },
+  "url": "http://run-f699d7b359.localhost:8765/k2-checkout/",
+  "host": "run-f699d7b359.localhost:8765"
+ },
+ {
+  "ts": 1790738307358,
+  "source": "server",
+  "type": "order",
+  "data": {
+   "fullName": "Avery Lindqvist",
+   "email": "avery.lindqvist@example.com",
+   "phone": "555-169-9320",
+   "street": "33 Lakeside Ave",
+   "city": "Madison",
+   "state": "WI",
+   "zip": "53703",
+   "shipping": "express",
+   "payment": "invoice",
+   "terms": true
+  }
+ }
+]

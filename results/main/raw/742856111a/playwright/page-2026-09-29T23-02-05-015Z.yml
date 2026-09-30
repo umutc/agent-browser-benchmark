@@ -1,0 +1,9 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Danger zone" [level=1] [ref=e7]
+      - paragraph [ref=e8]: Remove all demo records from this workspace.
+      - button "Delete demo data" [ref=e9] [cursor=pointer]

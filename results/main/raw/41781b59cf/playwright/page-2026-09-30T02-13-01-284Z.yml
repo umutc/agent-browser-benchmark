@@ -1,0 +1,13 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Welcome back" [level=1] [ref=e7]
+      - paragraph [ref=e8]: Your membership renews on the first of next month.
+      - paragraph [ref=e9]:
+        - text: Your access code is
+        - strong [ref=e10]: V3PW5T
+        - text: .
+      - paragraph [ref=e11]: Keep this code private.

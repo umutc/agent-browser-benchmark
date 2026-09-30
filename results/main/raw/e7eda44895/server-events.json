@@ -1,0 +1,47 @@
+[
+ {
+  "ts": 1790736435674,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Checkout"
+  },
+  "url": "http://run-e7eda44895.localhost:8765/k2-checkout/",
+  "host": "run-e7eda44895.localhost:8765"
+ },
+ {
+  "ts": 1790736435948,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-e7eda44895.localhost:8765/k2-checkout/",
+  "host": "run-e7eda44895.localhost:8765"
+ },
+ {
+  "ts": 1790736471115,
+  "source": "server",
+  "type": "order",
+  "data": {
+   "fullName": "Jordan Okafor",
+   "email": "jordan.okafor@example.com",
+   "phone": "555-197-3260",
+   "street": "33 Lakeside Ave",
+   "city": "Madison",
+   "state": "WI",
+   "zip": "53703",
+   "shipping": "express",
+   "payment": "invoice",
+   "terms": true
+  }
+ }
+]

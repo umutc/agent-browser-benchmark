@@ -1,0 +1,25 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Get a quote" [level=1] [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]: 1 Vehicle
+        - generic [ref=e10]: 2 Driver
+        - generic [ref=e11]: 3 Details
+        - generic [ref=e12]: 4 Review
+      - generic [ref=e25]:
+        - heading "Driver" [level=2] [ref=e26]
+        - generic [ref=e27]: First name
+        - textbox "First name" [ref=e28]: Jordan
+        - generic [ref=e29]: Last name
+        - textbox "Last name" [ref=e30]: Reyes
+        - generic [ref=e31]: Date of birth
+        - textbox "Date of birth" [ref=e33] [cursor=pointer]:
+          - /placeholder: Pick a date
+          - text: 8 June 1970
+      - paragraph [ref=e23]
+      - button "Back" [ref=e34] [cursor=pointer]
+      - button "Next" [ref=e24] [cursor=pointer]

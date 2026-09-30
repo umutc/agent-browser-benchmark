@@ -1,0 +1,1 @@
+{"browser":{"browserName":"chromium","isolated":true,"launchOptions":{"channel":"chrome","headless":false,"args":["--start-maximized"]},"contextOptions":{"viewport":null}},"outputDir":"/Users/umutc/code/browser-mcp-bench/results/main/raw/6113a6af93/playwright"}

@@ -1,0 +1,9 @@
+You are operating a web browser through the tools available to you.
+The web page is a local test site. Use the browser to interact with it.
+
+Start at: http://run-931d9e142e.localhost:8765/k3-network/
+
+Task: Some widgets on this dashboard are broken, but they do not show an error. For each widget A–F, classify it: "ok" (its data request succeeded and returned valid data, even if the value is zero), "http-error" (its data request failed with an HTTP error status), or "bad-data" (the request succeeded but returned missing or invalid data that the widget shows as if it were real).
+
+When you are done, give the final answer in the required structured format.
+If you could not complete the task, set completed to false and explain briefly in notes.

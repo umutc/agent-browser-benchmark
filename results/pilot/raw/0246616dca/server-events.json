@@ -1,0 +1,40 @@
+[
+ {
+  "ts": 1790721712085,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Settings"
+  },
+  "url": "http://run-0246616dca.localhost:8765/k1-dialogs/",
+  "host": "run-0246616dca.localhost:8765"
+ },
+ {
+  "ts": 1790721712346,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-0246616dca.localhost:8765/k1-dialogs/",
+  "host": "run-0246616dca.localhost:8765"
+ },
+ {
+  "ts": 1790721715887,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-0246616dca.localhost:8765/k1-dialogs/",
+  "host": "run-0246616dca.localhost:8765"
+ }
+]

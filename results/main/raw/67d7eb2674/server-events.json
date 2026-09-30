@@ -1,0 +1,34 @@
+[
+ {
+  "ts": 1790731793073,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Checkout"
+  },
+  "url": "http://run-67d7eb2674.localhost:8765/k2-checkout/",
+  "host": "run-67d7eb2674.localhost:8765"
+ },
+ {
+  "ts": 1790731798821,
+  "source": "server",
+  "type": "order",
+  "data": {
+   "fullName": "Riley Marchetti",
+   "email": "riley.marchetti@example.com",
+   "phone": "555-869-9233",
+   "street": "1570 Canyon Crest Dr",
+   "city": "Boulder",
+   "state": "CO",
+   "zip": "80302",
+   "shipping": "express",
+   "payment": "invoice",
+   "terms": true
+  }
+ }
+]

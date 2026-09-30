@@ -1,0 +1,41 @@
+[
+ {
+  "ts": 1790735356773,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Expenses"
+  },
+  "url": "http://run-f68bd1c608.localhost:8765/k1-upload/",
+  "host": "run-f68bd1c608.localhost:8765"
+ },
+ {
+  "ts": 1790735361997,
+  "source": "server",
+  "type": "upload",
+  "data": {
+   "token": "63RRCA",
+   "bytes": 237
+  }
+ },
+ {
+  "ts": 1790735362058,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 907,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Upload result"
+  },
+  "url": "http://run-f68bd1c608.localhost:8765/k1-upload/upload",
+  "host": "run-f68bd1c608.localhost:8765"
+ }
+]

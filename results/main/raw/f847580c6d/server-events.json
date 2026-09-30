@@ -1,0 +1,35 @@
+[
+ {
+  "ts": 1790736405819,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Cart"
+  },
+  "url": "http://run-f847580c6d.localhost:8765/k1-shadow/",
+  "host": "run-f847580c6d.localhost:8765"
+ },
+ {
+  "ts": 1790736413022,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-f847580c6d.localhost:8765/k1-shadow/",
+  "host": "run-f847580c6d.localhost:8765"
+ },
+ {
+  "ts": 1790736413023,
+  "source": "server",
+  "type": "apply",
+  "data": {
+   "word": "trail-n7ba"
+  }
+ }
+]

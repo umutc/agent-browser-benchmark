@@ -1,0 +1,47 @@
+[
+ {
+  "ts": 1790731881228,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Checkout"
+  },
+  "url": "http://run-c31b1c2655.localhost:8765/k2-checkout/",
+  "host": "run-c31b1c2655.localhost:8765"
+ },
+ {
+  "ts": 1790731881481,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-c31b1c2655.localhost:8765/k2-checkout/",
+  "host": "run-c31b1c2655.localhost:8765"
+ },
+ {
+  "ts": 1790732029467,
+  "source": "server",
+  "type": "order",
+  "data": {
+   "fullName": "Riley Marchetti",
+   "email": "riley.marchetti@example.com",
+   "phone": "555-921-8596",
+   "street": "92 Harbor View Ln",
+   "city": "Portland",
+   "state": "ME",
+   "zip": "04101",
+   "shipping": "express",
+   "payment": "invoice",
+   "terms": true
+  }
+ }
+]

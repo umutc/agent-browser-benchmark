@@ -1,0 +1,34 @@
+[
+ {
+  "ts": 1790736436465,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Checkout"
+  },
+  "url": "http://run-bbdbd58935.localhost:8765/k2-checkout/",
+  "host": "run-bbdbd58935.localhost:8765"
+ },
+ {
+  "ts": 1790736443686,
+  "source": "server",
+  "type": "order",
+  "data": {
+   "fullName": "Morgan Castillo",
+   "email": "morgan.castillo@example.com",
+   "phone": "555-980-1958",
+   "street": "33 Lakeside Ave",
+   "city": "Madison",
+   "state": "WI",
+   "zip": "53703",
+   "shipping": "express",
+   "payment": "invoice",
+   "terms": true
+  }
+ }
+]

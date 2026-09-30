@@ -1,0 +1,36 @@
+[
+ {
+  "ts": 1790733075113,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Board"
+  },
+  "url": "http://run-fedf830ade.localhost:8765/k1-dnd/",
+  "host": "run-fedf830ade.localhost:8765"
+ },
+ {
+  "ts": 1790733085518,
+  "source": "client",
+  "type": "drop",
+  "data": {
+   "trusted": true,
+   "item": "task-b"
+  },
+  "url": "http://run-fedf830ade.localhost:8765/k1-dnd/",
+  "host": "run-fedf830ade.localhost:8765"
+ },
+ {
+  "ts": 1790733085519,
+  "source": "server",
+  "type": "drop",
+  "data": {
+   "item": "task-b"
+  }
+ }
+]

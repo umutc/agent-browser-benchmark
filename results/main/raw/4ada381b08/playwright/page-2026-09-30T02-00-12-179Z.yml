@@ -1,0 +1,150 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Get a quote" [level=1] [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]: 1 Vehicle
+        - generic [ref=e10]: 2 Driver
+        - generic [ref=e11]: 3 Details
+        - generic [ref=e12]: 4 Review
+      - generic [ref=e25]:
+        - heading "Driver" [level=2] [ref=e26]
+        - generic [ref=e27]: First name
+        - textbox "First name" [ref=e28]: Jordan
+        - generic [ref=e29]: Last name
+        - textbox "Last name" [ref=e30]: Reyes
+        - generic [ref=e31]: Date of birth
+        - generic [ref=e32]:
+          - textbox "Date of birth" [ref=e33] [cursor=pointer]:
+            - /placeholder: Pick a date
+          - generic [ref=e35]:
+            - generic [ref=e120]:
+              - button "‹" [ref=e121] [cursor=pointer]
+              - strong [ref=e122]: February
+              - combobox [ref=e123]:
+                - option "2026"
+                - option "2025"
+                - option "2024"
+                - option "2023"
+                - option "2022"
+                - option "2021"
+                - option "2020"
+                - option "2019"
+                - option "2018"
+                - option "2017"
+                - option "2016"
+                - option "2015"
+                - option "2014"
+                - option "2013"
+                - option "2012"
+                - option "2011"
+                - option "2010"
+                - option "2009"
+                - option "2008"
+                - option "2007"
+                - option "2006"
+                - option "2005"
+                - option "2004"
+                - option "2003"
+                - option "2002"
+                - option "2001"
+                - option "2000"
+                - option "1999"
+                - option "1998"
+                - option "1997"
+                - option "1996"
+                - option "1995"
+                - option "1994"
+                - option "1993"
+                - option "1992"
+                - option "1991"
+                - option "1990"
+                - option "1989"
+                - option "1988"
+                - option "1987"
+                - option "1986"
+                - option "1985"
+                - option "1984"
+                - option "1983"
+                - option "1982"
+                - option "1981"
+                - option "1980"
+                - option "1979"
+                - option "1978"
+                - option "1977"
+                - option "1976"
+                - option "1975"
+                - option "1974"
+                - option "1973"
+                - option "1972"
+                - option "1971"
+                - option "1970" [selected]
+                - option "1969"
+                - option "1968"
+                - option "1967"
+                - option "1966"
+                - option "1965"
+                - option "1964"
+                - option "1963"
+                - option "1962"
+                - option "1961"
+                - option "1960"
+                - option "1959"
+                - option "1958"
+                - option "1957"
+                - option "1956"
+                - option "1955"
+                - option "1954"
+                - option "1953"
+                - option "1952"
+                - option "1951"
+                - option "1950"
+                - option "1949"
+                - option "1948"
+                - option "1947"
+                - option "1946"
+                - option "1945"
+                - option "1944"
+                - option "1943"
+                - option "1942"
+                - option "1941"
+                - option "1940"
+                - option "1939"
+                - option "1938"
+                - option "1937"
+              - button "›" [ref=e124] [cursor=pointer]
+            - generic [ref=e125]:
+              - button "1" [ref=e126] [cursor=pointer]
+              - button "2" [ref=e127] [cursor=pointer]
+              - button "3" [ref=e128] [cursor=pointer]
+              - button "4" [ref=e129] [cursor=pointer]
+              - button "5" [ref=e130] [cursor=pointer]
+              - button "6" [ref=e131] [cursor=pointer]
+              - button "7" [ref=e132] [cursor=pointer]
+              - button "8" [ref=e133] [cursor=pointer]
+              - button "9" [ref=e134] [cursor=pointer]
+              - button "10" [ref=e135] [cursor=pointer]
+              - button "11" [ref=e136] [cursor=pointer]
+              - button "12" [ref=e137] [cursor=pointer]
+              - button "13" [ref=e138] [cursor=pointer]
+              - button "14" [ref=e139] [cursor=pointer]
+              - button "15" [ref=e140] [cursor=pointer]
+              - button "16" [ref=e141] [cursor=pointer]
+              - button "17" [ref=e142] [cursor=pointer]
+              - button "18" [ref=e143] [cursor=pointer]
+              - button "19" [ref=e144] [cursor=pointer]
+              - button "20" [ref=e145] [cursor=pointer]
+              - button "21" [ref=e146] [cursor=pointer]
+              - button "22" [ref=e147] [cursor=pointer]
+              - button "23" [ref=e148] [cursor=pointer]
+              - button "24" [ref=e149] [cursor=pointer]
+              - button "25" [ref=e150] [cursor=pointer]
+              - button "26" [ref=e151] [cursor=pointer]
+              - button "27" [ref=e152] [cursor=pointer]
+              - button "28" [ref=e153] [cursor=pointer]
+      - paragraph [ref=e23]
+      - button "Back" [ref=e34] [cursor=pointer]
+      - button "Next" [ref=e24] [cursor=pointer]

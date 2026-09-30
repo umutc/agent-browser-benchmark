@@ -1,0 +1,55 @@
+[
+ {
+  "ts": 1790733485613,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Reports"
+  },
+  "url": "http://run-a75685e6d1.localhost:8765/k1-download/",
+  "host": "run-a75685e6d1.localhost:8765"
+ },
+ {
+  "ts": 1790733485889,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-a75685e6d1.localhost:8765/k1-download/",
+  "host": "run-a75685e6d1.localhost:8765"
+ },
+ {
+  "ts": 1790733488860,
+  "source": "server",
+  "type": "download",
+  "data": {}
+ },
+ {
+  "ts": 1790733489139,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 928,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-a75685e6d1.localhost:8765/k1-download/",
+  "host": "run-a75685e6d1.localhost:8765"
+ },
+ {
+  "ts": 1790733490900,
+  "source": "server",
+  "type": "download",
+  "data": {}
+ }
+]

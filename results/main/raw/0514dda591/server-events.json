@@ -1,0 +1,67 @@
+[
+ {
+  "ts": 1790730713935,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Board"
+  },
+  "url": "http://run-0514dda591.localhost:8765/k2-kanban/",
+  "host": "run-0514dda591.localhost:8765"
+ },
+ {
+  "ts": 1790730714195,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 973,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-0514dda591.localhost:8765/k2-kanban/",
+  "host": "run-0514dda591.localhost:8765"
+ },
+ {
+  "ts": 1790730719538,
+  "source": "client",
+  "type": "drag",
+  "data": {
+   "trusted": true,
+   "id": "c1",
+   "to": "done"
+  },
+  "url": "http://run-0514dda591.localhost:8765/k2-kanban/",
+  "host": "run-0514dda591.localhost:8765"
+ },
+ {
+  "ts": 1790730722132,
+  "source": "client",
+  "type": "drag",
+  "data": {
+   "trusted": true,
+   "id": "c2",
+   "to": "doing"
+  },
+  "url": "http://run-0514dda591.localhost:8765/k2-kanban/",
+  "host": "run-0514dda591.localhost:8765"
+ },
+ {
+  "ts": 1790730724119,
+  "source": "server",
+  "type": "save",
+  "data": {
+   "c3": "todo",
+   "c4": "doing",
+   "c5": "doing",
+   "c2": "doing",
+   "c6": "done",
+   "c1": "done"
+  }
+ }
+]

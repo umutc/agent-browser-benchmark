@@ -1,0 +1,56 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Cameras" [level=1] [ref=e7]
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Lumix A65" [ref=e10]:
+            - /url: camera?id=cam-1
+          - text: · 1-inch
+        - listitem [ref=e11]:
+          - link "Orion B75" [ref=e12]:
+            - /url: camera?id=cam-2
+          - text: · Micro Four Thirds
+        - listitem [ref=e13]:
+          - link "Kestrel C22" [ref=e14]:
+            - /url: camera?id=cam-3
+          - text: · Micro Four Thirds
+        - listitem [ref=e15]:
+          - link "Vantage D19" [ref=e16]:
+            - /url: camera?id=cam-4
+          - text: · APS-C
+        - listitem [ref=e17]:
+          - link "Nimbus E58" [ref=e18]:
+            - /url: camera?id=cam-5
+          - text: · Micro Four Thirds
+        - listitem [ref=e19]:
+          - link "Halcyon F61" [ref=e20]:
+            - /url: camera?id=cam-6
+          - text: · 1-inch
+        - listitem [ref=e21]:
+          - link "Lumix G14" [ref=e22]:
+            - /url: camera?id=cam-7
+          - text: · APS-C
+        - listitem [ref=e23]:
+          - link "Orion H36" [ref=e24]:
+            - /url: camera?id=cam-8
+          - text: · 1-inch
+        - listitem [ref=e25]:
+          - link "Kestrel I86" [ref=e26]:
+            - /url: camera?id=cam-9
+          - text: · 1-inch
+        - listitem [ref=e27]:
+          - link "Vantage J83" [ref=e28]:
+            - /url: camera?id=cam-10
+          - text: · APS-C
+        - listitem [ref=e29]:
+          - link "Nimbus K85" [ref=e30]:
+            - /url: camera?id=cam-11
+          - text: · Micro Four Thirds
+        - listitem [ref=e31]:
+          - link "Halcyon L87" [ref=e32]:
+            - /url: camera?id=cam-12
+          - text: · Full frame

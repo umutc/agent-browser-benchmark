@@ -1,0 +1,33 @@
+[
+ {
+  "ts": 1790725579084,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 1,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Safari/605.1.15",
+   "title": "Reveal"
+  },
+  "url": "http://run-bf8925e23c.localhost:8765/k1-click/",
+  "host": "run-bf8925e23c.localhost:8765"
+ },
+ {
+  "ts": 1790725582902,
+  "source": "client",
+  "type": "click",
+  "data": {
+   "trusted": true
+  },
+  "url": "http://run-bf8925e23c.localhost:8765/k1-click/",
+  "host": "run-bf8925e23c.localhost:8765"
+ },
+ {
+  "ts": 1790725582904,
+  "source": "server",
+  "type": "reveal",
+  "data": {}
+ }
+]

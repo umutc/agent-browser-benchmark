@@ -1,0 +1,17 @@
+[
+ {
+  "ts": 1790723879108,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Dashboard"
+  },
+  "url": "http://run-5cab0c32a1.localhost:8765/k3-network/",
+  "host": "run-5cab0c32a1.localhost:8765"
+ }
+]

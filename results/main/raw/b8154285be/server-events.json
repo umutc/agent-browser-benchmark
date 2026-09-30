@@ -1,0 +1,56 @@
+[
+ {
+  "ts": 1790735392789,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 890,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Order"
+  },
+  "url": "http://run-b8154285be.localhost:8765/k1-controls/",
+  "host": "run-b8154285be.localhost:8765"
+ },
+ {
+  "ts": 1790735393155,
+  "source": "client",
+  "type": "resize",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true
+  },
+  "url": "http://run-b8154285be.localhost:8765/k1-controls/",
+  "host": "run-b8154285be.localhost:8765"
+ },
+ {
+  "ts": 1790735401099,
+  "source": "server",
+  "type": "submit",
+  "data": {
+   "country": "Norway",
+   "subscribe": "yes",
+   "plan": "team",
+   "quantity": "3"
+  }
+ },
+ {
+  "ts": 1790735401106,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1727,
+   "h": 883,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+   "title": "Receipt"
+  },
+  "url": "http://run-b8154285be.localhost:8765/k1-controls/submit",
+  "host": "run-b8154285be.localhost:8765"
+ }
+]

@@ -1,0 +1,34 @@
+[
+ {
+  "ts": 1790738298796,
+  "source": "client",
+  "type": "pageview",
+  "data": {
+   "w": 1728,
+   "h": 873,
+   "dpr": 2,
+   "top": true,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+   "title": "Checkout"
+  },
+  "url": "http://run-83520463ba.localhost:8765/k2-checkout/",
+  "host": "run-83520463ba.localhost:8765"
+ },
+ {
+  "ts": 1790738329810,
+  "source": "server",
+  "type": "order",
+  "data": {
+   "fullName": "Avery Lindqvist",
+   "email": "avery.lindqvist@example.com",
+   "phone": "555-968-5803",
+   "street": "92 Harbor View Ln",
+   "city": "Portland",
+   "state": "ME",
+   "zip": "04101",
+   "shipping": "express",
+   "payment": "invoice",
+   "terms": true
+  }
+ }
+]

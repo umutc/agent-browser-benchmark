@@ -1,0 +1,27 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Acme Outdoor
+    - generic [ref=e4]: Test site
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Get a quote" [level=1] [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]: 1 Vehicle
+        - generic [ref=e10]: 2 Driver
+        - generic [ref=e11]: 3 Details
+        - generic [ref=e12]: 4 Review
+      - generic [ref=e120]:
+        - heading "Details" [level=2] [ref=e121]
+        - generic [ref=e122]:
+          - paragraph [ref=e123]: Do you always wear a helmet?
+          - generic [ref=e124]:
+            - radio "Yes" [checked] [active] [ref=e125]
+            - text: "Yes"
+          - generic [ref=e126]:
+            - radio "No" [ref=e127]
+            - text: "No"
+          - generic [ref=e128]: Riding experience (years)
+          - spinbutton "Riding experience (years)" [ref=e129]
+      - paragraph [ref=e23]
+      - button "Back" [ref=e34] [cursor=pointer]
+      - button "Next" [ref=e24] [cursor=pointer]
