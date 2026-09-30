@@ -129,7 +129,7 @@ window the agent resized, and kills only browser processes that descended from t
   which is not the engine inside Safari 27.
 - The HttpOnly-cookie probe tripped the API's cyber safeguard in 12 of its 15 runs (every
   variant except Orca). The refused turn was retracted and re-run on `claude-opus-5`, twice more
-  on `claude-opus-4-8`. The other 654 runs used `claude-opus-5-5` only.
+  on `claude-opus-4-8`. The other 658 runs used `claude-opus-5-5` only.
 - Claude in Chrome ran in the author's everyday Chrome profile with its extensions.
 - Answers were checked at run time; the secret is gone, so stored verdicts can be audited but
   the expected values cannot be re-derived.
