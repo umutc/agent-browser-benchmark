@@ -107,6 +107,11 @@ export function parseStream(lines, arrivals) {
 export function isRateLimited(metrics, stderr) {
   if (metrics.rateLimit?.status === 'rejected') return true;
   const text = `${metrics.resultText || ''}\n${stderr || ''}`;
-  if (metrics.isError || !metrics.hasResult) return /usage limit|rate limit|rate_limit|overloaded|529|capacity/i.test(text);
-  return false;
+  return (metrics.isError || !metrics.hasResult) && /usage limit|rate limit|rate_limit_error/i.test(text);
+}
+
+// Transient server-side failures (HTTP 529/500 from the API): retry the same run later.
+export function isApiError(metrics, stderr) {
+  const text = `${metrics.resultText || ''}\n${stderr || ''}`;
+  return (metrics.isError || !metrics.hasResult) && /529|overloaded|API Error: 5\d\d|internal server error/i.test(text);
 }

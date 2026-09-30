@@ -60,6 +60,37 @@ export function safariAutomationPids() {
 
 const chromeRunning = () => run('pgrep', ['-x', 'Google Chrome']).trim().length > 0;
 
+export function chromeWindowBounds() {
+  if (!chromeRunning()) return {};
+  const out = run('osascript', ['-e', 'tell application "Google Chrome" to get {id, bounds} of every window']);
+  const numbers = out.split(',').map((x) => x.trim()).filter(Boolean);
+  const half = numbers.length / 5;
+  const bounds = {};
+  for (let i = 0; i < half; i++) bounds[numbers[i]] = numbers.slice(half + i * 4, half + i * 4 + 4).map(Number);
+  return bounds;
+}
+
+// The Chrome extension can resize the user's real window (responsive tasks); put every
+// window that existed before the run back to its previous bounds.
+export function restoreChromeBounds(before) {
+  const now = chromeWindowBounds();
+  let restored = 0;
+  for (const [id, bounds] of Object.entries(before)) {
+    if (!now[id] || now[id].join(',') === bounds.join(',')) continue;
+    run('osascript', ['-e', `tell application "Google Chrome" to set bounds of (first window whose id is ${id}) to {${bounds.join(', ')}}`]);
+    restored += 1;
+  }
+  return restored;
+}
+
+// The extension disconnects when Chrome has no window left (for example after the agent
+// closes the last tab). Make sure a full-size window exists before a Chrome run.
+export function ensureChromeWindow(bounds = [0, 33, 1728, 1027]) {
+  if (!chromeRunning() || Object.keys(chromeWindowBounds()).length > 0) return false;
+  run('osascript', ['-e', 'tell application "Google Chrome" to make new window', '-e', 'delay 1', '-e', `tell application "Google Chrome" to set bounds of window 1 to {${bounds.join(', ')}}`]);
+  return true;
+}
+
 export function chromeWindowIds() {
   if (!chromeRunning()) return [];
   const out = run('osascript', ['-e', 'tell application "Google Chrome" to get id of every window']);
@@ -102,7 +133,8 @@ function closeOrcaTabs(runId, worktreeSelector) {
   try {
     tabs = JSON.parse(out).result?.tabs ?? [];
   } catch {}
-  const mine = tabs.filter((tab) => (tab.url || '').includes(`${runId}.localhost`)).sort((a, b) => b.index - a.index);
+  // Only the benchmark uses this workspace, so every tab in it belongs to the run.
+  const mine = [...tabs].sort((a, b) => b.index - a.index);
   for (const tab of mine) run('orca', ['tab', 'close', '--worktree', worktreeSelector, '--index', String(tab.index), '--json']);
   return mine.length;
 }
@@ -125,7 +157,7 @@ function removeRunFiles(runId, directories) {
   return removed;
 }
 
-export async function cleanupRun({ runId, variant, tracked, safariBefore, chromeWindowsBefore, workdir, orcaWorktree }) {
+export async function cleanupRun({ runId, variant, tracked, safariBefore, chromeWindowsBefore, chromeBoundsBefore, workdir, orcaWorktree }) {
   await new Promise((resolve) => setTimeout(resolve, 2500));
   const alive = new Map(processTable().map((row) => [row.pid, row.command]));
   const killed = [];
@@ -147,6 +179,7 @@ export async function cleanupRun({ runId, variant, tracked, safariBefore, chrome
   return {
     killedProcesses: killed,
     chromeTabsClosed: variant === 'claude-in-chrome' ? closeChromeTabs(runId, chromeWindowsBefore) : 0,
+    chromeWindowsResized: variant === 'claude-in-chrome' ? restoreChromeBounds(chromeBoundsBefore || {}) : 0,
     orcaTabsClosed: orcaWorktree ? closeOrcaTabs(runId, orcaWorktree) : 0,
     filesRemoved: removeRunFiles(runId, [join(homedir(), 'Downloads'), workdir]),
   };

@@ -4,7 +4,7 @@
 // are skipped, rate-limited runs are retried.
 //
 //   node src/runner.mjs --tasks k0,k1 --variants all --repeats k0=3,k1=3 --out results/main
-import { spawn } from 'node:child_process';
+import { execFileSync, spawn } from 'node:child_process';
 import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
@@ -12,8 +12,8 @@ import { startServer, makeContext, runEvents } from './server.mjs';
 import { TASKS, selectTasks } from './tasks/index.mjs';
 import { buildPrompt } from './tasks/common.mjs';
 import { VARIANTS, ROOT, WORKDIR, ORCA_WORKTREE, selectVariants, claudeArgs } from './variants.mjs';
-import { parseStream, isRateLimited } from './metrics.mjs';
-import { chromeWindowIds, cleanupRun, safariAutomationPids, trackDescendantBrowsers } from './cleanup.mjs';
+import { parseStream, isRateLimited, isApiError } from './metrics.mjs';
+import { chromeWindowBounds, chromeWindowIds, ensureChromeWindow, cleanupRun, safariAutomationPids, trackDescendantBrowsers } from './cleanup.mjs';
 import { newRunId, rng, shuffle } from './lib/codes.mjs';
 
 const { values: options } = parseArgs({
@@ -30,6 +30,7 @@ const { values: options } = parseArgs({
     'max-minutes': { type: 'string', default: '100000' },
     'max-runs': { type: 'string', default: '100000' },
     'dry-run': { type: 'boolean', default: false },
+    parallel: { type: 'boolean', default: false },
   },
 });
 
@@ -62,13 +63,16 @@ function buildPlan(tasks, variants) {
   return plan;
 }
 
+const DONE_STATUSES = ['ok', 'timeout', 'error'];
+const MIN_START_WIDTH = 1700;
+
 function finishedKeys() {
   if (!existsSync(runsFile)) return new Set();
   const keys = new Set();
   for (const line of readFileSync(runsFile, 'utf8').split('\n')) {
     if (!line.trim()) continue;
     const record = JSON.parse(line);
-    if (!['rate-limited', 'infra-error'].includes(record.status)) keys.add(record.key);
+    if (DONE_STATUSES.includes(record.status)) keys.add(record.key);
   }
   return keys;
 }
@@ -120,6 +124,21 @@ function runClaude(args, runDir, timeoutSec, tracked) {
   });
 }
 
+// Orca's browser takes its size from the Orca window layout, which changes whenever the
+// user opens a side panel. Open the run's tab ahead of time and pin its viewport so the
+// agent's first `orca goto` lands on a page with the same size as Safari and WebKit.
+function prepareOrcaTab() {
+  const orca = (args) => {
+    try {
+      return execFileSync('orca', [...args, '--worktree', ORCA_WORKTREE, '--json'], { encoding: 'utf8', timeout: 20000 });
+    } catch (error) {
+      return String(error.stdout || error.message);
+    }
+  };
+  orca(['tab', 'create', '--url', 'about:blank']);
+  orca(['exec', '--command', 'set viewport 1728 890 2']);
+}
+
 function viewportSummary(events) {
   const views = events.filter((e) => e.source === 'client' && ['pageview', 'resize'].includes(e.type) && e.data?.top !== false);
   if (views.length === 0) return null;
@@ -127,7 +146,7 @@ function viewportSummary(events) {
   return { w: last.w, h: last.h, dpr: last.dpr, first: { w: views[0].data.w, h: views[0].data.h }, samples: views.length };
 }
 
-async function runOne(item) {
+async function runOne(item, concurrency = 1) {
   const task = TASKS.find((t) => t.id === item.taskId);
   const variant = VARIANTS[item.variant];
   const runId = newRunId();
@@ -143,6 +162,7 @@ async function runOne(item) {
   const tracked = new Map();
   const safariBefore = safariAutomationPids();
   const chromeWindowsBefore = item.variant === 'claude-in-chrome' ? chromeWindowIds() : [];
+  const chromeBoundsBefore = item.variant === 'claude-in-chrome' ? chromeWindowBounds() : {};
   const startedAt = new Date().toISOString();
   const execution = await runClaude(args, runDir, task.timeoutSec, tracked);
   const metrics = parseStream(execution.lines, execution.arrivals);
@@ -165,6 +185,7 @@ async function runOne(item) {
     tracked,
     safariBefore,
     chromeWindowsBefore,
+    chromeBoundsBefore,
     workdir: WORKDIR,
     orcaWorktree: item.variant === 'orca-browser' ? ORCA_WORKTREE : null,
   });
@@ -173,8 +194,11 @@ async function runOne(item) {
   let status = 'ok';
   if (execution.timedOut) status = 'timeout';
   else if (isRateLimited(metrics, execution.stderr)) status = 'rate-limited';
+  else if (isApiError(metrics, execution.stderr)) status = 'api-error';
   else if (variant.infraErrors.test(allText)) status = 'infra-error';
   else if (!metrics.hasResult || metrics.isError) status = 'error';
+  const startWidth = viewportSummary(events)?.first?.w;
+  if (!task.resizesViewport && startWidth !== undefined && startWidth < MIN_START_WIDTH) status = 'invalid-viewport';
 
   const { toolResultTexts, ...metricFields } = metrics;
   const record = {
@@ -186,6 +210,7 @@ async function runOne(item) {
     rep: item.rep,
     runId,
     startedAt,
+    concurrency,
     status,
     pass: status === 'ok' && check.pass,
     claimedComplete: output?.completed ?? null,
@@ -218,53 +243,95 @@ async function main() {
   }
 
   const server = await startServer(TASKS);
-  const infraStrikes = {};
+  const strikes = {};
   const deadline = Date.now() + Number(options['max-minutes']) * 60_000;
-  let index = 0;
-  while (index < todo.length) {
+  const parallel = options.parallel;
+  const blocks = [];
+  for (const item of todo) {
+    const id = parallel ? `${item.rep}|${item.taskId}` : item.key;
+    if (blocks.at(-1)?.id !== id) blocks.push({ id, items: [] });
+    blocks.at(-1).items.push(item);
+  }
+  let finished = 0;
+  let stop = false;
+  let apiErrors = 0;
+  for (const block of blocks) {
+    if (stop) break;
     if (Date.now() > deadline) {
-      console.log(`[runner] PAUSE: --max-minutes reached after ${index} runs; re-run the same command to continue`);
+      console.log(`[runner] PAUSE: --max-minutes reached after ${finished} runs; re-run the same command to continue`);
       break;
     }
-    const item = todo[index];
-    const record = await runOne(item);
-    const utilization = record.rateLimit?.unifiedWindows?.seven_day?.utilization;
-    console.log(
-      `[runner] ${index + 1}/${todo.length} ${item.key} status=${record.status} pass=${record.pass} ` +
-        `time=${Math.round((record.durationMs || 0) / 1000)}s tools=${record.toolCalls} ` +
-        `tokens=${record.totalInputTokens}+${record.usage.output} 5h=${record.rateLimit?.unifiedWindows?.five_hour?.utilization ?? '?'} weekly=${utilization ?? '?'}`,
-    );
-
-    if (record.status === 'rate-limited') {
-      const resetsAt = record.rateLimit?.resetsAt;
-      const waitMs = resetsAt ? Math.max(60_000, resetsAt * 1000 - Date.now() + 60_000) : 10 * 60_000;
-      console.log(`[runner] rate limited; waiting ${Math.round(waitMs / 60000)} min`);
-      await sleep(waitMs);
-      continue;
-    }
-    if (record.status === 'infra-error') {
-      infraStrikes[item.variant] = (infraStrikes[item.variant] || 0) + 1;
-      if (infraStrikes[item.variant] >= 2) {
-        console.log(`[runner] STOP: ${item.variant} infrastructure failed twice; needs a human. See ${join(outDir, 'raw', record.runId)}`);
-        process.exitCode = 3;
-        break;
+    let pending = block.items;
+    for (let attempt = 1; pending.length && attempt <= 4 && !stop; attempt++) {
+      if (pending.some((item) => item.variant === 'orca-browser')) prepareOrcaTab();
+      if (pending.some((item) => item.variant === 'claude-in-chrome') && ensureChromeWindow()) console.log('[runner] opened a Chrome window (none was open)');
+      const records = await Promise.all(pending.map((item) => runOne(item, pending.length)));
+      const retry = [];
+      let waitMs = 0;
+      let lastRecord = null;
+      for (const [i, record] of records.entries()) {
+        const item = pending[i];
+        lastRecord = record;
+        const utilization = record.rateLimit?.unifiedWindows?.seven_day?.utilization;
+        console.log(
+          `[runner] ${item.key} status=${record.status} pass=${record.pass} time=${Math.round((record.durationMs || 0) / 1000)}s ` +
+            `tools=${record.toolCalls} tokens=${record.totalInputTokens}+${record.usage.output} x${record.concurrency} ` +
+            `5h=${record.rateLimit?.unifiedWindows?.five_hour?.utilization ?? '?'} weekly=${utilization ?? '?'}`,
+        );
+        if (DONE_STATUSES.includes(record.status)) {
+          finished += 1;
+          strikes[item.variant] = 0;
+          continue;
+        }
+        retry.push(item);
+        if (record.status === 'rate-limited') {
+          const windows = record.rateLimit?.unifiedWindows || {};
+          const rejected = Object.values(windows).filter((w) => w.utilization >= 0.99).map((w) => w.resetsAt);
+          const resetsAt = rejected.length ? Math.max(...rejected) : record.rateLimit?.resetsAt;
+          const resumeAt = resetsAt ? resetsAt * 1000 + 60_000 : Date.now() + 15 * 60_000;
+          if (resumeAt > deadline) {
+            console.log(`[runner] PAUSE: rate limited until ${new Date(resumeAt).toISOString()}; re-run after that time`);
+            process.exitCode = 5;
+            stop = true;
+          }
+          waitMs = Math.max(waitMs, resumeAt - Date.now());
+        } else if (record.status === 'api-error') {
+          apiErrors += 1;
+          waitMs = Math.max(waitMs, Math.min(15, 2 ** apiErrors) * 60_000);
+        } else {
+          strikes[item.variant] = (strikes[item.variant] || 0) + 1;
+          console.log(`[runner] ${item.key} ${record.status} (viewport ${record.viewport?.first?.w ?? '?'}); retrying`);
+          if (strikes[item.variant] >= 2) {
+            console.log(`[runner] STOP: ${item.variant} failed twice in a row with ${record.status}; needs a human. See ${join(outDir, 'raw', record.runId)}`);
+            process.exitCode = record.status === 'infra-error' ? 3 : 6;
+            stop = true;
+          }
+          waitMs = Math.max(waitMs, 15_000);
+        }
       }
-      await sleep(30_000);
-      continue;
+      if (!retry.some((item) => records[pending.indexOf(item)].status === 'api-error')) apiErrors = 0;
+      pending = retry;
+      if (pending.length && !stop) {
+        if (Date.now() + waitMs > deadline) break;
+        await sleep(waitMs);
+      }
+      const fiveHour = lastRecord?.rateLimit?.unifiedWindows?.five_hour;
+      const weekly = lastRecord?.rateLimit?.unifiedWindows?.seven_day?.utilization;
+      if (weekly !== undefined && weekly >= Number(options['max-weekly'])) {
+        console.log(`[runner] STOP: weekly usage ${weekly} reached --max-weekly ${options['max-weekly']}`);
+        process.exitCode = 4;
+        stop = true;
+      } else if (fiveHour && fiveHour.utilization >= Number(options['max-five-hour'])) {
+        const pause = Math.max(60_000, fiveHour.resetsAt * 1000 - Date.now() + 60_000);
+        if (Date.now() + pause > deadline) {
+          console.log(`[runner] PAUSE: five-hour usage ${fiveHour.utilization}; re-run after ${new Date(Date.now() + pause).toISOString()}`);
+          stop = true;
+        } else {
+          console.log(`[runner] five-hour usage ${fiveHour.utilization}; leaving room for the user, waiting ${Math.round(pause / 60000)} min`);
+          await sleep(pause);
+        }
+      }
     }
-    infraStrikes[item.variant] = 0;
-    const fiveHour = record.rateLimit?.unifiedWindows?.five_hour;
-    if (fiveHour && fiveHour.utilization >= Number(options['max-five-hour'])) {
-      const waitMs = Math.max(60_000, fiveHour.resetsAt * 1000 - Date.now() + 60_000);
-      console.log(`[runner] five-hour usage ${fiveHour.utilization}; leaving room for the user, waiting ${Math.round(waitMs / 60000)} min`);
-      await sleep(waitMs);
-    }
-    if (utilization !== undefined && utilization >= Number(options['max-weekly'])) {
-      console.log(`[runner] STOP: weekly usage ${utilization} reached --max-weekly ${options['max-weekly']}`);
-      process.exitCode = 4;
-      break;
-    }
-    index += 1;
     await sleep(1500);
   }
   server.close();

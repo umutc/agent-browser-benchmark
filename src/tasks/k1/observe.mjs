@@ -135,6 +135,7 @@ const canvas = defineTask({
 
 const responsive = defineTask({
   id: 'k1-responsive',
+  resizesViewport: true,
   tier: 'k1',
   capability: 'resize viewport',
   title: 'Mobile-only content',

@@ -12,7 +12,7 @@ export function loadRuns(dir) {
     .split('\n')
     .filter((l) => l.trim())
     .map((l) => JSON.parse(l))
-    .filter((r) => !['rate-limited', 'infra-error'].includes(r.status));
+    .filter((r) => ['ok', 'timeout', 'error'].includes(r.status));
 }
 
 export function median(values) {

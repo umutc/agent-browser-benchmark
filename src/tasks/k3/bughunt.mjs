@@ -191,6 +191,7 @@ const LONG_TEXT = 'Free returns within 60 days on all orders shipped to the cont
 
 const responsiveHunt = defineTask({
   id: 'k3-responsive',
+  resizesViewport: true,
   tier: 'k3',
   capability: 'mobile layout bugs',
   title: 'Layout bugs at phone width',

@@ -14,6 +14,10 @@ const { values: options } = parseArgs({
 const outDir = join(ROOT, options.out);
 const runs = loadRuns(outDir);
 const cells = aggregate(runs);
+// Times, tokens and cost come from the parallel phase, where every task's five variants
+// ran at the same moment. Pass rates use every run.
+const timed = runs.filter((r) => (r.concurrency || 1) > 1 || r.tier === 'k0');
+const timedCells = aggregate(timed);
 const meta = options.meta ? JSON.parse(readFileSync(join(ROOT, options.meta), 'utf8')) : {};
 
 const ORDER = ['claude-in-chrome', 'pw-chrome', 'orca-browser', 'safari-mcp', 'pw-webkit'];
@@ -38,6 +42,7 @@ const vname = (v) => `${swatch(v)}${esc(LABEL[v])}`;
 
 const runsOf = (filter) => runs.filter(filter);
 const tierRuns = (tier, v) => runs.filter((r) => r.tier === tier && r.variant === v);
+const timedTierRuns = (tier, v) => timed.filter((r) => r.tier === tier && r.variant === v);
 
 // ---------- scorecard ----------
 function capabilityCount(v) {
@@ -50,6 +55,7 @@ function scoreRow(v) {
   const k3 = tierRuns('k3', v);
   const k1 = tierRuns('k1', v);
   const all = runs.filter((r) => r.variant === v && r.tier !== 'k0');
+  const allTimed = timed.filter((r) => r.variant === v && r.tier !== 'k0');
   const base = tierRuns('k0', v);
   const cap = capabilityCount(v);
   const k2pass = k2.filter((r) => r.pass).length;
@@ -61,10 +67,12 @@ function scoreRow(v) {
     k2ci: wilson(k2pass, k2.length),
     k3recall: k3.length ? k3.reduce((s, r) => s + (r.check?.recall ?? 0), 0) / k3.length : null,
     k3precision: k3.length ? k3.reduce((s, r) => s + (r.check?.precision ?? 0), 0) / k3.length : null,
-    medSec: median(all.map((r) => r.durationMs / 1000)),
-    medTok: median(all.map((r) => r.totalInputTokens)),
+    medSec: median(allTimed.map((r) => r.durationMs / 1000)),
+    medTok: median(allTimed.map((r) => r.totalInputTokens)),
     baseTok: median(base.map((r) => r.totalInputTokens)),
-    medCost: median(all.map((r) => r.costUsd)),
+    medCost: median(allTimed.map((r) => r.costUsd)),
+    totalCost: runs.filter((r) => r.variant === v).reduce((sum, r) => sum + (r.costUsd || 0), 0),
+    trustedRate: (() => { const l = runs.filter((r) => r.variant === v && r.trusted !== null && r.pass); return l.length ? l.filter((r) => r.trusted).length / l.length : null; })(),
     timeouts: all.filter((r) => r.status === 'timeout').length,
     falseClaims: all.filter((r) => r.claimedComplete === true && !r.pass).length,
     n: all.length,
@@ -153,6 +161,7 @@ function matrix(tier, caption) {
         .map((v) => {
           const c = cells.find((x) => x.variant === v && x.task === t.id);
           if (!c) return '<td class="cell na">–</td>';
+          c.medianSeconds = timedCells.find((x) => x.variant === v && x.task === t.id)?.medianSeconds ?? c.medianSeconds;
           const level = c.passRate === 1 ? 'full' : c.passRate === 0 ? 'none' : 'part';
           const extra = tier === 'k3' ? `<small>recall ${pct(c.meanRecall)}</small>` : `<small>${num(c.medianSeconds, 0)} s</small>`;
           const why = c.timeouts ? ` · ${c.timeouts} timeout${c.timeouts > 1 ? 's' : ''}` : '';
@@ -227,7 +236,7 @@ const limitations = meta.limitations || [];
 
 const tierRange = (tier, metric) =>
   variants.map((v) => {
-    const list = tierRuns(tier, v).map(metric);
+    const list = timedTierRuns(tier, v).map(metric);
     return { v, mid: median(list), lo: quantile(list, 0.25), hi: quantile(list, 0.75) };
   });
 
@@ -277,11 +286,14 @@ code{font:0.84em var(--mono);background:color-mix(in oklab,var(--rule) 45%,trans
 .sw{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:7px;vertical-align:0}
 .s1{background:var(--s1)}.s2{background:var(--s2)}.s3{background:var(--s3)}.s4{background:var(--s4)}.s5{background:var(--s5)}
 .scroll{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font:14px/1.4 var(--display);font-variant-numeric:tabular-nums}
+table{border-collapse:collapse;width:100%;font:14px/1.4 var(--display)}
 caption{text-align:left;font:600 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);padding-bottom:10px}
 th,td{padding:9px 10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
 thead th{font-weight:700;color:var(--ink-2);white-space:nowrap}
-td.n{text-align:right;white-space:nowrap}
+td.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.score thead th{white-space:normal;vertical-align:bottom}
+.score th,.score td{padding-inline:8px}
+.cell small,.pill{font-variant-numeric:tabular-nums}
 .score td.n strong{font-weight:700}
 .matrix th[scope=row]{min-width:220px}
 .score th[scope=row],td .vn{white-space:nowrap}
@@ -313,18 +325,18 @@ details{margin:12px 0} summary{cursor:pointer;font:600 14px var(--display);color
 <header class="top">
   <p class="eyebrow">Browser automation benchmark · Claude Code</p>
   <h1>Five ways to drive a browser</h1>
-  <p class="dek">The same agent, model and prompts ran ${num(runs.filter((r) => r.tier !== 'k0').length)} browser tasks through five different automation surfaces. This report compares what each one could do, how often it finished the job, and what it cost in time and tokens.</p>
+  <p class="dek">The same agent, model and prompts ran ${num(runs.filter((r) => r.tier !== 'k0').length)} browser task runs through five different automation surfaces. This report compares what each one could do, how often it finished the job, and what it cost in time and tokens.</p>
   <p class="runline">${esc(meta.model || 'claude-opus-5-5')} · effort ${esc(meta.effort || 'medium')} · ${num(runs.length)} runs · ${esc((firstRun || '').slice(0, 10))} to ${esc((lastRun || '').slice(0, 10))} · list-price equivalent $${num(totalCost, 0)}</p>
 </header>
 
 <section>
   <h2>Scorecard</h2>
-  <p class="prose">Capability counts the ${capabilityCount(variants[0]).total} single-skill probes a variant passed in at least two of three runs. Realistic tasks and bug hunts are multi-step jobs repeated five times each. Time, tokens and cost are medians over every run except the baseline.</p>
+  <p class="prose">Capability counts the ${capabilityCount(variants[0]).total} single-skill probes a variant passed in at least two of three runs. Realistic tasks and bug hunts are multi-step jobs repeated five times each. Median time and input tokens come from the ${num(timed.filter((r) => r.tier !== 'k0').length)} runs of the parallel phase, where the five variants of each task ran at the same moment; cost is the list-price equivalent of every run.</p>
   <div class="scroll"><table class="score">
-    <thead><tr><th scope="col">Variant</th><th scope="col">Capability</th><th scope="col">Realistic tasks</th><th scope="col">Bug hunts (recall)</th><th scope="col">Median time</th><th scope="col">Median input</th><th scope="col">Fixed context</th><th scope="col">Timeouts</th><th scope="col">Wrong but claimed done</th></tr></thead>
+    <thead><tr><th scope="col">Variant</th><th scope="col">Capability</th><th scope="col">Realistic tasks</th><th scope="col">Bug hunts (recall)</th><th scope="col">Median time</th><th scope="col">Median input</th><th scope="col">Fixed context</th><th scope="col">Cost, all runs</th><th scope="col">Timeouts</th><th scope="col">Claimed done, failed</th></tr></thead>
     <tbody>${score
       .map(
-        (s) => `<tr><th scope="row">${vname(s.v)}</th><td class="n"><strong>${s.cap.solid}</strong>/${s.cap.total}</td><td class="n">${pct(s.k2rate)} <small>(${pct(s.k2ci[0])}–${pct(s.k2ci[1])})</small></td><td class="n">${pct(s.k3recall)}</td><td class="n">${num(s.medSec, 0)} s</td><td class="n">${kTok(s.medTok)}</td><td class="n">${kTok(s.baseTok)}</td><td class="n">${s.timeouts}</td><td class="n">${s.falseClaims}</td></tr>`,
+        (s) => `<tr><th scope="row">${vname(s.v)}</th><td class="n"><strong>${s.cap.solid}</strong>/${s.cap.total}</td><td class="n">${pct(s.k2rate)} <small>(${pct(s.k2ci[0])}–${pct(s.k2ci[1])})</small></td><td class="n">${pct(s.k3recall)}</td><td class="n">${num(s.medSec, 0)} s</td><td class="n">${kTok(s.medTok)}</td><td class="n">${kTok(s.baseTok)}</td><td class="n">$${num(s.totalCost, 1)}</td><td class="n">${s.timeouts}</td><td class="n">${s.falseClaims}</td></tr>`,
       )
       .join('')}</tbody></table></div>
 </section>

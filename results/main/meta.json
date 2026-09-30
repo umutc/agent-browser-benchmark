@@ -1,0 +1,41 @@
+{
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "findings": [
+    {
+      "title": "Every surface can do the job; the difference is cost.",
+      "body": "Across 655 task runs the pass rate never fell below 96% for any variant, and Playwright passed all 131 of its runs on both engines. The spread is in time and tokens: the slowest variant needed twice the time and nearly four times the input tokens of the leanest."
+    },
+    {
+      "title": "Claude in Chrome costs about twice as much.",
+      "body": "Median 26 s and 122k input tokens per run, against 13 s and 33k to 57k for the other four. Its list-price total was $22.5 against $10.7 to $14.9. It reads pages through screenshots more often (median 4.5 images per realistic task), carries the largest fixed context (16k tokens), and could not read an HttpOnly cookie in any run. Its real strength, driving your own signed-in browser, is outside what these clean-room fixtures measure."
+    },
+    {
+      "title": "Safari MCP is the leanest, with two gaps.",
+      "body": "Lowest total cost ($10.7), 38k median input tokens, and the most compact page reads (median 0.8 KB per probe). It has no press-move-release gesture, so pointer drags fell back to events synthesized in page JavaScript: 70% of its passing interactions used real input, against 100% for every other variant. A native <code>confirm()</code> dialog left its click call hanging in all three dialog runs."
+    },
+    {
+      "title": "Orca's browser is fragile around the host app.",
+      "body": "A native <code>confirm()</code> dropped the Orca runtime connection (1 of 3 passed, and that one needed a workaround). <code>set media print</code> reported success without switching the media type (0 of 3). Its speed depended on the Orca window: once the harness pre-opened a pinned tab and the workspace was on screen, its median run time halved."
+    },
+    {
+      "title": "The interface matters more than the engine.",
+      "body": "Playwright on Chrome and on WebKit finished within a second of each other on every tier. The engine-specific bug hunt came out exactly as the engines dictate: both WebKit variants found three broken widgets (two use Chromium-only APIs), all three Chromium variants found one."
+    },
+    {
+      "title": "Agents said when they took a shortcut.",
+      "body": "Where print emulation was missing, Claude in Chrome rewrote the page's print CSS and Orca rendered a PDF to trigger the print handler. Both reached the right code and wrote in their notes how they got there. The checker still counts these as failures because the task asked for print media; they account for all five cases where an agent claimed success and failed."
+    }
+  ],
+  "limitations": [
+    "One model and one effort setting (Opus 5.5, medium). Smaller models may separate the surfaces on success rate, not only cost.",
+    "The tasks proved easy for this model. The benchmark separates cost and edge capabilities well, general competence less so.",
+    "Claude Code adds its own system-prompt guidance for Claude in Chrome (for example, it closes its tab at the end of each run). The other variants rely on tool descriptions; Orca's CLI guide was appended to the system prompt to play the same role.",
+    "Engine builds differ: installed Chrome 154, Orca's Chromium 150, and Playwright's WebKit 26.6 build, which is not the engine inside Safari 27.",
+    "Orca is driven through Bash, not MCP, so its tool-call counts are not directly comparable with the others.",
+    "The first 174 runs ran one at a time; the other 496 ran five at a time, one per variant, on the same task. Times and tokens here come from the parallel phase. For four variants the parallel-to-sequential time ratio was 0.94 to 1.03; Orca's sequential-phase times are excluded because its setup changed mid-run.",
+    "Claude in Chrome used the author's everyday Chrome profile and its extensions. Every run used a fresh origin, so no cookies or storage carried over.",
+    "Expected answers came from a secret that lived only in the runner's memory. The stored verdicts can be audited; the answer values cannot be re-derived afterwards.",
+    "Local fixture pages only. Real sites with sign-in walls, bot detection or very heavy pages are not covered."
+  ]
+}
